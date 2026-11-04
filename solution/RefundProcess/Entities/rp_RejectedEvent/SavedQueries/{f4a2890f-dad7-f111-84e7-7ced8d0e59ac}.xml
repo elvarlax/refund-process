@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{f4a2890f-dad7-f111-84e7-7ced8d0e59ac}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="rp_errorreason" select="1" icon="1" preview="1">
+        <row name="result" id="rp_rejectedeventid">
+          <cell name="rp_sourcefilename" width="226" />
+          <cell name="rp_errorreason" width="173" />
+          <cell name="rp_raweventdata" width="300" />
+          <cell name="rp_reviewstatus" width="143" />
+          <cell name="rp_reviewnote" width="114" />
+          <cell name="createdon" width="139" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="rp_rejectedevent">
+          <attribute name="rp_errorreason" />
+          <attribute name="rp_rejectedeventid" />
+          <attribute name="rp_sourcefilename" />
+          <attribute name="rp_raweventdata" />
+          <attribute name="rp_reviewstatus" />
+          <attribute name="rp_reviewnote" />
+          <attribute name="createdon" />
+          <order attribute="rp_sourcefilename" descending="false" />
+          <filter type="and">
+            <condition attribute="rp_reviewstatus" operator="ne" value="126220002" />
+            <condition attribute="rp_reviewstatus" operator="ne" value="126220003" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Open Rows" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

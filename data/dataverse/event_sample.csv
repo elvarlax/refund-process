@@ -1,0 +1,4 @@
+Event Key,Case Id,Activity Name,Start Timestamp,End Timestamp,Resource,Role,Location,Vendor Id,Invoice Value,Source File
+245|Approve Invoice|2022-09-01 14:33:53.386055,245,Approve Invoice,2022-09-01 14:33:53,2022-09-01 17:14:43,Addison,Invoice Approver,"Seattle, USA",Vendor4,6312.7,AP_Refunds_EventLog_2022-W35.csv
+161|Refund With Special Voucher|2022-09-03 09:49:35.826594,161,Refund With Special Voucher,2022-09-03 09:49:35,2022-09-03 23:07:19,Adrian,Invoice Processor,"San Diego, USA",Vendor2,921.07,AP_Refunds_EventLog_2022-W35.csv
+233|Re-issuing the invoice|2022-08-31 18:03:11.210941,233,Re-issuing the invoice,2022-08-31 18:03:11,2022-08-31 19:00:52,Riley,Invoice Processor,"Seattle, USA",Vendor5,1246.69,AP_Refunds_EventLog_2022-W35.csv

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{cb9daf48-f128-4835-8b3d-a826fdd6f046}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="rp_errorreason" select="1" icon="1" preview="1">
+        <row name="result" id="rp_rejectedeventid">
+          <cell name="rp_errorreason" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="rp_rejectedevent">
+          <attribute name="rp_rejectedeventid" />
+          <attribute name="rp_errorreason" />
+          <attribute name="createdon" />
+          <order attribute="rp_errorreason" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="rp_errorreason" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Rejected Events" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

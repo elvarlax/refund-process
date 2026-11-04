@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{407a5192-bdfb-4e01-965c-fcb1d1621552}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="rp_errorreason" select="1" icon="1" preview="1">
+        <row name="result" id="rp_rejectedeventid">
+          <cell name="rp_errorreason" width="300" />
+          <cell name="rp_sourcefilename" width="150" />
+          <cell name="rp_raweventdata" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="rp_rejectedevent">
+          <attribute name="rp_rejectedeventid" />
+          <attribute name="rp_errorreason" />
+          <attribute name="createdon" />
+          <order attribute="rp_errorreason" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="rp_sourcefilename" />
+          <attribute name="rp_raweventdata" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Rejected Events" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

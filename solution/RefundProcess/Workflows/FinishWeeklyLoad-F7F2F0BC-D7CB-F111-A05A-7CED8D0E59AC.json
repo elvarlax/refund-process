@@ -1,0 +1,249 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_onedriveforbusiness": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "rp_sharedonedriveforbusiness_82186"
+        },
+        "api": {
+          "name": "shared_onedriveforbusiness"
+        }
+      },
+      "shared_office365": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedoffice365_543ca"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      },
+      "shared_dataflows": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "rp_shareddataflows_e4b57"
+        },
+        "api": {
+          "name": "shared_dataflows"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_dataflow_refresh_completes": {
+          "recurrence": {
+            "interval": 1,
+            "frequency": "Minute"
+          },
+          "metadata": {
+            "operationMetadataId": "ba6d0f46-634d-42f7-8ef5-e67b7ba2af01"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "workspaceType": "Environment",
+              "groupIdForOnRefreshComplete": "00000000-0000-0000-0000-000000000000-000000000-europe",
+              "dataflowIdForOnRefreshComplete": "48c409b3-0da7-4abc-a6c5-60821e5b743e"
+            },
+            "host": {
+              "connectionName": "shared_dataflows",
+              "operationId": "OnRefreshComplete",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_dataflows"
+            }
+          }
+        }
+      },
+      "actions": {
+        "Process_files": {
+          "actions": {
+            "List_incoming_files": {
+              "runAfter": {},
+              "metadata": {
+                "b!REDACTED_DRIVE_ID.REDACTED_FOLDER_ID": "/RefundProcess/incoming",
+                "operationMetadataId": "f40d6d7f-90b0-46b5-97bf-e43f0bf5ead9"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_onedriveforbusiness",
+                  "operationId": "ListFolderV2",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness"
+                },
+                "parameters": {
+                  "id": "b!REDACTED_DRIVE_ID.REDACTED_FOLDER_ID"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Dataflow_refresh_succeeded": {
+              "actions": {
+                "For_each_file,_move_to_processed": {
+                  "foreach": "@outputs('List_incoming_files')?['body/value']",
+                  "actions": {
+                    "Move_file_to_processed": {
+                      "runAfter": {},
+                      "metadata": {
+                        "operationMetadataId": "58a3053f-ffec-475d-a35f-292365ade436"
+                      },
+                      "type": "OpenApiConnection",
+                      "inputs": {
+                        "host": {
+                          "connectionName": "shared_onedriveforbusiness",
+                          "operationId": "MoveFile",
+                          "apiId": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness"
+                        },
+                        "parameters": {
+                          "id": "@items('For_each_file,_move_to_processed')?['Id']",
+                          "destination": "/RefundProcess/processed/@{items('For_each_file,_move_to_processed')?['Name']}",
+                          "overwrite": false
+                        },
+                        "authentication": "@parameters('$authentication')",
+                        "retryPolicy": {
+                          "type": "exponential",
+                          "count": 3,
+                          "interval": "PT10S"
+                        }
+                      }
+                    }
+                  },
+                  "runAfter": {},
+                  "metadata": {
+                    "operationMetadataId": "76534c54-a8f3-4f71-abbd-15f9ee91f044"
+                  },
+                  "type": "Foreach"
+                }
+              },
+              "runAfter": {
+                "List_incoming_files": [
+                  "Succeeded"
+                ]
+              },
+              "else": {
+                "actions": {
+                  "For_each_file,_move_to_failed": {
+                    "foreach": "@outputs('List_incoming_files')?['body/value']",
+                    "actions": {
+                      "Move_file_to_failed": {
+                        "runAfter": {},
+                        "metadata": {
+                          "operationMetadataId": "8047b66c-a4e0-4d15-a9b8-abb1571e6c1f"
+                        },
+                        "type": "OpenApiConnection",
+                        "inputs": {
+                          "host": {
+                            "connectionName": "shared_onedriveforbusiness",
+                            "operationId": "MoveFile",
+                            "apiId": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness"
+                          },
+                          "parameters": {
+                            "id": "@items('For_each_file,_move_to_failed')?['Id']",
+                            "destination": "/RefundProcess/failed/@{items('For_each_file,_move_to_failed')?['Name']}",
+                            "overwrite": false
+                          },
+                          "authentication": "@parameters('$authentication')",
+                          "retryPolicy": {
+                            "type": "exponential",
+                            "count": 3,
+                            "interval": "PT10S"
+                          }
+                        }
+                      }
+                    },
+                    "runAfter": {},
+                    "metadata": {
+                      "operationMetadataId": "6f47f712-9345-4cef-b247-10b0cf05175b"
+                    },
+                    "type": "Foreach"
+                  }
+                }
+              },
+              "expression": {
+                "equals": [
+                  "@triggerOutputs()?['body/status']",
+                  "Success"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "d8d0b237-7c71-432c-a512-beff49ef81f7"
+              },
+              "type": "If"
+            }
+          },
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "467e600e-b5a6-4cef-be00-15d1fb9d9635"
+          },
+          "type": "Scope"
+        },
+        "Handle_failure": {
+          "actions": {
+            "Send_an_email_(V2)": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "fb5c12a5-6461-4c5f-9511-b5396ec26d11"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_office365",
+                  "operationId": "SendEmailV2",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+                },
+                "parameters": {
+                  "emailMessage/To": "redacted@example.com",
+                  "emailMessage/Subject": "@concat(workflow()['tags']['flowDisplayName'], ' failed: ', workflow()['run']['name'])",
+                  "emailMessage/Body": "<p class=\"editor-paragraph\">The weekly load failed. Files may still be in the incoming folder. See the run history of this flow.</p>",
+                  "emailMessage/Importance": "Normal"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Terminate": {
+              "runAfter": {
+                "Send_an_email_(V2)": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "b0f9f130-2594-4f02-a42f-5123ba3bf937"
+              },
+              "type": "Terminate",
+              "inputs": {
+                "runStatus": "Failed",
+                "runError": {
+                  "code": "LoadFailed",
+                  "message": "The weekly load failed. See the run history of this flow."
+                }
+              }
+            }
+          },
+          "runAfter": {
+            "Process_files": [
+              "Failed",
+              "TimedOut"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "ba3de2b5-d671-4faf-a38d-537541a663d0"
+          },
+          "type": "Scope"
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

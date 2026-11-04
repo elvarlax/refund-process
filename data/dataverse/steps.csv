@@ -1,0 +1,14 @@
+Activity Name,Step Order,Process Path
+Invoice Entry,1,Both
+Check Customer Payment,2,Payment check
+Credit Memo Entry,3,Payment check
+Refund Customer,4,Payment check
+Confirm Payment Received,2,Approval
+Refund With Standard Voucher,3,Approval
+Refund With Special Voucher,3,Approval
+Complete the Customer Memo,4,Approval
+Reject Invoice,5,Approval
+Approve Invoice,5,Approval
+Credit Memo Creation,6,Approval
+Fill Credit Memo,7,Approval
+Re-issuing the invoice,9,Both

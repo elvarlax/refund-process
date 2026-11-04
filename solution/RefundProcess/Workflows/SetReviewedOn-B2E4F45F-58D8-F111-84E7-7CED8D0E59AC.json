@@ -1,0 +1,100 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedcommondataserviceforapps_72101"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "2f83ec72-a89a-4779-bb21-507ff6d793ba"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 3,
+              "subscriptionRequest/entityname": "rp_rejectedevent",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "rp_reviewstatus"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "NewStatus": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "c53347b2-70f5-4138-b777-82e8d2ae4c6e"
+          },
+          "type": "Compose",
+          "inputs": "@   triggerOutputs()?['body/rp_reviewstatus']"
+        },
+        "Reviewer": {
+          "runAfter": {
+            "NewStatus": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "d19024ab-a453-44ef-a6da-ee3f5e508717"
+          },
+          "type": "Compose",
+          "inputs": "@   triggerOutputs()?['body/_modifiedby_value']"
+        },
+        "Update_a_row": {
+          "runAfter": {
+            "Reviewer": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "ef1f2eb3-20df-4372-aea5-d2084ec8a4ea"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "UpdateOnlyRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "rp_rejectedevents",
+              "recordId": "@triggerOutputs()?['body/rp_rejectedeventid']",
+              "item/rp_ReviewedBy@odata.bind": "@if(equals(outputs('NewStatus'),126220000),null,concat('systemusers(',outputs('Reviewer'),')'))",
+              "item/rp_reviewedon": "@if(equals(outputs('NewStatus'),126220000),null,utcNow())"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

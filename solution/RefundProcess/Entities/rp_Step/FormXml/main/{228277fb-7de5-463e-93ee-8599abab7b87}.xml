@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{228277fb-7de5-463e-93ee-8599abab7b87}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{027a0aea-b8a1-434a-9f75-e221db1c0607}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{d7328abb-3000-4c49-beb0-fe5a2596a33f}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{79bbdc00-c155-4ed6-bb13-bfe3a29ab781}">
+                        <labels>
+                          <label description="Activity Name" languagecode="1033" />
+                        </labels>
+                        <control id="rp_activityname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="rp_activityname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3fa2250a-4f57-4c80-a714-aa6e8242dc7b}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8d5a5d2b-646a-439d-a58e-ba9e821b23b3}">
+                        <labels>
+                          <label description="Step Order" languagecode="1033" />
+                        </labels>
+                        <control id="rp_steporder" classid="{c6d124ca-7eda-4a60-aea9-7fb8d318b68f}" datafieldname="rp_steporder" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f8d3ceee-f39d-4854-ae7c-d933960195cb}">
+                        <labels>
+                          <label description="Process Path" languagecode="1033" />
+                        </labels>
+                        <control id="rp_processpath" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="rp_processpath" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

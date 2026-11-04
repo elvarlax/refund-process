@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.26101.177" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26101.177" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26101.00177">
+  <SolutionManifest>
+    <UniqueName>RefundProcess</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Refund Process" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.2</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>refund_process</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Refund Process" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>rp</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>12622</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="rp_event" behavior="0" />
+      <RootComponent type="1" schemaName="rp_rejectedevent" behavior="0" />
+      <RootComponent type="1" schemaName="rp_step" behavior="0" />
+      <RootComponent type="1" schemaName="systemuser" behavior="1" />
+      <RootComponent type="20" id="{2045d8d2-e7d7-f111-84e7-7ced8d0e59ac}" behavior="0" />
+      <RootComponent type="20" id="{fd302894-e6d7-f111-84e7-7ced8d0e59ac}" behavior="0" />
+      <RootComponent type="29" id="{3ed64699-d4cb-f111-a05a-7ced8d0e59ac}" behavior="0" />
+      <RootComponent type="29" id="{b2e4f45f-58d8-f111-84e7-7ced8d0e59ac}" behavior="0" />
+      <RootComponent type="29" id="{f7f2f0bc-d7cb-f111-a05a-7ced8d0e59ac}" behavior="0" />
+      <RootComponent type="62" schemaName="rp_RefundRejectedReview" behavior="0" />
+      <RootComponent type="80" schemaName="rp_RefundRejectedReview" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="systemuser" displayName="SystemUser" parentSchemaName="" solution="msdyn_PowerAdminSettingsEmail (2.2.3552.1)" />
+        <Dependent type="1" schemaName="systemuser" displayName="SystemUser" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)">
+          <package appName="AppModule Web Resources Package" version="2.5">AppModuleWebResources (2.5)</package>
+        </Required>
+        <Dependent type="80" schemaName="rp_RefundRejectedReview" displayName="Refund Rejected Review" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.27)" id.uniquename="AppChannel">
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.27">PowerAppsAppFramework_Anchor (1.0.0.27)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=rp_RefundRejectedReview,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="rp_RefundRejectedReview" id.settingdefinitionid.uniquename="AppChannel" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

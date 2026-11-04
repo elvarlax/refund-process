@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{90442984-be6a-43e2-b286-6500748f6952}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="rp_activityname" select="1" icon="1" preview="1">
+        <row name="result" id="rp_stepid">
+          <cell name="rp_activityname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="rp_step">
+          <attribute name="rp_stepid" />
+          <attribute name="rp_activityname" />
+          <attribute name="createdon" />
+          <order attribute="rp_activityname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Steps" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

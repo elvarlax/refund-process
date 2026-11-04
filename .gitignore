@@ -1,0 +1,19 @@
+# Your own values (server names, passwords): never in Git
+.env
+.env.*
+!.env.example
+
+powerbi/**/.pbi/localSettings.json
+powerbi/**/.pbi/cache.abf
+
+# Solution zips never go into Git (only the unpacked folder)
+*.zip
+
+# Private task plan export: never in Git
+PLAN_EXPORT.md
+
+# Local working notes: not part of the published project
+CLAUDE.md
+.claude/
+.vscode/
+

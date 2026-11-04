@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_rp_event" />
+  <EntityRelationship Name="business_unit_rp_rejectedevent" />
+  <EntityRelationship Name="business_unit_rp_step" />
+  <EntityRelationship Name="lk_rp_event_createdby" />
+  <EntityRelationship Name="lk_rp_event_modifiedby" />
+  <EntityRelationship Name="lk_rp_rejectedevent_createdby" />
+  <EntityRelationship Name="lk_rp_rejectedevent_modifiedby" />
+  <EntityRelationship Name="lk_rp_step_createdby" />
+  <EntityRelationship Name="lk_rp_step_modifiedby" />
+  <EntityRelationship Name="owner_rp_event" />
+  <EntityRelationship Name="owner_rp_rejectedevent" />
+  <EntityRelationship Name="owner_rp_step" />
+  <EntityRelationship Name="rp_event_Step_rp_step" />
+  <EntityRelationship Name="rp_rejectedevent_ReviewedBy_systemuser" />
+  <EntityRelationship Name="team_rp_event" />
+  <EntityRelationship Name="team_rp_rejectedevent" />
+  <EntityRelationship Name="team_rp_step" />
+  <EntityRelationship Name="user_rp_event" />
+  <EntityRelationship Name="user_rp_rejectedevent" />
+  <EntityRelationship Name="user_rp_step" />
+</EntityRelationships>

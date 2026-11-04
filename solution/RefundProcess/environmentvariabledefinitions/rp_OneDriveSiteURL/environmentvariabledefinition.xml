@@ -1,0 +1,13 @@
+<environmentvariabledefinition schemaname="rp_OneDriveSiteURL">
+  <description default="Site URL of the OneDrive folder that holds the weekly files. The default value is empty on purpose, so that no personal URL is stored in the solution.">
+    <label description="Site URL of the OneDrive folder that holds the weekly files. The default value is empty on purpose, so that no personal URL is stored in the solution." languagecode="1033" />
+  </description>
+  <displayname default="OneDrive Site URL">
+    <label description="OneDrive Site URL" languagecode="1033" />
+  </displayname>
+  <introducedversion>1.0.0.2</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <secretstore>0</secretstore>
+  <type>100000000</type>
+</environmentvariabledefinition>

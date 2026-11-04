@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26101.177" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26101.00177">
+  <Entities />
+  <Roles />
+  <Workflows />
+  <FieldSecurityProfiles />
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <AppModuleSiteMaps />
+  <AppModules />
+  <EntityDataProviders />
+  <connectionreferences>
+    <connectionreference connectionreferencelogicalname="new_sharedcommondataserviceforapps_72101">
+      <connectionreferencedisplayname>Microsoft Dataverse</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="new_sharedoffice365_543ca">
+      <connectionreferencedisplayname>Office 365 Outlook</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_office365</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="rp_shareddataflows_e4b57">
+      <connectionreferencedisplayname>Power Query Dataflows RefundProcess-e4b57</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_dataflows</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="rp_sharedonedriveforbusiness_82186">
+      <connectionreferencedisplayname>OneDrive for Business RefundProcess-82186</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+  </connectionreferences>
+  <msdyn_dataflows>
+    <msdyn_dataflow msdyn_dataflowid="77748232-cecb-f111-a05a-7ced8d0e59ac">
+      <iscustomizable>1</iscustomizable>
+      <msdyn_internalversion>d4908e1c-eebc-4744-a7b8-73595197d9fe</msdyn_internalversion>
+      <msdyn_mashupdocument>section Section1;
+shared RawEvents = let
+    Source = SharePoint.Files("https://example-my.sharepoint.com/personal/user_example_com", [ApiVersion = 15]),
+    Incoming = Table.SelectRows(Source, each Text.Contains([Folder Path], "/RefundProcess/incoming/") and Text.StartsWith([Name], "AP_Refunds_EventLog_") and Text.EndsWith([Name], ".csv")),
+    Parsed = Table.AddColumn(Incoming, "Data", each
+        let
+            t = Table.PromoteHeaders(Csv.Document([Content], [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]), [PromoteAllScalars = true]),
+            n = [Name]
+        in
+            Table.AddColumn(t, "SourceFile", each n, type text)),
+    Combined = Table.Combine(Parsed[Data]),
+    Ordered = Table.ReorderColumns(Combined, {"CaseId", "ActivityName", "StartTimestamp", "EndTimestamp", "Resource", "Role", "Location", "VendorID", "InvoiceValue", "SourceFile"})
+in
+    Ordered;
+shared Events = let
+    Source = RawEvents,
+    Unique = Table.Distinct(Source),
+    Nz = (x as nullable text) as text =&gt; if x = null then "" else x,
+    Steps = {"Invoice Entry", "Re-issuing the invoice", "Complete the Customer Memo", "Refund With Standard Voucher", "Credit Memo Entry", "Check Customer Payment", "Refund Customer", "Credit Memo Creation", "Approve Invoice", "Confirm Payment Received", "Fill Credit Memo", "Reject Invoice", "Refund With Special Voucher"},
+    Norm = (t as nullable text) as text =&gt;
+        let s = Text.Trim(Nz(t)) in
+            if Text.Length(s) &gt;= 16 and Text.Middle(s, 2, 1) = "."
+            then Text.Middle(s, 6, 4) &amp; "-" &amp; Text.Middle(s, 3, 2) &amp; "-" &amp; Text.Start(s, 2) &amp; " " &amp; Text.Middle(s, 11, 5) &amp; ":00"
+            else s,
+    AddStart = Table.AddColumn(Unique, "Start", each Norm([StartTimestamp]), type text),
+    AddEnd = Table.AddColumn(AddStart, "End", each Norm([EndTimestamp]), type text),
+    AddKey = Table.AddColumn(AddEnd, "EventKey", each Text.Trim(Nz([CaseId])) &amp; "|" &amp; Text.Trim(Nz([ActivityName])) &amp; "|" &amp; [Start], type text),
+    AddReason = Table.AddColumn(AddKey, "Reason", each
+        if not (let c = Text.Trim(Nz([CaseId])) in c &lt;&gt; "" and Text.Select(c, {"0".."9"}) = c) then "CaseId missing"
+        else if not List.Contains(Steps, Text.Trim(Nz([ActivityName]))) then "Unknown activity"
+        else if Text.Length([Start]) &lt; 19 or Text.Length([End]) &lt; 19 or Text.Contains([Start], "  ") or Text.Contains([End], "  ") or Text.Middle([Start], 4, 1) &lt;&gt; "-" or Text.Middle([End], 4, 1) &lt;&gt; "-" then "Unreadable timestamp"
+        else if [End] &lt; [Start] then "End before start"
+        else if (try Number.FromText(Text.Trim(Nz([InvoiceValue])), "en-US") otherwise null) = null then "InvoiceValue not a number"
+        else "", type text),
+    Ordered = Table.ReorderColumns(AddReason, {"EventKey", "CaseId", "ActivityName", "Start", "End", "Resource", "Role", "Location", "VendorID", "InvoiceValue", "SourceFile", "Reason", "StartTimestamp", "EndTimestamp"})
+in
+    Ordered;
+shared EventsValid = let
+    Source = Events,
+    OnlyValid = Table.SelectRows(Source, each [Reason] = ""),
+    OneKey = Table.Distinct(OnlyValid, {"EventKey"}),
+    Typed = Table.TransformColumns(OneKey, {
+        {"CaseId", each Int64.From(Number.FromText(Text.Trim(_))), Int64.Type},
+        {"Start", each DateTime.FromText(Text.Start(_, 19)), type datetime},
+        {"End", each DateTime.FromText(Text.Start(_, 19)), type datetime},
+        {"InvoiceValue", each Number.FromText(Text.Trim(_), "en-US"), type number},
+        {"ActivityName", Text.Trim, type text},
+        {"Resource", Text.Trim, type text},
+        {"Role", Text.Trim, type text},
+        {"Location", Text.Trim, type text},
+        {"VendorID", Text.Trim, type text}}),
+    Dropped = Table.RemoveColumns(Typed, {"StartTimestamp", "EndTimestamp", "Reason"}),
+    Renamed = Table.RenameColumns(Dropped, {{"Start", "StartTimestamp"}, {"End", "EndTimestamp"}}),
+    Final = Table.SelectColumns(Renamed, {"EventKey", "CaseId", "ActivityName", "StartTimestamp", "EndTimestamp", "Resource", "Role", "Location", "VendorID", "InvoiceValue", "SourceFile"})
+in
+    Final;
+shared EventsInvalid = let
+    Source = Events,
+    OnlyInvalid = Table.SelectRows(Source, each [Reason] &lt;&gt; ""),
+    Indexed = Table.AddIndexColumn(OnlyInvalid, "Idx", 1, 1, Int64.Type),
+    Nz = (x as nullable text) as text =&gt; if x = null then "" else x,
+    Base = Text.Start(Text.NewGuid(), 24),
+    AddRaw = Table.AddColumn(Indexed, "RawEventData", each """" &amp; Nz([Location]) &amp; """," &amp; Text.Combine({Nz([Role]), Nz([VendorID]), Nz([InvoiceValue]), Nz([Resource]), Nz([StartTimestamp]), Nz([EndTimestamp]), Nz([CaseId]), Nz([ActivityName])}, ","), type text),
+    AddId = Table.AddColumn(AddRaw, "RejectedEventId", each Base &amp; Text.PadStart(Text.From([Idx]), 12, "0"), type text),
+    Final = Table.SelectColumns(AddId, {"RejectedEventId", "Reason", "RawEventData", "SourceFile"})
+in
+    Final;
+</msdyn_mashupdocument>
+      <msdyn_mashupsettings>{"QueryGroups":[],"DocumentLocale":"en-GB","QueriesMetadata":{"RawEvents":{"QueryId":"149e0ee6-28a1-477e-a462-d08a2f61613a","QueryName":"RawEvents","QueryGroupId":null,"EntityName":null,"LastKnownIsCalculatedEntity":false,"LastKnownIsLinkedEntity":false,"LastKnownIsParameter":false,"IsHidden":null,"LastKnownResultTypeName":null,"LoadEnabled":false,"DeleteExistingDataOnLoad":false,"FieldsMetadata":{},"HostProperties":{"MappingEditorProperties":"{}"},"JsonOutputDestinations":null,"BindToDefaultOutputDestination":null,"JsonIncrementalRefreshSettings":null,"JsonStagingDefinition":null},"Events":{"QueryId":"20aef7dc-683e-4533-8614-92b8f16de99e","QueryName":"Events","QueryGroupId":null,"EntityName":null,"LastKnownIsCalculatedEntity":false,"LastKnownIsLinkedEntity":false,"LastKnownIsParameter":false,"IsHidden":null,"LastKnownResultTypeName":null,"LoadEnabled":false,"DeleteExistingDataOnLoad":false,"FieldsMetadata":{},"HostProperties":{"MappingEditorProperties":"{}"},"JsonOutputDestinations":null,"BindToDefaultOutputDestination":null,"JsonIncrementalRefreshSettings":null,"JsonStagingDefinition":null},"EventsValid":{"QueryId":"80c12024-1160-4703-ba74-73aecbd04ef2","QueryName":"EventsValid","QueryGroupId":null,"EntityName":"rp_Event","LastKnownIsCalculatedEntity":false,"LastKnownIsLinkedEntity":false,"LastKnownIsParameter":false,"IsHidden":null,"LastKnownResultTypeName":null,"LoadEnabled":true,"DeleteExistingDataOnLoad":false,"FieldsMetadata":{"rp_activityname":{"SourceColumnName":"ActivityName","DestinationFieldType":"Memo","AutoNumberSettings":null},"rp_caseidentifier":{"SourceColumnName":"CaseId","DestinationFieldType":"Integer","AutoNumberSettings":null},"rp_endtimestamp":{"SourceColumnName":"EndTimestamp","DestinationFieldType":"DateAndTime","AutoNumberSettings":null},"rp_eventkey":{"SourceColumnName":"EventKey","DestinationFieldType":"Memo","AutoNumberSettings":null},"rp_invoicevalue":{"SourceColumnName":"InvoiceValue","DestinationFieldType":"Double","AutoNumberSettings":null},"rp_location":{"SourceColumnName":"Location","DestinationFieldType":"Memo","AutoNumberSettings":null},"rp_resourcename":{"SourceColumnName":"Resource","DestinationFieldType":"Memo","AutoNumberSettings":null},"rp_role":{"SourceColumnName":"Role","DestinationFieldType":"Memo","AutoNumberSettings":null},"rp_sourcefile":{"SourceColumnName":"SourceFile","DestinationFieldType":"Memo","AutoNumberSettings":null},"rp_starttimestamp":{"SourceColumnName":"StartTimestamp","DestinationFieldType":"DateAndTime","AutoNumberSettings":null},"rp_vendoridentifier":{"SourceColumnName":"VendorID","DestinationFieldType":"Memo","AutoNumberSettings":null}},"HostProperties":{"MappingEditorProperties":"{\"primaryKeyLogicalName\":\"rp_eventkey\"}"},"JsonOutputDestinations":null,"BindToDefaultOutputDestination":null,"JsonIncrementalRefreshSettings":null,"JsonStagingDefinition":null},"EventsInvalid":{"QueryId":"d7425174-fac3-4708-9b61-573f9435beb1","QueryName":"EventsInvalid","QueryGroupId":null,"EntityName":"rp_RejectedEvent","LastKnownIsCalculatedEntity":false,"LastKnownIsLinkedEntity":false,"LastKnownIsParameter":false,"IsHidden":null,"LastKnownResultTypeName":null,"LoadEnabled":true,"DeleteExistingDataOnLoad":false,"FieldsMetadata":{"rp_errorreason":{"SourceColumnName":"Reason","DestinationFieldType":"Memo","AutoNumberSettings":null},"rp_raweventdata":{"SourceColumnName":"RawEventData","DestinationFieldType":"Memo","AutoNumberSettings":null},"rp_RejectedEventId":{"SourceColumnName":"RejectedEventId","DestinationFieldType":"Memo","AutoNumberSettings":null},"rp_sourcefilename":{"SourceColumnName":"SourceFile","DestinationFieldType":"Memo","AutoNumberSettings":null}},"HostProperties":{"MappingEditorProperties":"{\"primaryKeyLogicalName\":\"rp_rejectedeventid\"}"},"JsonOutputDestinations":null,"BindToDefaultOutputDestination":null,"JsonIncrementalRefreshSettings":null,"JsonStagingDefinition":null}},"FastCombine":false,"AllowNativeQueries":false,"HostContext":{"Type":"CdsT","Details":{"EnvironmentId":"00000000-0000-0000-0000-000000000000"}},"HostProperties":null,"SkipAutomaticTypeAndHeaderDetection":false,"DisableAutoAnonymousConnectionUpsert":false,"AllowedModules":null,"DataflowMetadata":"{\"DataflowType\":\"Cdst\",\"DataflowId\":\"48c409b3-0da7-4abc-a6c5-60821e5b743e\",\"OwnerUserId\":\"00000000-0000-0000-0000-000000000000\",\"OwnerName\":\"Unknown\",\"OwnerTenantId\":\"00000000-0000-0000-0000-000000000000\",\"GatewayObjectId\":null,\"ModelSnapshotUri\":\"\",\"GroupId\":\"00000000-0000-0000-0000-000000000000\",\"DataflowState\":\"Source\",\"LastUpdateTime\":\"2026-11-04T16:03:50.4346591+00:00\",\"LastStateChangedTime\":\"2026-10-19T18:00:11.3241132+00:00\",\"CreatedTime\":\"2026-10-19T15:02:44.2799963+00:00\",\"ExpiresAfter\":\"2026-10-21T14:02:44.2777591+00:00\",\"AllowedModules\":null,\"UseHostConnectionProvider\":null,\"SkipAutomaticTypeAndHeaderDetection\":null,\"EditingSessionId\":null,\"HostInformation\":null,\"HostContext\":{\"Type\":\"CdsT\",\"Details\":{\"EnvironmentId\":\"00000000-0000-0000-0000-000000000000\"}},\"HostProperties\":{\"ServiceFeatureFlag_EnableNewCdstDataflowOrchestration\":\"true\",\"CdsUploadExecutorKey\":\"Dms\",\"DmsVersionKey\":\"0\"},\"DisableAutoAnonymousConnectionUpsert\":null,\"RelatedDataflowId\":\"2d78c096-3314-42d9-a57b-64fe74f7f1d0\",\"DataflowPublishMetadata\":{\"PublishStatus\":\"Published\",\"ErrorInfo\":null,\"PublishVersion\":\"2026-10-19T15:17:26.8774501+00:00\",\"LastUpdateTime\":\"2026-10-19T15:17:36.3784072+00:00\",\"LastPublishedTime\":\"2026-10-19T15:17:36.3784072+00:00\",\"SessionId\":null,\"RequestId\":null},\"TrustedConnections\":null,\"DataflowStorageId\":\"CD000000-0000-0000-0000-0000000000CD\",\"DataflowCreatedByPQInGroupId\":null,\"OriginContext\":{\"PQOrigin\":\"00000000-0000-0000-0000-000000000000\",\"GroupMigrationVersion\":\"6\"},\"ConnectionOverrides\":[{\"Path\":\"https://example-my.sharepoint.com\",\"Kind\":\"SharePoint\",\"Provider\":\"PowerApps\",\"EnvironmentName\":\"00000000-0000-0000-0000-000000000000\",\"ApiName\":\"webcontents\",\"ConnectionName\":\"9b83620a910b4bcfa64187f9e2e0d6c2\",\"ExtensionData\":{},\"CredentialDetails\":{},\"ConnectionParameters\":{},\"PrivacyGroup\":\"None\"}]}","Dataflow":"{\"name\":\"LoadWeeklyFiles\",\"ppdf:dataflowId\":\"48c409b3-0da7-4abc-a6c5-60821e5b743e\",\"ppdf:owner\":{\"tenantId\":\"00000000-0000-0000-0000-000000000000\",\"userId\":\"00000000-0000-0000-0000-000000000000\"},\"ppdf:fastCopy\":false,\"ppdf:parametric\":false,\"ppdf:trackDataEnabled\":false,\"ppdf:partitionedCompute\":false,\"ppdf:enableVorder\":true,\"ppdf:enableOptimizedCopyToLakehouse\":false,\"ppdf:allowModernEvaluationEngine\":false,\"ppdf:allowModernRefreshService\":false,\"ppdf:allowModernDataflowOrchestrator\":false,\"version\":\"17\",\"culture\":\"en-GB\",\"ppdf:outputFileFormat\":\"Csv\",\"pbi:mashup\":{\"fastCombine\":false,\"allowNativeQueries\":false,\"queriesMetadata\":{\"RawEvents\":{\"queryId\":\"149e0ee6-28a1-477e-a462-d08a2f61613a\",\"queryName\":\"RawEvents\",\"lastKnownIsCalculatedEntity\":false,\"lastKnownIsLinkedEntity\":false,\"lastKnownIsParameter\":false,\"deleteExistingDataOnLoad\":false,\"hostProperties\":{\"MappingEditorProperties\":\"{}\"}},\"Events\":{\"queryId\":\"20aef7dc-683e-4533-8614-92b8f16de99e\",\"queryName\":\"Events\",\"lastKnownIsCalculatedEntity\":false,\"lastKnownIsLinkedEntity\":false,\"lastKnownIsParameter\":false,\"deleteExistingDataOnLoad\":false,\"hostProperties\":{\"MappingEditorProperties\":\"{}\"}},\"EventsValid\":{\"queryId\":\"80c12024-1160-4703-ba74-73aecbd04ef2\",\"queryName\":\"EventsValid\",\"entityName\":\"rp_Event\",\"loadEnabled\":true,\"lastKnownIsCalculatedEntity\":false,\"lastKnownIsLinkedEntity\":false,\"lastKnownIsParameter\":false,\"deleteExistingDataOnLoad\":false,\"hostProperties\":{\"MappingEditorProperties\":\"{\\\"primaryKeyLogicalName\\\":\\\"rp_eventkey\\\"}\"},\"fieldsMetadata\":{\"rp_activityname\":{\"sourceColumnName\":\"ActivityName\",\"destinationFieldType\":\"Memo\"},\"rp_caseidentifier\":{\"sourceColumnName\":\"CaseId\",\"destinationFieldType\":\"Integer\"},\"rp_endtimestamp\":{\"sourceColumnName\":\"EndTimestamp\",\"destinationFieldType\":\"DateAndTime\"},\"rp_eventkey\":{\"sourceColumnName\":\"EventKey\",\"destinationFieldType\":\"Memo\"},\"rp_invoicevalue\":{\"sourceColumnName\":\"InvoiceValue\",\"destinationFieldType\":\"Double\"},\"rp_location\":{\"sourceColumnName\":\"Location\",\"destinationFieldType\":\"Memo\"},\"rp_resourcename\":{\"sourceColumnName\":\"Resource\",\"destinationFieldType\":\"Memo\"},\"rp_role\":{\"sourceColumnName\":\"Role\",\"destinationFieldType\":\"Memo\"},\"rp_sourcefile\":{\"sourceColumnName\":\"SourceFile\",\"destinationFieldType\":\"Memo\"},\"rp_starttimestamp\":{\"sourceColumnName\":\"StartTimestamp\",\"destinationFieldType\":\"DateAndTime\"},\"rp_vendoridentifier\":{\"sourceColumnName\":\"VendorID\",\"destinationFieldType\":\"Memo\"}}},\"EventsInvalid\":{\"queryId\":\"d7425174-fac3-4708-9b61-573f9435beb1\",\"queryName\":\"EventsInvalid\",\"entityName\":\"rp_RejectedEvent\",\"loadEnabled\":true,\"lastKnownIsCalculatedEntity\":false,\"lastKnownIsLinkedEntity\":false,\"lastKnownIsParameter\":false,\"deleteExistingDataOnLoad\":false,\"hostProperties\":{\"MappingEditorProperties\":\"{\\\"primaryKeyLogicalName\\\":\\\"rp_rejectedeventid\\\"}\"},\"fieldsMetadata\":{\"rp_errorreason\":{\"sourceColumnName\":\"Reason\",\"destinationFieldType\":\"Memo\"},\"rp_raweventdata\":{\"sourceColumnName\":\"RawEventData\",\"destinationFieldType\":\"Memo\"},\"rp_RejectedEventId\":{\"sourceColumnName\":\"RejectedEventId\",\"destinationFieldType\":\"Memo\"},\"rp_sourcefilename\":{\"sourceColumnName\":\"SourceFile\",\"destinationFieldType\":\"Memo\"}}}},\"document\":\"section Section1;\\r\\nshared RawEvents = let\\n    Source = SharePoint.Files(\\\"https://example-my.sharepoint.com/personal/user_example_com\\\", [ApiVersion = 15]),\\n    Incoming = Table.SelectRows(Source, each Text.Contains([Folder Path], \\\"/RefundProcess/incoming/\\\") and Text.StartsWith([Name], \\\"AP_Refunds_EventLog_\\\") and Text.EndsWith([Name], \\\".csv\\\")),\\n    Parsed = Table.AddColumn(Incoming, \\\"Data\\\", each\\n        let\\n            t = Table.PromoteHeaders(Csv.Document([Content], [Delimiter = \\\",\\\", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]), [PromoteAllScalars = true]),\\n            n = [Name]\\n        in\\n            Table.AddColumn(t, \\\"SourceFile\\\", each n, type text)),\\n    Combined = Table.Combine(Parsed[Data]),\\n    Ordered = Table.ReorderColumns(Combined, {\\\"CaseId\\\", \\\"ActivityName\\\", \\\"StartTimestamp\\\", \\\"EndTimestamp\\\", \\\"Resource\\\", \\\"Role\\\", \\\"Location\\\", \\\"VendorID\\\", \\\"InvoiceValue\\\", \\\"SourceFile\\\"})\\nin\\n    Ordered;\\r\\nshared Events = let\\n    Source = RawEvents,\\n    Unique = Table.Distinct(Source),\\n    Nz = (x as nullable text) as text =&gt; if x = null then \\\"\\\" else x,\\n    Steps = {\\\"Invoice Entry\\\", \\\"Re-issuing the invoice\\\", \\\"Complete the Customer Memo\\\", \\\"Refund With Standard Voucher\\\", \\\"Credit Memo Entry\\\", \\\"Check Customer Payment\\\", \\\"Refund Customer\\\", \\\"Credit Memo Creation\\\", \\\"Approve Invoice\\\", \\\"Confirm Payment Received\\\", \\\"Fill Credit Memo\\\", \\\"Reject Invoice\\\", \\\"Refund With Special Voucher\\\"},\\n    Norm = (t as nullable text) as text =&gt;\\n        let s = Text.Trim(Nz(t)) in\\n            if Text.Length(s) &gt;= 16 and Text.Middle(s, 2, 1) = \\\".\\\"\\n            then Text.Middle(s, 6, 4) &amp; \\\"-\\\" &amp; Text.Middle(s, 3, 2) &amp; \\\"-\\\" &amp; Text.Start(s, 2) &amp; \\\" \\\" &amp; Text.Middle(s, 11, 5) &amp; \\\":00\\\"\\n            else s,\\n    AddStart = Table.AddColumn(Unique, \\\"Start\\\", each Norm([StartTimestamp]), type text),\\n    AddEnd = Table.AddColumn(AddStart, \\\"End\\\", each Norm([EndTimestamp]), type text),\\n    AddKey = Table.AddColumn(AddEnd, \\\"EventKey\\\", each Text.Trim(Nz([CaseId])) &amp; \\\"|\\\" &amp; Text.Trim(Nz([ActivityName])) &amp; \\\"|\\\" &amp; [Start], type text),\\n    AddReason = Table.AddColumn(AddKey, \\\"Reason\\\", each\\n        if not (let c = Text.Trim(Nz([CaseId])) in c &lt;&gt; \\\"\\\" and Text.Select(c, {\\\"0\\\"..\\\"9\\\"}) = c) then \\\"CaseId missing\\\"\\n        else if not List.Contains(Steps, Text.Trim(Nz([ActivityName]))) then \\\"Unknown activity\\\"\\n        else if Text.Length([Start]) &lt; 19 or Text.Length([End]) &lt; 19 or Text.Contains([Start], \\\"  \\\") or Text.Contains([End], \\\"  \\\") or Text.Middle([Start], 4, 1) &lt;&gt; \\\"-\\\" or Text.Middle([End], 4, 1) &lt;&gt; \\\"-\\\" then \\\"Unreadable timestamp\\\"\\n        else if [End] &lt; [Start] then \\\"End before start\\\"\\n        else if (try Number.FromText(Text.Trim(Nz([InvoiceValue])), \\\"en-US\\\") otherwise null) = null then \\\"InvoiceValue not a number\\\"\\n        else \\\"\\\", type text),\\n    Ordered = Table.ReorderColumns(AddReason, {\\\"EventKey\\\", \\\"CaseId\\\", \\\"ActivityName\\\", \\\"Start\\\", \\\"End\\\", \\\"Resource\\\", \\\"Role\\\", \\\"Location\\\", \\\"VendorID\\\", \\\"InvoiceValue\\\", \\\"SourceFile\\\", \\\"Reason\\\", \\\"StartTimestamp\\\", \\\"EndTimestamp\\\"})\\nin\\n    Ordered;\\r\\nshared EventsValid = let\\n    Source = Events,\\n    OnlyValid = Table.SelectRows(Source, each [Reason] = \\\"\\\"),\\n    OneKey = Table.Distinct(OnlyValid, {\\\"EventKey\\\"}),\\n    Typed = Table.TransformColumns(OneKey, {\\n        {\\\"CaseId\\\", each Int64.From(Number.FromText(Text.Trim(_))), Int64.Type},\\n        {\\\"Start\\\", each DateTime.FromText(Text.Start(_, 19)), type datetime},\\n        {\\\"End\\\", each DateTime.FromText(Text.Start(_, 19)), type datetime},\\n        {\\\"InvoiceValue\\\", each Number.FromText(Text.Trim(_), \\\"en-US\\\"), type number},\\n        {\\\"ActivityName\\\", Text.Trim, type text},\\n        {\\\"Resource\\\", Text.Trim, type text},\\n        {\\\"Role\\\", Text.Trim, type text},\\n        {\\\"Location\\\", Text.Trim, type text},\\n        {\\\"VendorID\\\", Text.Trim, type text}}),\\n    Dropped = Table.RemoveColumns(Typed, {\\\"StartTimestamp\\\", \\\"EndTimestamp\\\", \\\"Reason\\\"}),\\n    Renamed = Table.RenameColumns(Dropped, {{\\\"Start\\\", \\\"StartTimestamp\\\"}, {\\\"End\\\", \\\"EndTimestamp\\\"}}),\\n    Final = Table.SelectColumns(Renamed, {\\\"EventKey\\\", \\\"CaseId\\\", \\\"ActivityName\\\", \\\"StartTimestamp\\\", \\\"EndTimestamp\\\", \\\"Resource\\\", \\\"Role\\\", \\\"Location\\\", \\\"VendorID\\\", \\\"InvoiceValue\\\", \\\"SourceFile\\\"})\\nin\\n    Final;\\r\\nshared EventsInvalid = let\\n    Source = Events,\\n    OnlyInvalid = Table.SelectRows(Source, each [Reason] &lt;&gt; \\\"\\\"),\\n    Indexed = Table.AddIndexColumn(OnlyInvalid, \\\"Idx\\\", 1, 1, Int64.Type),\\n    Nz = (x as nullable text) as text =&gt; if x = null then \\\"\\\" else x,\\n    Base = Text.Start(Text.NewGuid(), 24),\\n    AddRaw = Table.AddColumn(Indexed, \\\"RawEventData\\\", each \\\"\\\"\\\"\\\" &amp; Nz([Location]) &amp; \\\"\\\"\\\",\\\" &amp; Text.Combine({Nz([Role]), Nz([VendorID]), Nz([InvoiceValue]), Nz([Resource]), Nz([StartTimestamp]), Nz([EndTimestamp]), Nz([CaseId]), Nz([ActivityName])}, \\\",\\\"), type text),\\n    AddId = Table.AddColumn(AddRaw, \\\"RejectedEventId\\\", each Base &amp; Text.PadStart(Text.From([Idx]), 12, \\\"0\\\"), type text),\\n    Final = Table.SelectColumns(AddId, {\\\"RejectedEventId\\\", \\\"Reason\\\", \\\"RawEventData\\\", \\\"SourceFile\\\"})\\nin\\n    Final;\\r\\n\"},\"annotations\":[{\"name\":\"pbi:QueryGroups\",\"value\":\"[]\"}]}"}</msdyn_mashupsettings>
+      <msdyn_name>LoadWeeklyFiles</msdyn_name>
+      <msdyn_originaldataflowid>48c409b3-0da7-4abc-a6c5-60821e5b743e</msdyn_originaldataflowid>
+      <msdyn_refreshsettings>{"RefreshPeriod":null,"ScheduleRefreshType":null,"StartDateTime":"0001-01-01T00:00:00+00:00","TimeBasedRefreshPeriod":null,"TimeZoneId":null}</msdyn_refreshsettings>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </msdyn_dataflow>
+  </msdyn_dataflows>
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml>

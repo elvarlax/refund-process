@@ -1,0 +1,4 @@
+# Keep the data files byte-identical on every platform: LF line endings for CSV.
+*.csv text eol=lf
+*.sql text
+*.md  text

@@ -1,0 +1,109 @@
+SourceFile,Reason,Count
+AP_Refunds_EventLog_2022-W35.csv,CaseId missing,3
+AP_Refunds_EventLog_2022-W35.csv,Duplicate event,3
+AP_Refunds_EventLog_2022-W35.csv,End before start,2
+AP_Refunds_EventLog_2022-W35.csv,InvoiceValue not a number,2
+AP_Refunds_EventLog_2022-W35.csv,Unknown activity,1
+AP_Refunds_EventLog_2022-W35.csv,_Rows read,961
+AP_Refunds_EventLog_2022-W36.csv,CaseId missing,3
+AP_Refunds_EventLog_2022-W36.csv,Duplicate event,1
+AP_Refunds_EventLog_2022-W36.csv,End before start,2
+AP_Refunds_EventLog_2022-W36.csv,InvoiceValue not a number,1
+AP_Refunds_EventLog_2022-W36.csv,Unknown activity,2
+AP_Refunds_EventLog_2022-W36.csv,_Rows read,1222
+AP_Refunds_EventLog_2022-W37.csv,CaseId missing,1
+AP_Refunds_EventLog_2022-W37.csv,Duplicate event,3
+AP_Refunds_EventLog_2022-W37.csv,End before start,3
+AP_Refunds_EventLog_2022-W37.csv,InvoiceValue not a number,2
+AP_Refunds_EventLog_2022-W37.csv,Unknown activity,1
+AP_Refunds_EventLog_2022-W37.csv,_Rows read,1040
+AP_Refunds_EventLog_2022-W38.csv,CaseId missing,3
+AP_Refunds_EventLog_2022-W38.csv,Duplicate event,3
+AP_Refunds_EventLog_2022-W38.csv,End before start,3
+AP_Refunds_EventLog_2022-W38.csv,InvoiceValue not a number,2
+AP_Refunds_EventLog_2022-W38.csv,Unknown activity,1
+AP_Refunds_EventLog_2022-W38.csv,_Rows read,1179
+AP_Refunds_EventLog_2022-W39.csv,CaseId missing,2
+AP_Refunds_EventLog_2022-W39.csv,Duplicate event,3
+AP_Refunds_EventLog_2022-W39.csv,End before start,2
+AP_Refunds_EventLog_2022-W39.csv,InvoiceValue not a number,2
+AP_Refunds_EventLog_2022-W39.csv,Unknown activity,1
+AP_Refunds_EventLog_2022-W39.csv,_Rows read,843
+AP_Refunds_EventLog_2022-W40.csv,CaseId missing,1
+AP_Refunds_EventLog_2022-W40.csv,Duplicate event,1
+AP_Refunds_EventLog_2022-W40.csv,End before start,1
+AP_Refunds_EventLog_2022-W40.csv,InvoiceValue not a number,1
+AP_Refunds_EventLog_2022-W40.csv,Unknown activity,2
+AP_Refunds_EventLog_2022-W40.csv,_Rows read,1161
+AP_Refunds_EventLog_2022-W41.csv,CaseId missing,2
+AP_Refunds_EventLog_2022-W41.csv,Duplicate event,2
+AP_Refunds_EventLog_2022-W41.csv,End before start,1
+AP_Refunds_EventLog_2022-W41.csv,InvoiceValue not a number,1
+AP_Refunds_EventLog_2022-W41.csv,Unknown activity,1
+AP_Refunds_EventLog_2022-W41.csv,_Rows read,973
+AP_Refunds_EventLog_2022-W42.csv,CaseId missing,2
+AP_Refunds_EventLog_2022-W42.csv,Duplicate event,3
+AP_Refunds_EventLog_2022-W42.csv,End before start,2
+AP_Refunds_EventLog_2022-W42.csv,InvoiceValue not a number,1
+AP_Refunds_EventLog_2022-W42.csv,Unknown activity,2
+AP_Refunds_EventLog_2022-W42.csv,_Rows read,1115
+AP_Refunds_EventLog_2022-W43.csv,CaseId missing,1
+AP_Refunds_EventLog_2022-W43.csv,Duplicate event,1
+AP_Refunds_EventLog_2022-W43.csv,End before start,2
+AP_Refunds_EventLog_2022-W43.csv,InvoiceValue not a number,2
+AP_Refunds_EventLog_2022-W43.csv,Unknown activity,1
+AP_Refunds_EventLog_2022-W43.csv,_Rows read,1179
+AP_Refunds_EventLog_2022-W44.csv,CaseId missing,1
+AP_Refunds_EventLog_2022-W44.csv,Duplicate event,1
+AP_Refunds_EventLog_2022-W44.csv,End before start,1
+AP_Refunds_EventLog_2022-W44.csv,InvoiceValue not a number,2
+AP_Refunds_EventLog_2022-W44.csv,Unknown activity,2
+AP_Refunds_EventLog_2022-W44.csv,_Rows read,944
+AP_Refunds_EventLog_2022-W45.csv,CaseId missing,3
+AP_Refunds_EventLog_2022-W45.csv,Duplicate event,1
+AP_Refunds_EventLog_2022-W45.csv,End before start,3
+AP_Refunds_EventLog_2022-W45.csv,InvoiceValue not a number,2
+AP_Refunds_EventLog_2022-W45.csv,Unknown activity,2
+AP_Refunds_EventLog_2022-W45.csv,_Rows read,1150
+AP_Refunds_EventLog_2022-W46.csv,CaseId missing,3
+AP_Refunds_EventLog_2022-W46.csv,Duplicate event,3
+AP_Refunds_EventLog_2022-W46.csv,End before start,2
+AP_Refunds_EventLog_2022-W46.csv,InvoiceValue not a number,1
+AP_Refunds_EventLog_2022-W46.csv,Unknown activity,2
+AP_Refunds_EventLog_2022-W46.csv,_Rows read,1230
+AP_Refunds_EventLog_2022-W47.csv,CaseId missing,1
+AP_Refunds_EventLog_2022-W47.csv,Duplicate event,1
+AP_Refunds_EventLog_2022-W47.csv,End before start,2
+AP_Refunds_EventLog_2022-W47.csv,InvoiceValue not a number,2
+AP_Refunds_EventLog_2022-W47.csv,Unknown activity,1
+AP_Refunds_EventLog_2022-W47.csv,_Rows read,1048
+AP_Refunds_EventLog_2022-W48.csv,CaseId missing,2
+AP_Refunds_EventLog_2022-W48.csv,Duplicate event,3
+AP_Refunds_EventLog_2022-W48.csv,End before start,2
+AP_Refunds_EventLog_2022-W48.csv,InvoiceValue not a number,1
+AP_Refunds_EventLog_2022-W48.csv,Unknown activity,1
+AP_Refunds_EventLog_2022-W48.csv,_Rows read,1308
+AP_Refunds_EventLog_2022-W49.csv,CaseId missing,1
+AP_Refunds_EventLog_2022-W49.csv,Duplicate event,1
+AP_Refunds_EventLog_2022-W49.csv,End before start,1
+AP_Refunds_EventLog_2022-W49.csv,InvoiceValue not a number,2
+AP_Refunds_EventLog_2022-W49.csv,Unknown activity,1
+AP_Refunds_EventLog_2022-W49.csv,_Rows read,868
+AP_Refunds_EventLog_2022-W50.csv,CaseId missing,1
+AP_Refunds_EventLog_2022-W50.csv,Duplicate event,1
+AP_Refunds_EventLog_2022-W50.csv,End before start,2
+AP_Refunds_EventLog_2022-W50.csv,InvoiceValue not a number,2
+AP_Refunds_EventLog_2022-W50.csv,Unknown activity,1
+AP_Refunds_EventLog_2022-W50.csv,_Rows read,1151
+AP_Refunds_EventLog_2022-W51.csv,CaseId missing,3
+AP_Refunds_EventLog_2022-W51.csv,Duplicate event,2
+AP_Refunds_EventLog_2022-W51.csv,End before start,2
+AP_Refunds_EventLog_2022-W51.csv,InvoiceValue not a number,1
+AP_Refunds_EventLog_2022-W51.csv,Unknown activity,1
+AP_Refunds_EventLog_2022-W51.csv,_Rows read,920
+AP_Refunds_EventLog_2022-W52.csv,CaseId missing,2
+AP_Refunds_EventLog_2022-W52.csv,Duplicate event,3
+AP_Refunds_EventLog_2022-W52.csv,End before start,3
+AP_Refunds_EventLog_2022-W52.csv,InvoiceValue not a number,2
+AP_Refunds_EventLog_2022-W52.csv,Unknown activity,2
+AP_Refunds_EventLog_2022-W52.csv,_Rows read,1045

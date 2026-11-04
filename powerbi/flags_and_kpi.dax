@@ -1,0 +1,75 @@
+// Flags and KPI measures for Power BI (DAX). Written, not run in Power BI.
+// Column names below are display names ('Case Id', 'Start Timestamp' ...). The Dataverse connector and the SQL endpoint are likely to return
+// logical names (rp_caseidentifier, rp_starttimestamp ...): rename the columns in Power Query to the names below, or adapt the formulas. Not checked.
+// Tables: 'Event' (from rp_event), 'Rejected Event' (from rp_rejectedevent), 'Step' (from rp_step).
+
+// ============ 1. Calculated columns on 'Event' ============
+// Start of the step before this one in the same case (LAG).
+PrevStart =
+VAR c = 'Event'[Case Id]
+VAR s = 'Event'[Start Timestamp]
+RETURN CALCULATE ( MAX ( 'Event'[Start Timestamp] ),
+        FILTER ( ALL ( 'Event' ), 'Event'[Case Id] = c && 'Event'[Start Timestamp] < s ) )
+
+// End of that previous step.
+PrevEnd =
+VAR c = 'Event'[Case Id]
+VAR p = 'Event'[PrevStart]
+RETURN IF ( ISBLANK ( p ), BLANK (),
+        CALCULATE ( MAX ( 'Event'[End Timestamp] ),
+            FILTER ( ALL ( 'Event' ), 'Event'[Case Id] = c && 'Event'[Start Timestamp] = p ) ) )
+
+// Hours waited before 'Approve Invoice' (blank for every other activity).
+WaitBeforeApprovalHours =
+IF ( 'Event'[Activity Name] = "Approve Invoice" && NOT ISBLANK ( 'Event'[PrevEnd] ),
+     DATEDIFF ( 'Event'[PrevEnd], 'Event'[Start Timestamp], SECOND ) / 3600.0 )
+
+// ============ 2. Calculated table: one row per case ============
+Cases =
+ADDCOLUMNS (
+    SUMMARIZE ( 'Event', 'Event'[Case Id] ),
+    "FirstStart",   CALCULATE ( MIN ( 'Event'[Start Timestamp] ) ),
+    "LastEnd",      CALCULATE ( MAX ( 'Event'[End Timestamp] ) ),
+    "HasApproval",  CALCULATE ( COUNTROWS ( 'Event' ), 'Event'[Activity Name] = "Approve Invoice" ) > 0,
+    "Rejections",   CALCULATE ( COUNTROWS ( 'Event' ), 'Event'[Activity Name] = "Reject Invoice" ),
+    "MaxWaitHours", CALCULATE ( MAX ( 'Event'[WaitBeforeApprovalHours] ) )
+)
+
+// ============ 3. Calculated columns on Cases ============
+CycleDays = DATEDIFF ( Cases[FirstStart], Cases[LastEnd], SECOND ) / 86400.0
+
+// 90th percentile of cycle time on the same path. PERCENTILEX.INC interpolates linearly, like PERCENTILE_CONT in SQL.
+P90ByPath =
+VAR path = Cases[HasApproval]
+RETURN PERCENTILEX.INC ( FILTER ( Cases, Cases[HasApproval] = path ), Cases[CycleDays], 0.9 )
+
+FlagRejected2Plus = Cases[Rejections] >= 2
+FlagWaitOver24h   = Cases[MaxWaitHours] > 24
+FlagSlowCycle     = Cases[CycleDays] > Cases[P90ByPath]
+FlagAny           = Cases[FlagRejected2Plus] || Cases[FlagWaitOver24h] || Cases[FlagSlowCycle]
+
+// ============ 4. Measures ============
+Flagged cases        = CALCULATE ( COUNTROWS ( Cases ), Cases[FlagAny] = TRUE () )
+Flag: Rejected 2+    = CALCULATE ( COUNTROWS ( Cases ), Cases[FlagRejected2Plus] = TRUE () )
+Flag: Wait > 24 h    = CALCULATE ( COUNTROWS ( Cases ), Cases[FlagWaitOver24h] = TRUE () )
+Flag: Cycle > P90    = CALCULATE ( COUNTROWS ( Cases ), Cases[FlagSlowCycle] = TRUE () )
+
+Median cycle days    = MEDIAN ( Cases[CycleDays] )
+Case count           = COUNTROWS ( Cases )
+Loaded rows          = COUNTROWS ( 'Event' )
+Rejected rows        = COUNTROWS ( 'Rejected Event' )
+// Excludes the duplicates the flow removes before writing (36 in the weekly files), so it is lower than the 0.83% in the README.
+Rejected share       = DIVIDE ( [Rejected rows], [Loaded rows] + [Rejected rows] )
+
+// Average wait per activity (hours): add a calculated column on 'Event' first, then average it by 'Activity Name' in a visual.
+WaitHours =
+IF ( NOT ISBLANK ( 'Event'[PrevEnd] ), DATEDIFF ( 'Event'[PrevEnd], 'Event'[Start Timestamp], SECOND ) / 3600.0 )
+Avg wait hours = AVERAGE ( 'Event'[WaitHours] )
+
+// Notes
+// - Dataverse stores timestamps without fractions of a second, so a case that is a fraction of a second over 24 hours
+//   or over the P90 can differ from the SQL result. Counts can therefore differ by a few from the SQL numbers.
+// - 'Event'[PrevStart] filters all rows for every row: with ~20,000 events this takes a while on refresh. If it is too slow,
+//   compute the previous step in Power Query instead (sort by Case Id and Start Timestamp, add an index, merge the table with itself).
+// - The measure is [Case count], not [Cases], so it does not collide with the table 'Cases'.
+// - PrevStart takes the latest earlier start. When two events in a case share a start time this can differ from a LAG-based calculation.

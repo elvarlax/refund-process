@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{f8ab6c55-3516-4e7c-8927-7c5869536726}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{a5e3854d-68e3-4647-b1c6-70f5dac33d9f}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{8b7b9163-ce0e-406e-b148-03005a86880a}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{177353ab-7bbe-4d45-846e-80181f88b33e}">
+                        <labels>
+                          <label description="Event Key" languagecode="1033" />
+                        </labels>
+                        <control id="rp_eventkey" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="rp_eventkey" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{eced21af-0dab-41b1-a6e8-37500706e900}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c637aafc-ffe0-4101-83ee-1c20644cf458}">
+                        <labels>
+                          <label description="Case Id" languagecode="1033" />
+                        </labels>
+                        <control id="rp_caseidentifier" classid="{c6d124ca-7eda-4a60-aea9-7fb8d318b68f}" datafieldname="rp_caseidentifier" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ee81c4f3-49b3-4d47-aaf9-8ef7b73175f5}">
+                        <labels>
+                          <label description="Activity Name" languagecode="1033" />
+                        </labels>
+                        <control id="rp_activityname" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="rp_activityname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ef02ab4c-5702-4133-87f4-b9478ef85803}">
+                        <labels>
+                          <label description="Start Timestamp" languagecode="1033" />
+                        </labels>
+                        <control id="rp_starttimestamp" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="rp_starttimestamp" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6035e6c8-4195-4a1b-9357-29fdf3b5db09}">
+                        <labels>
+                          <label description="End Timestamp" languagecode="1033" />
+                        </labels>
+                        <control id="rp_endtimestamp" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="rp_endtimestamp" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{98aced89-f8b5-4bc0-988d-b0a77cfb21e4}">
+                        <labels>
+                          <label description="Resource" languagecode="1033" />
+                        </labels>
+                        <control id="rp_resourcename" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="rp_resourcename" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d5d18e84-75b8-44f8-9c62-a8af021d1537}">
+                        <labels>
+                          <label description="Role" languagecode="1033" />
+                        </labels>
+                        <control id="rp_role" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="rp_role" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{905ca608-6ffa-48d5-8dbb-51e8c84881e5}">
+                        <labels>
+                          <label description="Location" languagecode="1033" />
+                        </labels>
+                        <control id="rp_location" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="rp_location" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{73a4bc99-eb47-4a44-9948-7abd5c9b43dc}">
+                        <labels>
+                          <label description="Vendor Id" languagecode="1033" />
+                        </labels>
+                        <control id="rp_vendoridentifier" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="rp_vendoridentifier" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d99dafd0-4521-4370-94fa-4e39a020d6de}">
+                        <labels>
+                          <label description="Invoice Value" languagecode="1033" />
+                        </labels>
+                        <control id="rp_invoicevalue" classid="{c3efe0c3-0ec6-42be-8349-cbd9079dfd8e}" datafieldname="rp_invoicevalue" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e0bcba0a-4c59-49df-8127-01f43feab644}">
+                        <labels>
+                          <label description="Source File" languagecode="1033" />
+                        </labels>
+                        <control id="rp_sourcefile" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="rp_sourcefile" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

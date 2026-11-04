@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{8fa72353-ccca-44fa-bbba-e995a12b0f61}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="rp_eventkey" select="1" icon="1" preview="1">
+        <row name="result" id="rp_eventid">
+          <cell name="rp_eventkey" width="300" />
+          <cell name="rp_caseidentifier" width="150" />
+          <cell name="rp_activityname" width="150" />
+          <cell name="rp_starttimestamp" width="150" />
+          <cell name="rp_endtimestamp" width="150" />
+          <cell name="rp_resourcename" width="150" />
+          <cell name="rp_role" width="150" />
+          <cell name="rp_location" width="150" />
+          <cell name="rp_vendoridentifier" width="150" />
+          <cell name="rp_invoicevalue" width="150" />
+          <cell name="rp_sourcefile" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="rp_event">
+          <attribute name="rp_eventid" />
+          <attribute name="rp_eventkey" />
+          <attribute name="createdon" />
+          <order attribute="rp_eventkey" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="rp_caseidentifier" />
+          <attribute name="rp_activityname" />
+          <attribute name="rp_starttimestamp" />
+          <attribute name="rp_endtimestamp" />
+          <attribute name="rp_resourcename" />
+          <attribute name="rp_role" />
+          <attribute name="rp_location" />
+          <attribute name="rp_vendoridentifier" />
+          <attribute name="rp_invoicevalue" />
+          <attribute name="rp_sourcefile" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Events" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,1180 @@
+Location,Role,VendorID,InvoiceValue,Resource,StartTimestamp,EndTimestamp,CaseId,ActivityName
+"Seattle, USA",Invoice Processor,Vendor4,1750.63,Riley,2022-09-25 16:39:50.537329,2022-09-25 17:18:57.639243,685,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor4,1475.79,Riley,2022-09-21 10:30:54.143325,2022-09-21 11:29:56.495869,622,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor1,1057.47,Aiden,2022-09-22 15:05:13.575898,2022-09-22 16:19:26.353564,719,Confirm Payment Received
+"San Diego, USA",Invoice Approver,Vendor2,3516.46,Jessie,2022-09-22 11:49:05.438468,2022-09-23 00:14:31.771454,715,Complete the Customer Memo
+"San Diego, USA",Invoice Approver,Vendor2,728.06,Jessie,2022-09-24 16:57:46.339153,2022-09-24 22:05:27.562459,560,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor2,437.13,Casey,2022-09-20 18:39:55.049193,2022-09-21 02:21:10.557165,625,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor4,1571.36,Aiden,2022-09-19 10:41:05.718683,2022-09-19 12:01:26.284465,692,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,599.88,Casey,2022-09-23 05:38:14.155152,2022-09-23 15:18:53.001183,612,Check Customer Payment
+"Seattle, USA",Invoice Approver,Vendor2,502.53,Addison,2022-09-21 22:39:08.296574,2022-09-22 01:44:32.792708,695,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,1922.69,Aiden,2022-09-21 13:06:14.977423,2022-09-21 14:16:34.311166,636,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor2,522.2,Casey,2022-09-23 10:14:20.092735,2022-09-23 17:39:37.172685,699,Invoice Entry
+"Seattle, USA",Invoice Approver,Vendor5,668.03,Addison,2022-09-22 17:48:55.368097,2022-09-22 19:11:54.207788,583,Reject Invoice
+"San Francisco, USA",Invoice Approver,Vendor3,2322.01,Jackie,2022-09-22 09:50:46.417647,2022-09-22 12:34:46.309094,661,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor2,972.32,Abbie,2022-09-27 03:05:54.160871,2022-09-27 08:18:03.572058,678,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,809.59,Casey,2022-09-21 08:52:03.711956,2022-09-21 14:04:12.165638,659,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor1,1082.77,Riley,2022-09-23 11:19:28.686483,2022-09-23 12:20:44.327164,643,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor2,412.56,Aiden,2022-09-20 13:51:45.562273,2022-09-20 16:12:23.066640,637,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,2755.93,Abbie,2022-09-21 10:49:56.551737,2022-09-21 17:37:09.607339,690,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor2,5208.39,Aiden,2022-09-21 09:58:06.781604,2022-09-21 12:12:56.405644,718,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,2012.64,Aiden,2022-09-19 10:05:30.553971,2022-09-19 12:43:22.685284,590,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor3,1037.58,Aiden,2022-09-22 14:28:42.514370,2022-09-22 15:38:49.965254,679,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor3,1919.38,Riley,2022-09-20 12:37:31.382288,2022-09-20 13:19:02.221688,697,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor2,1185.66,Casey,2022-09-28 10:47:10.382136,2022-09-28 15:26:33.611005,578,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor2,919.33,Aiden,2022-09-23 14:01:30.715150,2022-09-23 16:44:54.863793,662,Refund Customer
+"Seattle, USA",Invoice Approver,Vendor5,1800.96,Addison,2022-09-20 18:10:58.896936,2022-09-20 20:17:12.258806,575,Reject Invoice
+"San Diego, USA",Invoice Approver,Vendor2,935.28,Jessie,2022-09-27 05:07:27.261309,2022-09-27 11:44:46.426845,702,Reject Invoice
+"San Diego, USA",Invoice Processor,Vendor2,1708.8,Adrian,2022-09-20 10:30:14.388955,2022-09-20 18:22:19.206613,693,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,1286.58,Riley,2022-09-21 21:28:49.340731,2022-09-21 22:46:03.497376,582,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor1,371.64,Riley,2022-09-23 14:29:45.287756,2022-09-23 15:19:40.225203,632,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor1,1074.48,Riley,2022-09-20 11:15:39.013632,2022-09-20 13:11:23.954743,605,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,537.9,Casey,2022-09-22 15:43:25.901695,2022-09-22 22:20:33.687805,694,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor4,1380.57,Aiden,2022-09-22 04:57:14.905765,2022-09-22 06:37:25.634983,656,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor4,1819.68,Riley,2022-09-23 11:37:02.925188,2022-09-23 12:46:17.306257,670,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor3,1670.7,Aiden,2022-09-23 17:24:33.169514,2022-09-23 18:15:51.943915,652,Credit Memo Entry
+"Seattle, USA",Invoice Approver,Vendor4,282.21,Addison,2022-09-20 12:59:39.613204,2022-09-20 16:26:31.517202,577,Complete the Customer Memo
+"Seattle, USA",Invoice Approver,Vendor5,668.03,Addison,2022-09-23 07:31:55.507064,2022-09-23 11:22:47.027425,583,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor5,1632.91,Casey,2022-09-21 09:37:49.826225,2022-09-21 19:22:10.817169,617,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor4,1012.15,Aiden,2022-09-21 15:28:18.976624,2022-09-21 17:02:30.092629,644,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor5,668.03,Riley,2022-09-23 12:07:31.202348,2022-09-23 12:40:23.352430,583,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor3,375.2,Aiden,2022-09-19 17:58:30.215830,2022-09-19 20:11:09.656436,600,Confirm Payment Received
+"San Diego, USA",Invoice Processor,Vendor2,935.28,Abbie,2022-10-06 03:17:20.054915,2022-10-06 11:57:27.014075,702,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor1,616.46,Riley,2022-09-20 10:15:39.396955,2022-09-20 11:24:29.172711,669,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor3,1151.88,Aiden,2022-09-23 07:43:38.678748,2022-09-23 08:59:57.266909,614,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor1,1999.54,Aiden,2022-09-23 02:10:19.904777,2022-09-23 04:21:31.285314,572,Confirm Payment Received
+"Seattle, USA",Invoice Approver,Vendor2,502.53,Addison,2022-09-20 14:01:53.589412,2022-09-20 16:30:28.268086,695,Complete the Customer Memo
+"San Francisco, USA",Invoice Approver,Vendor3,375.2,Jackie,2022-09-20 17:22:31.263420,2022-09-20 21:36:16.795602,600,Approve Invoice
+"Seattle, USA",Invoice Approver,Vendor1,955.79,Addison,2022-09-21 02:45:13.758197,2022-09-21 05:31:21.050703,633,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor5,4731.83,Casey,2022-09-23 14:39:45.678235,2022-09-23 21:25:29.991947,584,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor2,2160.85,Riley,2022-09-22 13:12:20.998895,2022-09-22 13:52:24.194907,705,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor2,1634.46,Riley,2022-09-19 17:20:02.417915,2022-09-19 18:30:10.897750,686,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor5,4731.83,Casey,2022-09-24 16:03:32.082008,2022-09-25 00:17:08.247923,584,Refund With Standard Voucher
+"San Diego, USA",Invoice Approver,Vendor2,935.28,Jessie,2022-09-29 08:08:22.247351,2022-09-29 12:43:57.108969,702,Reject Invoice
+"Seattle, USA",Invoice Processor,Vendor3,893.71,Riley,2022-09-22 16:40:32.298107,2022-09-22 17:43:58.367249,648,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor3,1215.29,Aiden,2022-09-20 12:11:04.804922,2022-09-20 14:53:36.933547,667,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,1919.38,Riley,2022-09-20 13:19:02.221688,2022-09-20 13:58:53.326054,697,Fill Credit Memo
+"Seattle, USA",Invoice Processor,Vendor3,556.35,Riley,2022-09-23 15:16:05.250864,2022-09-23 18:06:55.214341,634,Refund Customer
+"San Diego, USA",Invoice Approver,Vendor5,2755.93,Jessie,2022-09-25 07:54:53.167521,2022-09-25 15:55:45.008256,690,Approve Invoice
+"San Francisco, USA",Invoice Approver,Vendor1,1932.88,Jackie,2022-09-22 09:11:18.840699,2022-09-22 12:45:33.445559,561,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor5,1800.96,Riley,2022-09-20 14:33:10.830973,2022-09-20 15:25:16.507614,575,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor2,1634.46,Riley,2022-09-19 16:30:21.763901,2022-09-19 17:20:02.417915,686,Credit Memo Entry
+"San Diego, USA",Invoice Processor,Vendor5,1042.23,Abbie,2022-09-20 08:26:39.943024,2022-09-20 12:22:41.519076,602,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor4,733.69,Riley,2022-09-23 10:43:22.608557,2022-09-23 12:23:35.349880,565,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor1,1560.92,Aiden,2022-09-22 18:21:27.322426,2022-09-22 19:46:39.515243,594,Credit Memo Entry
+"San Diego, USA",Invoice Processor,Vendor5,2755.93,Abbie,2022-09-25 15:55:45.008256,2022-09-26 01:12:16.547747,690,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor2,619.29,Abbie,2022-09-21 14:06:23.433640,2022-09-21 19:33:14.204621,704,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,490.62,Aiden,2022-09-21 19:10:26.234125,2022-09-21 21:16:41.479826,579,Fill Credit Memo
+"Seattle, USA",Invoice Approver,Vendor4,1282.6,Addison,2022-09-24 12:57:54.270231,2022-09-24 15:32:45.242021,587,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor5,443.1,Casey,2022-09-24 04:28:24.554521,2022-09-24 11:22:35.050465,623,Credit Memo Entry
+"Seattle, USA",Invoice Approver,Vendor5,1800.96,Addison,2022-09-24 19:21:48.651221,2022-09-24 22:07:20.265365,575,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,412.56,Aiden,2022-09-20 18:17:20.692496,2022-09-20 20:17:37.379614,637,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor4,1282.6,Riley,2022-09-24 12:00:44.982345,2022-09-24 12:57:54.270231,587,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor1,1999.54,Aiden,2022-09-25 09:24:06.155933,2022-09-25 11:42:26.716706,572,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor2,1728.7,Riley,2022-09-22 12:14:01.180016,2022-09-22 13:44:18.478659,576,Confirm Payment Received
+"Seattle, USA",Invoice Approver,Vendor5,1370.91,Addison,2022-09-28 05:04:50.007276,2022-09-28 08:29:24.978783,717,Approve Invoice
+"San Francisco, USA",Invoice Approver,Vendor2,745.6,Jackie,2022-09-19 19:39:18.029101,2022-09-19 23:11:48.312818,716,Reject Invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1377.12,Aiden,2022-09-20 16:44:32.729867,2022-09-20 17:40:01.197078,606,Fill Credit Memo
+"Seattle, USA",Invoice Approver,Vendor4,1750.63,Addison,2022-09-24 13:14:49.516757,2022-09-24 15:21:27.397595,685,Reject Invoice
+"San Francisco, USA",Invoice Approver,Vendor1,369.08,Jackie,2022-09-22 01:06:45.463592,2022-09-22 04:47:26.646236,701,Reject Invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1932.88,Aiden,2022-09-25 18:14:57.350013,2022-09-25 20:24:57.757695,561,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor1,1205.05,Aiden,2022-09-27 01:35:19.511433,2022-09-27 05:06:03.085211,655,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor2,716.55,Aiden,2022-09-22 15:27:40.687362,2022-09-22 16:59:51.081360,631,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,1286.58,Riley,2022-09-21 09:20:59.969184,2022-09-21 10:18:26.255158,582,Check Customer Payment
+"Seattle, USA",Invoice Approver,Vendor3,761.56,Addison,2022-09-23 17:43:48.846100,2022-09-23 20:10:03.544198,709,Reject Invoice
+"San Diego, USA",Invoice Processor,Vendor2,3516.46,Adrian,2022-09-20 11:47:59.855831,2022-09-20 19:24:42.389868,715,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor3,2169.89,Jackie,2022-09-25 07:41:08.420405,2022-09-25 11:13:40.871689,653,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor4,1908.76,Riley,2022-09-20 08:49:07.577351,2022-09-20 10:30:28.902315,628,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor4,1475.79,Riley,2022-09-21 12:36:48.504123,2022-09-21 14:55:03.894400,622,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor3,1350.47,Riley,2022-09-19 13:28:29.811364,2022-09-19 14:20:21.419287,682,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor1,369.08,Aiden,2022-09-24 01:00:55.838685,2022-09-24 02:49:02.752534,701,Fill Credit Memo
+"Seattle, USA",Invoice Processor,Vendor4,1100.54,Riley,2022-09-27 13:33:10.447606,2022-09-27 14:39:30.694963,710,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor4,1750.63,Riley,2022-09-25 15:24:28.576015,2022-09-25 15:57:49.451261,685,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor4,817.7,Aiden,2022-09-22 20:04:27.993621,2022-09-22 21:24:45.267843,677,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor3,2466.35,Riley,2022-09-19 14:26:02.142271,2022-09-19 15:09:24.198959,616,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor3,2379.22,Aiden,2022-09-19 12:54:50.450574,2022-09-19 15:06:38.394024,571,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor2,845.05,Riley,2022-09-23 14:43:37.849075,2022-09-23 15:23:23.559670,647,Check Customer Payment
+"San Francisco, USA",Invoice Approver,Vendor3,1437.06,Jackie,2022-09-25 14:35:52.623852,2022-09-25 17:47:06.237692,592,Complete the Customer Memo
+"San Francisco, USA",Invoice Approver,Vendor2,1370.38,Jackie,2022-09-19 12:23:41.925135,2022-09-19 15:51:14.538102,591,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor1,1057.47,Aiden,2022-09-23 17:55:04.444781,2022-09-23 18:39:06.110872,719,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor5,1632.91,Casey,2022-09-23 14:09:54.206049,2022-09-23 21:47:01.343366,617,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,282.81,Adrian,2022-09-20 12:24:36.299708,2022-09-20 19:13:50.006827,658,Invoice Entry
+"Seattle, USA",Invoice Approver,Vendor4,709.79,Addison,2022-09-24 04:27:59.115626,2022-09-24 06:26:43.242968,618,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,1311.36,Aiden,2022-09-20 15:29:45.351121,2022-09-20 17:15:52.019889,672,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor5,1107.84,Riley,2022-09-22 15:23:14.058086,2022-09-22 16:10:34.928542,610,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor2,762.27,Adrian,2022-09-24 14:23:27.163494,2022-09-24 20:45:21.341025,581,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor5,980.08,Riley,2022-09-19 13:52:02.197990,2022-09-19 14:19:10.301722,603,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,2006.17,Aiden,2022-09-20 12:10:22.757799,2022-09-20 14:02:54.615478,593,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor3,6846.42,Aiden,2022-09-23 17:58:00.621756,2022-09-23 19:10:27.408054,712,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1144.54,Aiden,2022-09-22 16:20:08.456636,2022-09-22 17:32:44.879951,687,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor2,2634.24,Riley,2022-09-23 05:58:53.827498,2022-09-23 06:46:51.546845,666,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor1,2132.06,Aiden,2022-09-22 18:21:37.537467,2022-09-22 20:10:58.787459,566,Credit Memo Entry
+"Seattle, USA",Invoice Approver,Vendor3,1350.47,Addison,2022-09-19 17:21:03.094229,2022-09-19 21:13:52.603090,682,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor2,1526.4,Aiden,2022-09-20 22:02:40.681630,2022-09-21 00:21:28.810924,569,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor2,1123.28,Aiden,2022-09-23 09:51:14.167998,2022-09-23 12:03:39.740664,626,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor2,502.53,Riley,2022-09-20 13:13:47.503412,2022-09-20 14:01:53.589412,695,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor5,1632.91,Casey,2022-09-22 16:50:17.156817,2022-09-23 00:29:46.242814,617,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor2,278.18,Aiden,2022-09-21 10:35:56.107787,2022-09-21 12:09:08.572028,720,Fill Credit Memo
+"Seattle, USA",Invoice Processor,Vendor4,1282.6,Riley,2022-09-24 18:15:00.160303,2022-09-24 19:06:30.095780,587,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor1,1057.47,Aiden,2022-09-22 12:47:46.594264,2022-09-22 15:05:13.575898,719,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,1350.47,Riley,2022-09-19 12:12:19.317033,2022-09-19 13:28:29.811364,682,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor2,1076.98,Aiden,2022-09-23 19:47:19.577715,2022-09-23 21:10:43.465232,615,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor2,745.6,Aiden,2022-09-19 12:40:27.201947,2022-09-19 14:47:52.939453,716,Invoice Entry
+"San Diego, USA",Invoice Approver,Vendor2,3516.46,Jessie,2022-09-24 18:45:06.113193,2022-09-25 04:51:22.871611,715,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor5,537.9,Casey,2022-09-25 02:59:09.919148,2022-09-25 10:34:29.634612,694,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor3,1105.72,Aiden,2022-09-21 17:03:31.530573,2022-09-21 18:50:52.066315,698,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor3,1215.29,Aiden,2022-09-21 08:18:48.615023,2022-09-21 09:28:09.607016,667,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor2,2634.24,Riley,2022-09-22 22:05:42.585299,2022-09-22 22:38:37.905273,666,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor4,709.79,Riley,2022-09-24 03:43:29.227671,2022-09-24 04:27:59.115626,618,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor5,344.79,Riley,2022-09-23 13:40:30.164173,2022-09-23 15:27:32.771030,596,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor1,850.39,Aiden,2022-09-20 15:33:30.469814,2022-09-20 17:31:53.787771,563,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor1,2132.06,Aiden,2022-09-22 14:20:13.043742,2022-09-22 17:01:17.079840,566,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,437.13,Casey,2022-09-21 20:29:53.643622,2022-09-22 01:57:22.868450,625,Refund Customer
+"Seattle, USA",Invoice Approver,Vendor4,709.79,Addison,2022-09-28 04:21:53.882572,2022-09-28 08:18:05.978085,618,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor2,502.53,Riley,2022-09-20 11:10:21.326384,2022-09-20 12:13:04.523464,695,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor1,1377.12,Aiden,2022-09-19 12:32:37.206124,2022-09-19 14:18:51.176431,606,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor5,2795.11,Riley,2022-09-24 13:13:14.881382,2022-09-24 15:07:21.164265,675,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor1,409.71,Aiden,2022-09-22 11:18:23.498189,2022-09-22 12:43:07.450005,595,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor3,893.71,Riley,2022-09-22 11:20:53.980920,2022-09-22 12:54:25.157098,648,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor3,1151.88,Jackie,2022-09-20 10:24:51.414451,2022-09-20 12:42:26.192197,614,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,5208.39,Aiden,2022-09-22 20:43:19.056986,2022-09-22 22:14:30.815026,718,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor3,2169.89,Aiden,2022-09-24 11:12:48.296395,2022-09-24 13:12:05.426237,653,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor1,1429.51,Aiden,2022-09-21 16:04:42.008515,2022-09-21 17:48:03.492929,580,Credit Memo Entry
+"San Francisco, USA",Invoice Approver,Vendor2,745.6,Jackie,2022-09-19 17:40:38.480891,2022-09-19 19:39:18.029101,716,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor1,1205.05,Aiden,2022-09-27 05:06:03.085211,2022-09-27 06:21:14.638123,655,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor1,1735.26,Riley,2022-09-24 02:03:57.485034,2022-09-24 03:08:36.663789,608,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor2,845.05,Riley,2022-09-23 13:15:01.374888,2022-09-23 14:43:37.849075,647,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor1,1961.85,Riley,2022-09-19 10:16:11.793384,2022-09-19 12:10:49.857605,613,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor2,1311.36,Aiden,2022-09-20 10:12:47.726358,2022-09-20 11:58:32.393871,672,Check Customer Payment
+"San Francisco, USA",Invoice Approver,Vendor1,2006.17,Jackie,2022-09-19 19:35:22.791797,2022-09-19 23:20:06.934000,593,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor3,2466.35,Riley,2022-09-19 15:09:24.198959,2022-09-19 16:18:22.930538,616,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor1,5716.42,Aiden,2022-09-19 08:11:34.767904,2022-09-19 10:04:53.732875,609,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,1652.63,Adrian,2022-09-24 19:01:18.525311,2022-09-24 23:20:22.372483,573,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor4,1819.68,Riley,2022-09-25 05:45:21.654821,2022-09-25 06:04:09.807074,670,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor5,1875.72,Adrian,2022-09-20 12:02:26.317957,2022-09-20 19:13:07.796038,689,Credit Memo Entry
+"Seattle, USA",Invoice Approver,Vendor1,955.79,Addison,2022-09-21 05:31:21.050703,2022-09-21 09:00:28.963992,633,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor3,628.04,Riley,2022-09-20 09:40:54.982190,2022-09-20 12:32:22.959748,673,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor1,955.79,Riley,2022-09-21 10:23:17.632076,2022-09-21 11:03:36.462804,633,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor5,668.03,Riley,2022-09-20 10:57:29.273302,2022-09-20 12:19:55.379642,583,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor3,2322.01,Jackie,2022-09-20 10:49:02.836694,2022-09-20 14:18:43.336025,661,Reject Invoice
+"Seattle, USA",Invoice Approver,Vendor2,2634.24,Addison,2022-09-23 03:13:09.844340,2022-09-23 05:58:53.827498,666,Reject Invoice
+"San Francisco, USA",Invoice Processor,Vendor1,5716.42,Aiden,2022-09-23 22:33:37.860206,2022-09-24 00:06:09.841855,609,Fill Credit Memo
+"San Diego, USA",Invoice Processor,Vendor2,935.28,Abbie,2022-09-20 18:14:25.721935,2022-09-21 04:12:14.263037,702,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor2,2042.0,Aiden,2022-09-21 17:20:42.658521,2022-09-21 18:24:58.839447,654,Refund With Standard Voucher
+"San Francisco, USA",Invoice Approver,Vendor3,1151.88,Jackie,2022-09-22 11:17:22.425940,2022-09-22 15:22:29.471008,614,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor5,1370.91,Riley,2022-09-23 14:07:08.296808,2022-09-23 15:40:26.396042,717,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,619.29,Abbie,2022-09-21 19:33:14.204621,2022-09-22 05:42:15.568491,704,Confirm Payment Received
+"San Diego, USA",Invoice Processor,Vendor5,1875.72,Adrian,2022-09-21 14:37:58.771591,2022-09-21 21:51:42.987344,689,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor2,1370.38,Aiden,2022-09-19 08:11:30.728929,2022-09-19 09:46:04.493339,591,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,1123.28,Aiden,2022-09-23 12:03:39.740664,2022-09-23 13:39:42.552933,626,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor1,1264.16,Aiden,2022-09-22 17:35:25.786591,2022-09-22 19:22:42.175179,586,Credit Memo Entry
+"Seattle, USA",Invoice Approver,Vendor4,1750.63,Addison,2022-09-24 16:01:43.819445,2022-09-24 18:48:31.888549,685,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor5,599.88,Casey,2022-09-19 12:43:41.524075,2022-09-19 19:14:11.588017,612,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor5,980.08,Riley,2022-09-19 08:52:21.518152,2022-09-19 10:30:50.986890,603,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor2,490.62,Jackie,2022-09-19 18:43:55.051889,2022-09-19 23:09:17.555387,579,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor1,616.46,Riley,2022-09-21 07:10:31.443902,2022-09-21 07:34:45.587735,669,Re-issuing the invoice
+"Seattle, USA",Invoice Approver,Vendor5,344.79,Addison,2022-09-26 22:33:16.356147,2022-09-27 00:57:48.096357,596,Complete the Customer Memo
+"San Francisco, USA",Invoice Approver,Vendor1,369.08,Jackie,2022-09-20 17:59:59.157585,2022-09-20 21:30:07.988211,701,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor5,4731.83,Casey,2022-09-25 20:09:40.210771,2022-09-26 01:52:48.101489,584,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor4,2577.43,Riley,2022-09-24 11:55:10.926780,2022-09-24 12:28:29.746001,676,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor2,2012.64,Aiden,2022-09-19 12:43:22.685284,2022-09-19 14:44:15.131548,590,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor5,943.29,Adrian,2022-09-20 07:35:56.173198,2022-09-20 17:31:07.299390,570,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor2,728.06,Adrian,2022-09-28 23:35:27.544206,2022-09-29 07:26:41.291163,560,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor2,1172.88,Abbie,2022-09-21 15:21:45.195562,2022-09-21 21:42:00.318453,707,Invoice Entry
+"San Diego, USA",Invoice Approver,Vendor2,1067.03,Jessie,2022-09-22 18:46:30.724692,2022-09-23 04:56:17.693709,619,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor2,1067.03,Casey,2022-09-19 14:01:32.280008,2022-09-19 19:11:44.514543,619,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,1370.38, Aiden  ,2022-09-19 09:46:04.493339,2022-09-19 10:59:17.218663,591,Confirm Payment Received
+"San Francisco, USA",Invoice Approver,Vendor1,369.08,Jackie,2022-09-20 21:30:07.988211,2022-09-20 23:33:49.520768,701,Reject Invoice
+"San Francisco, USA",Invoice Processor,Vendor2,530.63,Aiden,2022-09-22 17:32:11.539014,2022-09-22 20:19:34.859020,665,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor1,1999.54,Aiden,2022-09-25 13:27:21.069283,2022-09-25 13:59:11.491510,572,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,437.13,Casey,2022-09-20 09:56:16.384009,2022-09-20 18:39:55.049193,625,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,728.06,Adrian,2022-09-30 03:41:32.085956,2022-09-30 09:59:45.460022,560,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,660.77,Aiden,2022-09-22 11:07:12.931807,2022-09-22 14:03:16.345719,706,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,412.56,Aiden,2022-09-23 19:12:53.357735,2022-09-23 20:30:00.109496,637,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor5,668.03,Riley,2022-09-23 12:40:23.352430,2022-09-23 12:54:59.059013,583,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,2006.17,Aiden,2022-09-19 12:24:51.620158,2022-09-19 15:07:46.540922,593,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor5,1800.96,Riley,2022-09-20 11:28:25.914733,2022-09-20 12:55:42.718791,575,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor2,918.79,Jackie,2022-09-23 14:02:12.698449,2022-09-23 17:11:39.005294,639,Approve Invoice
+"Seattle, USA",Invoice Approver,Vendor2,502.53,Addison,2022-09-22 17:37:09.043104,2022-09-22 20:00:28.550713,695,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor2,728.06,Adrian,2022-09-24 09:39:13.941065,2022-09-24 16:57:46.339153,560,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor5,1235.6,Casey,2022-09-25 06:10:26.506295,2022-09-25 13:46:32.729472,607,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor3,1919.38,Riley,2022-09-19 12:31:50.375067,2022-09-19 14:03:29.530628,697,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,3405.17,Adrian,2022-09-23 14:01:03.006935,2022-09-23 19:26:21.232015,627,Invoice Entry
+"Seattle, USA",Invoice Approver,Vendor2,2634.24,Addison,2022-09-22 22:38:37.905273,2022-09-23 03:13:09.844340,666,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor4,1750.63,Riley,2022-09-23 10:16:30.449667,2022-09-23 11:42:02.550623,685,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor2,716.55,Aiden,2022-09-22 19:40:38.354616,2022-09-22 21:34:26.347060,631,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor2,1526.4,Aiden,2022-09-20 15:39:03.287500,2022-09-20 17:18:33.161060,569,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,628.04,Riley,2022-09-19 14:02:33.112312,2022-09-19 15:17:32.648197,,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,1526.4,Aiden,2022-09-20 19:51:46.012844,2022-09-20 22:02:40.681630,569,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor5,654.14,Abbie,2022-09-20 16:30:32.438840,2022-09-20 21:55:50.288148,649,Credit Memo Entry
+"San Diego, USA",Invoice Approver,Vendor2,619.29,Jessie,2022-10-04 06:16:43.477305,2022-10-04 14:59:28.721191,704,Approve Invoice
+"Seattle, USA",Invoice Approver,Vendor4,1282.6,Addison,2022-09-24 15:32:45.242021,2022-09-24 18:15:00.160303,587,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor5,2795.11,Riley,2022-09-23 14:12:18.525106,2022-09-23 14:49:02.278578,675,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor4,733.69,Riley,2022-09-23 12:23:35.349880,2022-09-23 13:11:51.426649,565,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor5,654.14,Abbie,2022-09-19 13:53:36.756859,2022-09-19 20:54:30.193837,649,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,919.33,Aiden,2022-09-23 08:53:57.653917,2022-09-23 10:34:08.586781,662,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,3516.46,Adrian,2022-09-21 14:18:50.348136,2022-09-22 06:22:51.886960,715,Refund With Special Voucher
+"Seattle, USA",Invoice Processor,Vendor3,628.04,Riley,2022-09-20 12:32:22.959748,2022-09-20 13:19:51.209422,673,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor4,501.14,Riley,2022-09-20 18:15:26.313619,2022-09-20 19:12:47.905670,641,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor2,3970.38,Aiden,2022-09-23 18:07:04.823402,2022-09-23 19:47:42.139016,599,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor2,809.59,Casey,2022-09-21 14:04:12.165638,2022-09-21 21:24:33.290459,659,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor2,1172.88,Abbie,2022-09-27 02:36:17.181423,2022-09-27 08:15:57.911894,707,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor3,344.54,Riley,2022-09-21 11:07:21.779984,2022-09-21 12:32:52.228983,650,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor4,784.16,Riley,2022-09-21 08:19:49.711509,2022-09-21 09:13:57.189696,630,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,243.95,Riley,2022-09-20 13:14:37.126223,2022-09-20 14:20:47.893195,668,Credit Memo Entry
+"San Francisco, USA",Invoice Approver,Vendor1,369.08,Jackie,2022-09-22 05:21:05.992390,2022-09-22 09:36:29.889114,701,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor1,369.08,Aiden,2022-09-24 02:49:02.752534,2022-09-24 03:53:43.767879,701,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,762.27,Adrian,2022-09-24 20:45:21.341025,2022-09-25 06:08:13.835217,581,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor3,6846.42,Aiden,2022-09-23 16:30:38.300274,2022-09-23 17:58:00.621756,712,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor4,1100.54,Riley,2022-09-28 18:23:15.656905,2022-09-28 18:52:34.357898,710,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor2,745.6,Aiden,2022-09-21 12:04:20.176336,2022-09-21 13:30:45.560040,716,Fill Credit Memo
+"San Diego, USA",Invoice Processor,Vendor5,943.29,Adrian,2022-09-21 18:44:26.628432,2022-09-21 23:05:06.122347,570,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor5,381.35,Riley,2022-09-24 05:27:57.129082,2022-09-24 06:29:41.318330,638,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor3,1105.72,Aiden,2022-09-21 14:40:31.001420,2022-09-21 17:03:31.530573,698,Confirm Payment Received
+"Seattle, USA",Invoice Approver,Vendor4,1750.63,Addison,2022-09-25 12:56:47.627436,2022-09-25 15:24:28.576015,685,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor4,976.2,Aiden,2022-09-21 12:12:30.149004,2022-09-21 14:10:19.426114,691,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor3,556.35,Riley,2022-09-22 17:29:26.689911,2022-09-22 18:04:27.259930,634,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor2,638.48,Aiden,2022-09-21 15:34:15.508659,2022-09-21 16:13:07.801842,680,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor5,1060.27,Adrian,2022-09-23 05:29:13.910798,2022-09-23 10:23:06.273674,671,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor4,4445.46,Riley,2022-09-22 13:07:52.670571,2022-09-22 14:27:55.739613,597,Confirm Payment Received
+"San Diego, USA",Invoice Processor,Vendor2,935.28,Abbie,2022-09-26 05:39:08.480369,2022-09-26 11:12:45.255037,702,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor1,600.09,Aiden,2022-09-19 14:43:37.647646,2022-09-19 16:25:09.849271,568,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor3,510.85,Aiden,2022-09-23 20:31:00.588013,2022-09-23 22:25:44.152068,664,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,935.28,Abbie,2022-10-05 01:48:21.159472,2022-10-05 10:25:10.127737,702,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor2,509.0,Adrian,2022-09-24 18:18:50.248072,2022-09-25 00:35:47.649676,651,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor1,369.08,Aiden,2022-09-21 19:01:41.973604,2022-09-21 20:51:24.388504,701,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor2,4667.44,Casey,2022-09-22 10:50:36.865396,2022-09-22 21:01:43.839840,696,Refund With Special Voucher
+"San Francisco, USA",Invoice Processor,Vendor2,3428.33,Aiden,2022-09-21 17:05:22.415686,2022-09-21 18:57:14.964477,564,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor2,3516.46,Adrian,2022-09-25 23:43:39.844633,2022-09-26 07:26:19.889590,715,Re-issuing the invoice
+"Seattle, USA",Invoice Approver,Vendor2,2634.24,Addison,2022-09-24 04:34:12.459533,2022-09-24 06:46:55.475206,666,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor3,2169.89,Aiden,2022-09-25 06:23:58.881959,2022-09-25 07:41:08.420405,653,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor2,1311.36,Aiden,2022-09-20 11:58:32.393871,2022-09-20 14:01:21.929387,672,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor1,1932.88,Aiden,2022-09-25 20:24:57.757695,2022-09-25 22:43:49.274076,561,Fill Credit Memo
+"San Diego, USA",Invoice Approver,Vendor5,1042.23,Jessie,2022-09-20 21:16:33.712005,2022-09-21 05:11:04.428800,602,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor1,369.08,Aiden,2022-09-19 13:52:44.305355,2022-09-19 16:00:53.282711,701,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,676.24,Riley,2022-09-22 14:34:16.616062,2022-09-22 16:03:28.678408,585,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor2,911.14,Casey,2022-09-20 15:50:51.275457,2022-09-20 22:06:44.175593,640,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,761.56,Riley,2022-09-23 20:10:03.544198,2022-09-23 20:54:32.884504,709,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor3,2169.89,Aiden,2022-09-26 08:06:39.537126,2022-09-26 09:47:17.197584,653,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor5,1060.27,Adrian,2022-09-21 10:23:26.811377,2022-09-21 15:22:43.896225,671,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,1922.69,Aiden,2022-09-21 15:22:54.235655,2022-09-21 16:51:00.734187,636,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor4,4445.46,Riley,2022-09-22 12:14:13.530098,2022-09-22 13:07:52.670571,597,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,717.61,Aiden,2022-09-21 13:10:38.574038,2022-09-21 14:23:02.319204,703,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor3,2379.22,Aiden,2022-09-21 12:12:00.352969,2022-09-21 14:18:19.093096,571,Fill Credit Memo
+"San Francisco, USA",Invoice Approver,Vendor1,1999.54,Jackie,2022-09-23 06:25:57.189569,2022-09-23 08:28:10.875677,572,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor5,668.03,Riley,2022-09-20 12:19:55.379642,2022-09-20 13:21:05.495015,583,Confirm Payment Received
+"San Diego, USA",Invoice Approver,Vendor5,4731.83,Jessie,2022-09-25 00:17:08.247923,2022-09-25 07:45:19.271062,584,Complete the Customer Memo
+"Seattle, USA",Invoice Approver,Vendor4,282.21,Addison,2022-09-21 09:30:05.537096,2022-09-21 13:17:10.762557,577,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor2,4988.27,Abbie,2022-09-22 17:48:16.154406,2022-09-23 01:20:04.095646,657,Check Customer Payment
+"Seattle, USA",Invoice Approver,Vendor3,1350.47,Addison,2022-09-19 14:20:21.419287,2022-09-19 17:21:03.094229,682,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor1,1082.77,Riley,2022-09-23 09:49:44.412938,2022-09-23 10:36:50.227618,643,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor3,410.47,Riley,2022-09-21 10:50:28.535207,2022-09-21 11:29:30.593143,562,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor2,717.61,Aiden,2022-09-21 15:16:47.039117,2022-09-21 17:40:28.107660,703,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor2,1652.63,Adrian,2022-09-21 11:49:20.125754,2022-09-21 18:20:41.745154,573,Invoice Entry
+"Seattle, USA",Invoice Approver,Vendor2,562.35,Addison,2022-09-23 19:29:19.552653,2022-09-24 00:47:47.461791,624,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor3,410.47,Riley,2022-09-20 11:00:32.029611,2022-09-20 12:03:44.024108,562,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor5,948.89,Riley,2022-09-21 13:37:19.344513,2022-09-21 15:18:40.562122,688,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor4,1282.6,Riley,2022-09-28 10:31:23.000225,2022-09-28 10:49:02.990306,587,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor3,1693.86,Aiden,2022-09-21 20:04:58.352632,2022-09-21 21:31:04.188794,684,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor5,2755.93,Abbie,2022-09-26 16:22:43.374099,2022-09-26 22:31:43.591282,690,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor5,264.85,Riley,2022-09-23 12:55:48.904228,2022-09-23 13:29:09.329852,601,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor4,501.14,Riley,2022-09-20 15:14:14.164397,2022-09-20 16:36:57.198873,641,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor3,1105.72,Aiden,2022-09-23 18:57:09.608970,2022-09-23 20:18:57.126336,698,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor2,2634.24,Riley,2022-09-24 07:44:01.015236,2022-09-24 08:29:14.408946,666,Fill Credit Memo
+"Seattle, USA",Invoice Approver,Vendor2,562.35,Addison,2022-09-23 15:42:48.197730,2022-09-23 19:29:19.552653,624,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor2,2372.08,Adrian,2022-09-25 07:55:02.113956,2022-09-25 14:26:59.109237,642,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor3,344.54,Riley,2022-09-21 13:32:40.613816,2022-09-21 14:56:27.620541,650,Credit Memo Entry
+"Seattle, USA",Invoice Approver,Vendor5,344.79,Addison,2022-09-26 19:08:24.323183,2022-09-26 22:11:57.340760,596,Reject Invoice
+"San Diego, USA",Invoice Approver,Vendor2,728.06,Jessie,2022-09-23 13:52:44.896228,2022-09-23 20:05:14.664827,560,Reject Invoice
+"Seattle, USA",Invoice Approver,Vendor2,2634.24,Addison,2022-09-21 19:55:35.009703,2022-09-21 23:31:40.106854,666,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor5,1060.27,Adrian,2022-09-22 03:00:39.732621,2022-09-22 10:19:35.544174,671,Check Customer Payment
+"Seattle, USA",Invoice Approver,Vendor4,1750.63,Addison,2022-09-25 08:55:16.501743,2022-09-25 12:56:47.627436,685,Complete the Customer Memo
+"San Diego, USA",Invoice Approver,Vendor5,1632.91,Jessie,2022-09-21 19:22:10.817169,2022-09-22 02:49:01.244414,617,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,717.61,Aiden,2022-09-21 17:40:28.107660,2022-09-21 19:08:25.117058,703,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor3,2169.89,Jackie,2022-09-25 01:24:29.888024,2022-09-25 04:21:07.631691,653,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor3,243.95,Riley,2022-09-20 16:09:31.924473,2022-09-20 16:47:35.766459,668,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,809.59,Casey,2022-09-20 14:26:41.796788,2022-09-20 21:01:32.155247,659,Invoice Entry
+"Seattle, USA",Invoice Approver,Vendor4,2577.43,Addison,2022-09-24 07:39:25.403883,2022-09-24 11:11:52.153683,676,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor4,501.14,Riley,2022-09-20 19:12:47.905670,2022-09-20 20:10:12.555298,641,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,1133.67,Adrian,2022-09-22 21:16:44.440784,2022-09-23 02:32:09.825831,589,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor4,1819.68,Riley,2022-09-23 14:04:55.135726,2022-09-23 16:06:01.006790,670,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor3,344.54,Riley,2022-09-21 12:32:52.228983,2022-09-21 13:32:40.613816,650,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor2,530.63,Aiden,2022-09-22 21:57:51.234431,2022-09-22 23:03:25.277139,665,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1264.16,Aiden,2022-09-22 16:33:33.375756,2022-09-22 17:35:25.786591,586,Check Customer Payment
+"San Francisco, USA",Invoice Approver,Vendor1,5716.42,Jackie,2022-09-20 09:36:20.739871,2022-09-20 12:18:38.351000,609,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor5,2839.81,Casey,2022-09-29 12:13:10.479507,2022-09-29 18:23:33.768180,660,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor3,2169.89,Aiden,2022-09-26 06:54:57.212591,2022-09-26 08:06:39.537126,653,Fill Credit Memo
+"Seattle, USA",Invoice Processor,Vendor4,1282.6,Riley,2022-09-23 15:36:13.681158,2022-09-23 17:10:26.414315,587,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,5208.39,Aiden,2022-09-22 20:00:38.308048,2022-09-22 20:43:19.056986,718,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor2,490.62,Aiden,2022-09-20 19:34:05.376086,2022-09-20 20:37:56.565119,579,Refund With Standard Voucher
+"Seattle, USA",Invoice Approver,Vendor5,668.03,Addison,2022-09-22 20:07:41.575489,2022-09-22 22:49:00.043703,583,Complete the Customer Memo
+"Seattle, USA",Invoice Approver,Vendor2,502.53,Addison,2022-09-20 16:30:28.268086,2022-09-20 19:26:32.982785,695,Reject Invoice
+"San Diego, USA",Invoice Processor,Vendor5,8993.46,Abbie,2022-09-20 18:08:24.121729,2022-09-21 03:26:21.329965,611,Confirm Payment Received
+"Seattle, USA",Invoice Approver,Vendor5,344.79,Addison,2022-09-27 14:28:09.798206,2022-09-27 17:48:31.582783,596,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor2,1133.67,Adrian,2022-09-25 13:10:14.582501,2022-09-25 19:05:23.648019,589,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor5,1875.72,Adrian,2022-09-20 06:10:30.583324,2022-09-20 12:02:26.317957,689,Check Customer Payment
+"San Diego, USA",Invoice Approver,Vendor2,619.29,Jessie,2022-10-01 20:04:07.101558,2022-10-02 06:42:22.671606,704,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor5,1800.96,Riley,2022-09-24 18:14:19.338711,2022-09-24 19:21:48.651221,575,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor5,1632.91,Casey,2022-09-20 19:41:51.879374,2022-09-21 02:15:31.834379,617,Confirm Payment Received
+"Seattle, USA",Invoice Approver,Vendor4,1750.63,Addison,2022-09-22 16:16:43.313387,2022-09-22 19:03:12.938551,685,Reject Invoice
+"Seattle, USA",Invoice Processor,Vendor4,4445.46,Riley,2022-09-23 11:30:49.729631,2022-09-23 12:10:53.022638,597,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor2,5208.39,Jackie,2022-09-21 15:59:05.728622,2022-09-21 21:05:13.553364,718,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor1,868.06,Aiden,2022-09-20 15:03:02.971779,2022-09-20 17:39:43.571084,646,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor1,519.67,Aiden,2022-09-23 14:36:10.374348,2022-09-23 15:38:02.970793,567,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor3,2322.01,Aiden,2022-09-19 16:56:42.843081,2022-09-19 19:08:39.243821,661,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor1,459.18,Aiden,2022-09-21 18:55:57.347961,2022-09-21 20:15:39.107979,713,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor3,1481.82,Riley,2022-09-19 13:19:47.408758,2022-09-19 14:41:17.611873,711,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor3,2322.01,Aiden,2022-09-19 19:08:39.243821,2022-09-19 20:17:13.457748,661,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor4,928.73,Aiden,2022-09-22 15:56:02.626947,2022-09-22 18:07:47.119859,588,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor4,2577.43,Riley,2022-09-23 17:54:05.049372,2022-09-23 18:53:03.012948,676,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor2,1067.03,Casey,2022-09-25 16:10:03.336818,2022-09-25 20:46:36.075172,619,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor2,509.0,Adrian,2022-09-25 14:34:56.418684,2022-09-25 20:03:36.180748,651,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,3516.46,Adrian,2022-09-25 04:51:22.871611,2022-09-25 09:09:08.135190,715,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor5,668.03,Riley,2022-09-23 11:22:47.027425,2022-09-23 12:07:31.202348,583,Credit Memo Creation
+"Seattle, USA",Invoice Approver,Vendor2,502.53,Addison,2022-09-21 15:31:15.428146,2022-09-21 18:52:42.834813,695,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor2,972.32,Abbie,2022-09-24 15:04:58.752661,2022-09-24 22:54:18.221825,678,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor2,1311.36,Aiden,2022-09-20 08:31:22.447401,2022-09-20 10:12:47.726358,672,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,1269.99,Casey,2022-09-20 14:55:31.204386,2022-09-20 23:18:20.072171,700,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor3,2379.22,Aiden,2022-09-20 15:38:56.292968,2022-09-20 16:09:52.990360,571,Refund With Standard Voucher
+"San Francisco, USA",Invoice Approver,Vendor2,638.48,Jackie,2022-09-23 18:09:22.550100,2022-09-23 21:22:56.846031,680,Reject Invoice
+"Seattle, USA",Invoice Processor,Vendor3,628.04,Riley,2022-09-19 16:44:06.912870,2022-09-19 17:22:55.557073,673,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor5,1107.84,Riley,2022-09-22 14:51:19.911644,2022-09-22 15:23:14.058086,610,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor5,668.03,Riley,2022-09-20 13:21:05.495015,2022-09-20 14:11:05.941764,583,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor2,530.63,Aiden,2022-09-22 20:19:34.859020,2022-09-22 21:57:51.234431,665,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor4,1750.63,Riley,2022-09-22 09:45:48.766054,2022-09-22 10:54:35.146079,685,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor5,1800.96,Riley,2022-09-25 18:05:32.207165,2022-09-25 18:44:14.427252,575,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,972.32,Abbie,2022-09-23 15:48:38.278941,2022-09-24 01:18:35.413282,678,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor3,1151.88,Jackie,2022-09-20 12:42:26.192197,2022-09-20 15:03:42.911998,614,Reject Invoice
+"San Diego, USA",Invoice Processor,Vendor2,4667.44,Casey,2022-09-21 14:33:45.792843,2022-09-21 21:25:52.269494,696,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor4,1750.63,Riley,2022-09-25 08:20:35.808923,2022-09-25 08:55:16.501743,685,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor2,619.29,Abbie,2022-10-05 22:42:15.845245,2022-10-06 07:57:26.086243,704,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor4,1012.15,Aiden,2022-09-21 17:02:30.092629,2022-09-21 18:08:33.350464,644,Re-issuing the invoice
+"San Diego, USA",Invoice Approver,Vendor5,1486.18,Jessie,2022-09-29 13:55:38.622346,2022-09-30 00:53:35.019077,621,Complete the Customer Memo
+"San Diego, USA",Invoice Approver,Vendor5,1486.18,Jessie,2022-09-27 13:18:04.673154,2022-09-28 00:20:25.131275,621,Reject Invoice
+"San Diego, USA",Invoice Processor,Vendor5,1042.23,Abbie,2022-09-19 09:09:19.789307,2022-09-19 15:51:43.459068,602,Invoice Entry
+"San Diego, USA",Invoice Approver,Vendor2,4667.44,Jessie,2022-09-23 16:07:13.401404,2022-09-24 02:05:21.069406,696,Complete the Customer Memo
+"San Diego, USA",Invoice Approver,Vendor2,935.28,Jessie,2022-09-22 14:23:30.127203,2022-09-22 20:42:55.249741,702,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor1,459.18,Aiden,2022-09-21 17:58:42.769342,2022-09-21 18:55:57.347961,713,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor1,1735.26,Riley,2022-09-21 12:22:36.371937,2022-09-21 13:51:57.946055,608,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor4,1475.79,Riley,2022-09-21 11:29:56.495869,2022-09-21 12:36:48.504123,622,Aprove Invoice
+"San Francisco, USA",Invoice Processor,Vendor1,850.39,Aiden,2022-09-19 10:36:48.075681,2022-09-19 12:32:01.503417,563,Confirm Payment Received
+"Seattle, USA",Invoice Approver,Vendor3,1919.38,Addison,2022-09-19 16:18:40.357170,2022-09-19 18:59:13.907271,697,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor5,2795.11,Riley,2022-09-23 11:46:25.015764,2022-09-23 13:19:44.688447,675,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor1,1961.85,Riley,2022-09-19 08:36:48.679439,2022-09-19 10:16:11.793384,613,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor1,1205.05,Aiden,2022-09-23 08:39:26.574284,2022-09-23 11:14:57.948533,655,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,1486.18,Casey,2022-09-19 09:42:26.449876,2022-09-19 16:03:58.304617,621,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor1,1377.12,Aiden,2022-09-20 17:40:01.197078,2022-09-20 18:26:32.774066,606,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,519.67,Aiden,2022-09-25 23:37:33.584463,2022-09-26 03:00:43.040358,567,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor3,1437.06,Aiden,2022-09-26 17:23:17.183440,2022-09-26 18:46:46.229971,592,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor5,1486.18,Casey,2022-10-02 23:42:09.331086,2022-10-03 05:14:46.335514,621,Fill Credit Memo
+"San Diego, USA",Invoice Processor,Vendor5,443.1,Casey,2022-09-23 20:45:00.475280,2022-09-24 04:28:24.554521,623,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor2,737.47,Casey,2022-09-24 09:59:05.159900,2022-09-24 23:01:20.353372,629,Refund With Special Voucher
+"San Diego, USA",Invoice Processor,Vendor2,498.69,Casey,2022-09-23 08:07:45.523500,2022-09-23 13:20:21.987302,559,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor3,1670.7,Aiden,2022-09-23 20:39:33.633520,2022-09-23 21:09:49.622239,652,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor2,2042.0,Aiden,2022-09-22 20:05:46.783359,2022-09-22 20:45:45.050118,654,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor3,1437.06,Aiden,2022-09-25 13:15:43.735235,2022-09-25 14:35:52.623852,592,Refund With Standard Voucher
+"San Francisco, USA",Invoice Approver,Vendor3,1151.88,Jackie,2022-09-20 06:11:06.064874,2022-09-20 09:01:12.584109,614,Reject Invoice
+"Seattle, USA",Invoice Processor,Vendor5,1370.91,Riley,2022-09-28 09:38:10.707631,2022-09-28 09:52:53.422926,717,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor4,976.2,Aiden,2022-09-21 16:30:56.376004,2022-09-21 17:38:37.841797,691,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor3,1105.72,Jackie,2022-09-21 18:50:52.066315,2022-09-21 22:22:23.017085,698,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor3,556.35,Riley,2022-09-23 18:06:55.214341,2022-09-23 18:50:35.406063,634,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,619.29,Abbie,2022-10-05 04:00:32.202202,2022-10-05 11:36:57.422901,704,Fill Credit Memo
+"San Diego, USA",Invoice Processor,Vendor5,4731.83,Casey,2022-09-26 11:35:42.341344,2022-09-26 15:31:27.100492,584,Fill Credit Memo
+"Seattle, USA",Invoice Processor,Vendor3,243.95,Riley,2022-09-20 14:20:47.893195,2022-09-20 16:09:31.924473,668,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor4,928.73,Aiden,2022-09-22 18:07:47.119859,2022-09-22 19:10:15.201089,588,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor3,510.85,Aiden,2022-09-23 16:41:47.750346,2022-09-23 18:03:21.135821,664,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor5,381.35,Riley,2022-09-24 06:29:41.318330,2022-09-24 07:45:05.182665,638,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor5,264.85,Riley,2022-09-23 10:30:20.978790,2022-09-23 11:50:46.074519,601,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,344.54,Riley,2022-09-22 02:45:01.449279,2022-09-22 04:04:06.883689,650,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor2,2160.85,Riley,2022-09-22 13:52:24.194907,2022-09-22 14:21:54.117359,705,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor1,850.39,Aiden,2022-09-19 09:26:55.856287,2022-09-19 10:36:48.075681,563,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,1076.98,Aiden,2022-09-23 15:00:02.889221,2022-09-23 17:31:18.854480,615,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,1269.99,Casey,2022-09-24 12:26:54.920969,2022-09-24 21:33:33.184182,700,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor2,1728.7,Riley,2022-09-23 14:47:24.254574,2022-09-23 15:42:42.815249,576,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor4,1188.32,Riley,2022-09-23 12:01:55.687919,2022-09-23 12:46:59.572681,708,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor5,948.89,Riley,2022-09-21 16:32:08.626044,2022-09-21 17:33:31.489495,688,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor2,490.62,Aiden,2022-09-19 14:12:50.284818,2022-09-19 15:41:03.620835,579,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor1,369.08,Jackie,2022-09-22 21:44:34.437286,2022-09-23 00:10:36.311645,701,Reject Invoice
+"Seattle, USA",Invoice Processor,Vendor5,980.08,Riley,2022-09-19 10:30:50.986890,2022-09-19 11:21:19.413444,603,Check Customer Payment
+"San Francisco, USA",Invoice Approver,Vendor1,1057.47,Jackie,2022-09-22 17:44:00.008097,2022-09-22 19:37:59.657311,719,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor5,2839.81,Casey,2022-09-28 13:31:19.467575,2022-09-28 23:18:05.920172,660,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor1,409.71,Aiden,2022-09-22 12:43:07.450005,2022-09-22 14:17:39.451465,595,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor2,919.33,Aiden,2022-09-23 10:34:08.586781,2022-09-23 11:52:04.154369,662,Check Customer Payment
+"San Francisco, USA",Invoice Approver,Vendor3,1105.72,Jackie,2022-09-22 15:54:52.545788,2022-09-22 17:57:15.687299,698,Reject Invoice
+"San Diego, USA",Invoice Processor,Vendor5,1235.6,Casey,2022-09-23 04:39:57.677519,2022-09-23 14:26:15.650228,607,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor1,371.64,Riley,2022-09-24 10:16:55.476324,2022-09-24 10:57:13.786680,632,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor2,638.48,Aiden,2022-09-24 21:24:58.821714,2022-09-24 22:43:30.948535,680,Credit Memo Creation
+"San Diego, USA",Invoice Approver,Vendor2,862.99,Jessie,2022-09-23 16:39:10.306423,2022-09-24 00:21:14.611728,604,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor3,1437.06,Aiden,2022-09-22 10:52:00.758919,2022-09-22 11:55:14.038373,592,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor3,1481.82,Riley,2022-09-19 14:41:17.611873,2022-09-19 15:26:52.036822,711,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor3,747.4,Riley,2022-09-20 13:32:13.994802,2022-09-20 14:06:51.863126,598,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,885.7,Abbie,2022-09-28 19:44:05.463174,2022-09-29 02:36:04.019140,714,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor5,943.29,Adrian,2022-09-20 17:31:07.299390,2022-09-21 00:05:26.085633,570,Credit Memo Entry
+"San Diego, USA",Invoice Approver,Vendor2,935.28,Jessie,2022-10-03 22:55:05.141839,2022-10-04 09:47:10.095178,702,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor2,918.79,Aiden,2022-09-23 20:12:00.347865,2022-09-23 22:10:32.997608,639,Re-issuing the invoice
+"Seattle, USA",Invoice Approver,Vendor4,709.79,Addison,2022-09-24 06:26:43.242968,2022-09-24 08:45:23.285885,618,Reject Invoice
+"San Francisco, USA",Invoice Processor,Vendor2,1408.27,Aiden,2022-09-23 18:56:22.019752,2022-09-23 20:08:33.946223,574,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor2,638.48,Aiden,2022-09-22 20:45:51.650475,2022-09-22 21:41:37.698297,680,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor3,375.2,Aiden,2022-09-19 15:51:16.238309,2022-09-19 17:58:30.215830,600,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,1526.4,Aiden,2022-09-20 17:18:33.161060,2022-09-20 18:28:43.624935,569,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor2,522.2,Casey,2022-09-24 08:37:53.019256,2022-09-24 14:27:55.523416,699,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor4,1750.63,Riley,2022-09-22 10:54:35.146079,2022-09-22 12:52:49.353552,685,Confirm Payment Received
+"San Diego, USA",Invoice Approver,Vendor5,1486.18,Jessie,2022-09-25 05:26:52.172813,2022-09-25 14:31:31.199454,621,Reject Invoice
+"Seattle, USA",Invoice Approver,Vendor5,344.79,Addison,2022-09-23 18:29:25.118115,2022-09-23 20:49:48.661950,596,Reject Invoice
+"San Diego, USA",Invoice Processor,Vendor5,1486.18,Casey,2022-10-03 05:14:46.335514,2022-10-03 13:26:19.558080,621,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor3,1437.06,Jackie,2022-09-24 13:53:13.089132,2022-09-24 18:23:09.570614,592,Reject Invoice
+"San Diego, USA",Invoice Processor,Vendor5,2755.93,Abbie,2022-09-21 17:37:09.607339,2022-09-21 22:40:30.183306,690,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor1,1098.05,Riley,2022-09-24 05:44:11.238601,2022-09-24 06:04:22.977951,674,Re-issuing the invoice
+"San Diego, USA",Invoice Approver,Vendor2,935.28,Jessie,2022-09-26 11:12:45.255037,2022-09-26 17:35:06.801983,702,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,513.55,Aiden,2022-09-22 16:42:51.330493,2022-09-22 19:25:29.327422,681,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor2,490.62,Aiden,2022-09-19 17:45:07.731512,2022-09-19 18:43:55.051889,579,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor3,1693.86,Aiden,2022-09-20 15:28:45.737023,2022-09-20 17:41:29.723492,684,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,972.32,Abbie,2022-09-26 20:36:14.389739,2022-09-27 03:05:54.160871,678,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor2,1408.27,Aiden,2022-09-23 14:01:15.557222,2022-09-23 16:05:16.053027,574,Check Customer Payment
+"Seattle, USA",Invoice Approver,Vendor5,1800.96,Addison,2022-09-24 22:07:20.265365,2022-09-25 01:40:03.637102,575,Reject Invoice
+"San Diego, USA",Invoice Approver,Vendor5,1042.23,Jessie,2022-09-23 06:05:46.835512,2022-09-23 12:22:01.378643,602,Approve Invoice
+"San Diego, USA",Invoice Approver,Vendor5,8993.46,Jessie,2022-09-23 17:53:34.989651,2022-09-24 00:14:29.720377,611,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor2,1652.63,Adrian,2022-09-25 15:53:20.278655,2022-09-25 22:07:40.796019,573,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor1,616.46,Riley,2022-09-21 06:17:36.648992,2022-09-21 07:10:31.443902,669,Fill Credit Memo
+"San Diego, USA",Invoice Processor,Vendor5,4731.83,Casey,2022-09-23 21:25:29.991947,2022-09-24 06:32:32.820775,584,Confirm Payment Received
+"San Francisco, USA",Invoice Approver,Vendor1,1999.54,Jackie,2022-09-23 08:28:10.875677,2022-09-23 11:57:28.764193,572,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor2,809.59,Casey,2022-09-24 19:59:51.283279,2022-09-25 04:14:08.978642,659,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor2,638.48,Aiden,2022-09-25 01:03:34.236097,2022-09-25 02:05:41.305800,680,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor5,1800.96,Riley,2022-09-20 12:55:42.718791,2022-09-20 14:33:10.830973,575,Confirm Payment Received
+"San Francisco, USA",Invoice Approver,Vendor2,278.18,Jackie,2022-09-20 17:58:22.776709,2022-09-20 21:01:35.246402,720,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1144.54,Aiden,2022-09-22 21:35:27.383080,2022-09-22 22:42:06.614490,687,Re-issuing the invoice
+"Seattle, USA",Invoice Approver,Vendor1,1074.48,Addison,2022-09-20 14:43:44.660851,2022-09-20 18:24:00.248412,605,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor2,762.27,Adrian,2022-09-26 00:12:04.965307,2022-09-26 08:04:16.762750,581,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,459.18,Aiden,2022-09-21 20:15:39.107979,2022-09-21 21:06:46.129738,713,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor3,2503.98,Riley,2022-09-20 18:36:14.043608,2022-09-20 19:06:52.336615,663,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor3,761.56,Riley,2022-09-25 01:13:29.774774,2022-09-25 02:19:58.805182,709,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor2,2042.0,Aiden,2022-09-24 18:23:12.127619,2022-09-24 19:16:32.068146,654,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,2132.06,Aiden,2022-09-26 14:08:36.598079,2022-09-26 15:30:49.254501,566,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor1,955.79,Riley,2022-09-21 09:28:29.046934,2022-09-21 10:23:17.632076,633,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor3,2322.01,Aiden,2022-09-22 12:34:46.309094,2022-09-22 14:00:43.800014,661,Credit Memo Creation
+"San Diego, USA",Invoice Approver,Vendor2,1652.63,Jessie,2022-09-22 21:51:50.262594,2022-09-23 08:32:42.453248,573,Complete the Customer Memo
+"Seattle, USA",Invoice Approver,Vendor1,1961.85,Addison,2022-09-20 05:04:04.540897,2022-09-20 07:00:05.643942,613,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor2,862.99,Adrian,2022-09-22 10:47:39.538036,2022-09-23 06:32:21.326434,604,Refund With Special Voucher
+"San Diego, USA",Invoice Processor,Vendor5,1269.99,Casey,2022-09-21 12:12:01.847730,2022-09-21 18:57:57.562605,700,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor3,2322.01,Aiden,2022-09-22 14:00:43.800014,2022-09-22 15:03:12.068363,661,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor2,717.61,Aiden,2022-09-21 14:23:02.319204,2022-09-21 15:16:47.039117,703,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor3,556.35,Riley,2022-09-22 14:56:22.633680,2022-09-22 16:05:19.279714,634,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,513.55,Aiden,2022-09-22 19:25:29.327422,2022-09-22 20:47:59.074025,681,Refund Customer
+"Seattle, USA",Invoice Approver,Vendor4,1750.63,Addison,2022-09-24 18:48:31.888549,2022-09-24 21:21:40.718143,685,Reject Invoice
+"San Diego, USA",Invoice Processor,Vendor5,443.1,Casey,2022-09-27 23:26:53.733084,2022-09-28 09:02:25.096346,623,Refund Customer
+"San Diego, USA",Invoice Approver,Vendor2,1652.63,Jessie,2022-09-23 14:12:37.628874,2022-09-23 23:48:37.984109,573,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor2,1123.28,Aiden,2022-09-24 11:34:01.970648,2022-09-24 12:41:30.289540,626,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor3,2322.01,Jackie,2022-09-21 09:07:18.104276,2022-09-21 13:17:19.188866,661,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor2,845.05,Riley,2022-09-23 16:15:11.843709,2022-09-23 17:41:43.836100,647,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor2,918.79,Aiden,2022-09-22 10:10:53.992077,2022-09-22 12:28:32.145723,639,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,2755.93,Abbie,2022-09-20 15:42:48.969877,2022-09-20 23:26:38.277317,690,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,3405.17,Adrian,2022-09-24 08:48:39.979229,2022-09-24 15:10:40.326665,627,Check Customer Payment
+"San Francisco, USA",Invoice Approver,Vendor3,1215.29,Jackie,2022-09-21 09:28:09.607016,2022-09-21 12:00:12.318580,667,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor2,1185.66,Casey,2022-09-24 10:52:29.454339,2022-09-24 16:39:31.335562,578,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor1,409.71,Aiden,2022-09-22 09:41:22.761875,2022-09-22 11:18:23.498189,595,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor3,1151.88,Aiden,2022-09-23 06:44:26.014308,2022-09-23 07:43:38.678748,614,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor3,1350.47,Riley,2022-09-19 11:04:08.023239,2022-09-19 12:12:19.317033,682,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor1,1144.54,Aiden,2022-09-22 19:20:30.458132,2022-09-22 21:35:27.383080,687,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor4,928.73,Aiden,2022-09-22 13:05:39.150713,2022-09-22 14:45:39.183314,588,Check Customer Payment
+"Seattle, USA",Invoice Approver,Vendor2,2634.24,Addison,2022-09-21 23:31:40.106854,2022-09-22 02:58:46.579279,666,Reject Invoice
+"San Francisco, USA",Invoice Processor,Vendor3,2322.01,Aiden,2022-09-19 14:57:48.981913,2022-09-19 16:56:42.843081,661,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor1,660.77,Aiden,2022-09-23 11:15:33.002235,2022-09-23 12:14:20.913711,706,Fill Credit Memo
+"San Francisco, USA",Invoice Approver,Vendor1,369.08,Jackie,2022-09-23 00:52:33.767773,2022-09-23 04:35:18.136826,701,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor5,344.79,Riley,2022-09-23 15:27:32.771030,2022-09-23 16:29:39.792774,596,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor4,817.7,Aiden,2022-09-22 12:16:01.944365,2022-09-22 14:19:12.990351,677,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,747.4,Riley,2022-09-20 12:06:31.269223,2022-09-20 13:32:13.994802,598,Refund Customer
+"Seattle, USA",Invoice Approver,Vendor4,784.16,Addison,2022-09-25 02:47:51.181813,2022-09-25 06:11:20.155610,630,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor2,278.18,Aiden,2022-09-20 10:30:44.327458,2022-09-20 12:31:51.156098,720,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor1,5716.42,Aiden,2022-09-20 05:46:52.930088,2022-09-20 07:32:31.104087,609,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor2,1922.69,Aiden,2022-09-21 10:47:54.875423,2022-09-21 13:06:14.977423,636,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,1370.38,Aiden,2022-09-20 12:14:57.368955,2022-09-20 13:34:05.761360,591,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor2,745.6,Aiden,2022-09-19 16:14:58.791195,2022-09-19 17:40:38.480891,716,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor2,3428.33,Aiden,2022-09-22 15:13:33.490103,2022-09-22 16:16:07.947390,564,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor4,784.16,Riley,2022-09-25 07:01:03.227166,2022-09-25 07:24:03.539706,630,Fill Credit Memo
+"Seattle, USA",Invoice Processor,Vendor2,1634.46,Riley,2022-09-19 18:30:10.897750,2022-09-19 18:56:33.222300,686,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor2,745.6,Jackie,2022-09-20 14:07:39.816929,2022-09-20 17:31:52.936786,716,Complete the Customer Memo
+"San Diego, USA",Invoice Approver,Vendor2,935.28,Jessie,2022-09-22 20:42:55.249741,2022-09-23 01:49:41.756115,702,Reject Invoice
+"San Diego, USA",Invoice Processor,Vendor2,1067.03,Casey,2022-09-25 20:46:36.075172,2022-09-26 06:07:28.996170,619,Fill Credit Memo
+"Seattle, USA",Invoice Processor,Vendor3,1286.58,Riley,2022-09-21 08:30:31.624206,2022-09-21 09:20:59.969184,582,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor3,1037.58,Aiden,2022-09-24 16:29:18.731207,2022-09-24 17:22:06.594956,679,Credit Memo Creation
+"San Francisco, USA",Invoice Approver,Vendor2,5208.39,Jackie,2022-09-22 13:57:11.312887,2022-09-22 17:51:58.496224,718,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor2,412.56,Aiden,2022-09-23 18:01:17.881701,2022-09-23 19:12:53.357735,637,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor1,1264.16,Aiden,2022-09-22 19:22:42.175179,2022-09-22 20:49:37.137145,586,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor2,4667.44,Casey,2022-09-28 01:16:49.076845,2022-09-28 05:18:26.023394,696,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor2,862.99,Adrian,2022-09-21 15:51:53.354958,2022-09-22 00:23:36.408413,604,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor1,2006.17,Aiden,2022-09-20 15:02:52.578411,2022-09-20 15:34:04.318053,593,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor5,1235.6,Casey,2022-09-24 14:11:43.439953,2022-09-24 19:54:33.773441,607,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor3,410.47,Riley,2022-09-20 13:29:34.755280,2022-09-20 14:02:46.563480,562,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor1,1560.92,Aiden,2022-09-23 05:38:15.674603,2022-09-23 06:35:37.449585,594,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor3,1105.72,Jackie,2022-09-22 22:13:10.866802,2022-09-23 04:20:34.586900,698,Approve Invoice
+"San Diego, USA",Invoice Approver,Vendor5,2839.81,Jessie,2022-09-24 13:04:23.114814,2022-09-24 22:17:56.141633,660,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor5,1800.96,Riley,2022-09-25 17:15:53.892335,2022-09-25 18:05:32.207165,575,Fill Credit Memo
+"Seattle, USA",Invoice Processor,Vendor1,1098.05,Riley,2022-09-23 09:57:10.977911,2022-09-23 11:10:22.874892,674,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,2466.35,Riley,2022-09-20 08:21:44.145551,2022-09-20 10:01:48.587583,616,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor2,1133.67,Adrian,2022-09-25 19:05:23.648019,2022-09-26 03:52:27.968794,589,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor1,868.06,Aiden,2022-09-20 12:00:20.752504,2022-09-20 14:05:23.966147,646,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,676.24,Riley,2022-09-22 12:41:29.892474,2022-09-22 13:19:49.938535,585,Check Customer Payment
+"San Francisco, USA",Invoice Approver,Vendor3,1437.06,Jackie,2022-09-23 12:39:26.147055,2022-09-23 16:43:54.655342,592,Reject Invoice
+"Seattle, USA",Invoice Processor,Vendor4,1188.32,Riley,2022-09-23 10:20:51.056705,2022-09-23 11:24:12.871471,708,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor2,5208.39,Aiden,2022-09-21 14:40:19.341933,2022-09-21 15:59:05.728622,718,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor3,2466.35,Riley,2022-09-19 13:13:24.801987,2022-09-19 14:26:02.142271,616,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor2,704.91,Riley,2022-09-23 16:05:54.710351,2022-09-23 16:36:59.316340,645,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor2,1728.7,Riley,2022-09-23 14:15:41.416864,2022-09-23 14:47:24.254574,576,Fill Credit Memo
+"Seattle, USA",Invoice Processor,Vendor5,2795.11,Riley,2022-09-23 13:19:44.688447,2022-09-23 14:12:18.525106,675,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor3,6846.42,Aiden,2022-09-23 10:55:21.648034,2022-09-23 13:26:37.589959,712,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor3,1105.72,Jackie,2022-09-22 19:10:09.450621,2022-09-22 22:13:10.866802,698,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor1,1429.51,Aiden,2022-09-21 14:59:09.891316,2022-09-21 16:04:42.008515,,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor3,1693.86,Aiden,2022-09-20 19:57:42.830326,2022-09-20 21:49:45.275054,684,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor2,562.35,Riley,2022-09-24 15:09:03.208077,2022-09-24 16:18:56.324462,624,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor2,762.27,Adrian,2022-09-22 14:05:41.568266,2022-09-22 18:48:32.794073,581,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor4,578.67,Aiden,2022-09-19 10:37:01.775214,2022-09-19 12:49:36.704049,620,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor2,2042.0,Aiden,2022-09-21 15:51:33.212758,2022-09-21 17:20:42.658521,654,Confirm Payment Received
+"San Diego, USA",Invoice Processor,Vendor2,1708.8,Adrian,2022-09-26 23:32:55.224363,2022-09-27 04:51:18.465379,693,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor3,1481.82,Riley,2022-09-19 18:16:27.282910,2022-09-19 18:30:20.831027,711,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor3,1350.47,Riley,2022-09-20 06:48:10.363092,2022-09-20 07:20:36.505592,682,Fill Credit Memo
+"Seattle, USA",Invoice Processor,Vendor5,1507.99,Riley,2022-09-22 12:23:01.277523,2022-09-22 13:36:03.111096,635,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor5,654.14,Abbie,2022-09-20 21:55:50.288148,2022-09-21 05:16:42.133276,649,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor4,733.69,Riley,23.09.2022 13:11,2022-09-23 14:18:43.987947,565,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor3,1105.72,Aiden,2022-09-22 17:57:15.687299,2022-09-22 19:10:09.450621,698,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor4,578.67,Aiden,2022-09-19 14:57:26.233113,2022-09-19 16:01:08.389087,620,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor2,2372.08,Adrian,2022-09-24 23:36:04.513451,2022-09-25 07:55:02.113956,642,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor2,911.14,Casey,2022-09-21 19:19:14.127508,2022-09-22 03:12:44.749428,640,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor4,709.79,Riley,2022-09-28 08:18:05.978085,2022-09-28 09:16:28.860113,618,Credit Memo Creation
+"San Diego, USA",Invoice Approver,Vendor2,619.29,Jessie,2022-09-23 23:47:28.609606,2022-09-24 07:40:24.907605,704,Complete the Customer Memo
+"Seattle, USA",Invoice Approver,Vendor5,1800.96,Addison,2022-09-25 02:13:23.569973,2022-09-25 05:39:50.967578,575,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,918.79,Aiden,2022-09-22 14:44:54.906494,2022-09-22 16:15:08.744172,639,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor5,1486.18,Casey,2022-09-26 12:47:16.591470,2022-09-26 17:59:55.125321,621,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor5,8993.46,Abbie,2022-09-20 09:07:15.597379,2022-09-20 18:08:24.121729,611,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,676.24,Riley,2022-09-22 16:03:28.678408,2022-09-22 17:01:50.899129,585,Re-issuing the invoice
+"Seattle, USA",Invoice Approver,Vendor5,1800.96,Addison,2022-09-20 15:25:16.507614,2022-09-20 18:10:58.896936,575,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor3,6846.42,Aiden,2022-09-23 15:31:07.001326,2022-09-23 16:30:38.300274,712,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor4,578.67,Aiden,2022-09-19 09:41:12.178270,2022-09-19 10:37:01.775214,620,Invoice Entry
+"Seattle, USA",Invoice Approver,Vendor2,2634.24,Addison,2022-09-23 06:46:51.546845,2022-09-23 10:41:41.536584,666,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,2042.0,Aiden,2022-09-21 14:25:57.107659,2022-09-21 15:51:33.212758,654,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,619.29,Abbie,2022-09-29 01:12:18.633180,2022-09-29 10:13:22.192385,704,Refund With Special Voucher
+"Seattle, USA",Invoice Processor,Vendor5,344.79,Riley,2022-09-27 18:35:58.079172,2022-09-27 19:07:36.276133,596,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor1,868.06,Aiden,2022-09-20 14:05:23.966147,2022-09-20 15:03:02.971779,646,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor2,513.55,Aiden,2022-09-22 13:22:54.150398,2022-09-22 15:09:58.448845,681,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,344.54,Riley,2022-09-22 04:04:06.883689,2022-09-22 04:54:47.530533,650,Re-issuing the invoice
+"Seattle, USA",Invoice Approver,Vendor4,709.79,Addison,2022-09-24 09:16:49.429479,2022-09-24 12:20:31.034410,618,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor5,3405.17,Adrian,2022-09-25 10:00:47.773028,2022-09-25 14:42:52.505134,627,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor5,1632.91,Casey,2022-09-20 14:42:24.104251,2022-09-20 19:41:51.879374,617,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,498.69,Casey,2022-09-21 06:06:59.417921,2022-09-21 12:05:05.878412,559,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor1,1264.16,Aiden,2022-09-22 14:38:28.978306,2022-09-22 16:33:33.375756,586,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor4,1571.36,Aiden,2022-09-20 08:38:23.967778,2022-09-20 09:39:44.233751,692,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor2,490.62,Aiden,2022-09-21 17:54:31.574506,2022-09-21 19:10:26.234125,579,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor3,1215.29,Aiden,2022-09-22 03:05:18.604365,2022-09-22 04:29:56.270828,667,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor2,845.05,Riley,2022-09-23 15:23:23.559670,2022-09-23 16:15:11.843709,647,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor1,1074.48,Riley,2022-09-21 09:29:09.998896,2022-09-21 10:32:42.253025,605,Fill Credit Memo
+"San Diego, USA",Invoice Approver,Vendor2,619.29,Jessie,2022-09-24 07:40:24.907605,2022-09-24 13:07:01.688672,704,Reject Invoice
+"San Francisco, USA",Invoice Approver,Vendor2,490.62,Jackie,2022-09-20 23:25:44.925840,2022-09-21 03:28:49.790544,579,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor5,943.29,Adrian,2022-09-19 15:38:33.137276,2022-09-19 21:55:47.957649,570,Invoice Entry
+"Seattle, USA",Invoice Approver,Vendor2,1728.7,Addison,2022-09-22 14:45:25.536033,2022-09-22 17:49:37.878270,576,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor5,980.08,Riley,2022-09-19 12:39:43.646755,2022-09-19 13:52:02.197990,603,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor2,919.33,Aiden,2022-09-23 16:44:54.863793,2022-09-23 17:52:17.469875,662,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,737.47,Casey,2022-09-28 21:35:25.943324,2022-09-29 03:00:22.808559,629,Credit Memo Creation
+"Seattle, USA",Invoice Approver,Vendor4,2577.43,Addison,2022-09-23 18:53:03.012948,2022-09-23 21:26:55.896584,676,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor2,522.2,Casey,2022-09-28 22:11:13.127828,2022-09-29 05:40:37.476767,699,Fill Credit Memo
+"San Diego, USA",Invoice Processor,Vendor5,1060.27,Adrian,2022-09-22 10:19:35.544174,2022-09-22 14:54:13.054560,671,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor4,1012.15,Aiden,2022-09-21 10:08:47.104699,2022-09-21 12:43:01.379706,644,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor2,2012.64,Aiden,2022-09-19 15:33:25.481194,2022-09-19 17:14:37.985972,590,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor3,2466.35,Riley,2022-09-20 10:01:48.587583,2022-09-20 10:53:50.713413,616,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor4,282.21,Riley,2022-09-21 13:17:10.762557,2022-09-21 13:46:01.214164,577,Credit Memo Creation
+"Seattle, USA",Invoice Approver,Vendor4,1750.63,Addison,2022-09-23 11:42:02.550623,2022-09-23 13:49:14.988192,685,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor2,502.53,Riley,2022-09-22 20:00:28.550713,2022-09-22 20:54:37.265685,695,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor1,1082.77,Riley,2022-09-24 06:30:31.694426,2022-09-24 07:16:40.820400,643,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor3,1350.47,Riley,2022-09-20 07:20:36.505592,2022-09-20 08:08:21.247221,682,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor4,282.21,Riley,2022-09-20 10:42:14.470908,2022-09-20 12:03:08.581453,577,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor3,1919.38,Riley,2022-09-19 15:24:55.300051,2022-09-19 16:18:40.357170,697,Refund With Standard Voucher
+"Seattle, USA",Invoice Approver,Vendor1,616.46,Addison,2022-09-20 16:13:38.243942,2022-09-20 19:14:44.002958,669,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor3,1481.82,Riley,2022-09-19 16:24:08.082897,2022-09-19 18:16:27.282910,711,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor2,1185.66,Casey,2022-09-24 05:10:14.990944,2022-09-24 10:52:29.454339,578,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor1,955.79,Riley,2022-09-21 02:03:41.505180,2022-09-21 02:45:13.758197,633,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor3,375.2,Aiden,2022-09-19 20:11:09.656436,2022-09-19 21:42:08.382205,600,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor2,2160.85,Riley,2022-09-22 15:04:07.145518,2022-09-22 15:43:52.522964,705,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor1,1098.05,Riley,2022-09-23 11:10:22.874892,2022-09-23 12:20:39.051824,674,Check Customer Payment
+"San Diego, USA",Invoice Approver,Vendor5,2755.93,Jessie,2022-09-22 14:21:52.516790,2022-09-23 04:20:52.941606,690,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor2,1728.7,Riley,2022-09-22 11:05:38.094227,2022-09-22 12:14:01.180016,576,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor2,562.35,Riley,2022-09-24 16:45:09.903514,2022-09-24 17:47:18.143425,624,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor2,2042.0,Aiden,2022-09-24 16:08:46.065085,2022-09-24 18:23:12.127619,654,Fill Credit Memo
+"San Diego, USA",Invoice Approver,Vendor2,728.06,Jessie,2022-09-22 10:58:11.837474,2022-09-22 19:47:12.411434,560,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor5,1269.99,Casey,2022-09-21 04:49:59.869684,2022-09-21 12:12:01.847730,700,Check Customer Payment
+"San Francisco, USA",Invoice Approver,Vendor3,2322.01,Jackie,2022-09-20 06:33:46.543075,2022-09-20 10:49:02.836694,661,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor4,1012.15,Aiden,2022-09-21 08:47:40.001775,2022-09-21 10:08:47.104699,644,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor3,1151.88,Aiden,2022-09-22 06:14:00.149527,2022-09-22 07:27:05.400365,614,Refund With Standard Voucher
+"San Diego, USA",Invoice Approver,Vendor5,537.9,Jessie,2022-09-23 14:07:41.611990,2022-09-24 00:19:40.973499,694,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor5,2567.16,Riley,2022-09-19 15:00:05.703250,2022-09-19 16:29:17.301772,683,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor4,1188.32,Riley,2022-09-23 09:17:37.746400,2022-09-23 10:20:51.056705,708,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,809.59,Casey,2022-09-20 21:01:32.155247,2022-09-21 03:06:12.416457,659,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor2,1133.67,Adrian,2022-09-23 09:32:11.062085,2022-09-23 15:18:21.893050,589,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor2,1172.88,Abbie,2022-09-21 21:42:00.318453,2022-09-22 06:22:09.125690,707,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor5,2567.16,Riley,2022-09-19 11:42:55.096446,2022-09-19 13:06:11.747742,683,Invoice Entry
+"San Diego, USA",Invoice Approver,Vendor2,522.2,Jessie,2022-09-26 06:49:47.960296,2022-09-26 12:54:11.367864,699,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor2,2042.0,Aiden,2022-09-24 15:04:14.026963,2022-09-24 16:08:46.065085,654,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor2,1067.03,Casey,2022-09-26 13:21:58.616311,2022-09-26 19:07:46.704783,619,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1429.51,Aiden,2022-09-25 14:31:34.961073,2022-09-25 15:39:15.201024,580,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1932.88,Aiden,2022-09-22 05:05:54.387021,2022-09-22 07:09:09.785383,561,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor3,510.85,Aiden,2022-09-23 18:03:21.135821,2022-09-23 19:03:43.138530,664,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor1,371.64,Riley,2022-09-23 13:09:05.309841,2022-09-23 14:29:45.287756,632,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,3428.33,Aiden,2022-09-21 15:36:57.755268,2022-09-21 17:05:22.415686,564,Confirm Payment Received
+"San Diego, USA",Invoice Processor,Vendor2,1172.88,Abbie,2022-09-24 00:15:49.327433,2022-09-24 12:02:10.160668,707,Refund With Special Voucher
+"San Diego, USA",Invoice Approver,Vendor5,537.9,Jessie,2022-09-22 22:20:33.687805,2022-09-23 07:54:13.924107,694,Complete the Customer Memo
+"Seattle, USA",Invoice Approver,Vendor3,761.56,Addison,2022-09-24 18:40:36.575906,2022-09-24 21:46:34.975668,709,Complete the Customer Memo
+"Seattle, USA",Invoice Approver,Vendor4,N/A,Addison,2022-09-24 09:45:19.878862,2022-09-24 12:42:13.850964,630,Reject Invoice
+"Seattle, USA",Invoice Approver,Vendor3,761.56,Addison,2022-09-23 13:59:08.524054,2022-09-23 17:43:48.846100,709,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor1,616.46,Riley,2022-09-20 12:19:28.426857,2022-09-20 12:56:44.957996,669,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor1,519.67,Aiden,2022-09-26 03:00:43.040358,2022-09-26 04:25:55.774454,567,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor2,1123.28,Jackie,2022-09-23 17:13:05.324277,2022-09-23 20:07:45.137256,626,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor5,1107.84,Riley,2022-09-22 13:31:04.096169,2022-09-22 14:51:19.911644,610,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor4,1750.63,Riley,2022-09-24 15:21:27.397595,2022-09-24 16:01:43.819445,685,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor4,1750.63,Riley,2022-09-25 15:57:49.451261,2022-09-25 16:39:50.537329,685,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor3,1670.7,Aiden,2022-09-23 14:00:40.170798,2022-09-23 16:08:08.182217,652,Invoice Entry
+"Seattle, USA",Invoice Approver,Vendor5,344.79,Addison,2022-09-26 15:33:43.936033,2022-09-26 19:08:24.323183,596,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,1076.98,Aiden,2022-09-23 18:48:48.620760,2022-09-23 19:47:19.577715,615,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor4,817.7,Aiden,2022-09-22 14:19:12.990351,2022-09-22 16:25:35.251790,677,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor3,676.24,Riley,2022-09-22 11:30:19.262420,2022-09-22 12:41:29.892474,585,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor4,1100.54,Riley,2022-09-23 14:30:13.791013,2022-09-23 15:51:40.039903,710,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor5,344.79,Riley,2022-09-26 22:11:57.340760,2022-09-26 22:33:16.356147,596,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor2,3516.46,Adrian,2022-09-20 19:24:42.389868,2022-09-21 03:12:24.878894,715,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor1,1735.26,Riley,2022-09-24 04:17:59.547356,2022-09-24 05:20:47.287213,608,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,868.06,Aiden,2022-09-20 18:53:24.597679,2022-09-20 19:30:27.407717,646,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,4667.44,Casey,2022-09-28 05:18:26.023394,2022-09-28 14:19:12.009920,696,Fill Credit Memo
+"San Francisco, USA",Invoice Approver,Vendor2,1123.28,Jackie,2022-09-23 13:39:42.552933,2022-09-23 17:13:05.324277,626,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor5,537.9,Casey,2022-09-21 23:35:30.260350,2022-09-22 08:33:44.748965,694,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor2,1311.36,Aiden,2022-09-20 14:01:21.929387,2022-09-20 15:29:45.351121,672,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor2,3970.38,Aiden,2022-09-23 16:56:00.044643,2022-09-23 18:07:04.823402,599,Credit Memo Entry
+"San Diego, USA",Invoice Processor,Vendor2,1708.8,Adrian,2022-09-26 17:13:46.157323,2022-09-26 23:32:55.224363,693,Fill Credit Memo
+"San Francisco, USA",Invoice Approver,Vendor3,2379.22,Jackie,2022-09-20 16:09:52.990360,2022-09-20 18:12:25.112376,571,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor3,1286.58,Riley,2022-09-21 10:18:26.255158,2022-09-21 11:58:01.188715,582,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor1,660.77,Aiden,2022-09-22 15:24:07.831682,2022-09-22 16:18:27.203858,706,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor3,1037.58,Aiden,2022-09-24 18:32:42.018063,2022-09-24 20:17:43.660902,679,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor5,2839.81,Casey,2022-09-29 06:33:51.272582,2022-09-29 12:13:10.479507,660,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor2,2012.64,Aiden,2022-09-19 17:14:37.985972,2022-09-19 19:18:18.280644,590,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1560.92,Aiden,2022-09-22 16:58:16.931619,2022-09-22 18:21:27.322426,594,Check Customer Payment
+"Seattle, USA",Invoice Approver,Vendor4,1750.63,Addison,2022-09-22 13:36:49.340780,2022-09-22 16:16:43.313387,685,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,716.55,Aiden,2022-09-22 21:34:26.347060,2022-09-22 22:49:41.956965,631,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,885.7,Abbie,2022-09-27 04:47:01.663405,2022-09-27 14:24:55.561282,714,Refund With Special Voucher
+"Seattle, USA",Invoice Processor,Vendor2,1728.7,Riley,2022-09-22 13:44:18.478659,2022-09-22 14:45:25.536033,576,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor4,1188.32,Riley,2022-09-23 11:24:12.871471,2022-09-23 12:01:55.687919,708,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor3,2169.89,Aiden,2022-09-26 05:09:33.842936,2022-09-26 06:54:57.212591,653,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor2,862.99,Adrian,2022-09-21 09:50:22.374269,2022-09-21 15:51:53.354958,604,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,1060.27,Adrian,2022-09-22 22:40:00.133149,2022-09-23 05:29:13.910798,671,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor4,282.21,Riley,2022-09-20 12:03:08.581453,2022-09-20 12:59:39.613204,577,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor3,761.56,Riley,2022-09-23 12:09:46.693798,2022-09-23 13:18:16.938295,709,Confirm Payment Received
+"San Diego, USA",Invoice Processor,Vendor5,1042.23,Abbie,2022-09-24 04:36:44.495830,2022-09-24 09:52:16.788866,602,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor4,1282.6,Riley,2022-09-28 10:49:02.990306,2022-09-28 11:09:07.422659,587,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor5,2795.11,Riley,2022-09-24 15:07:21.164265,2022-09-24 15:48:21.385016,675,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor3,1215.29,Aiden,2022-09-22 01:16:27.819746,2022-09-22 01:56:12.441441,667,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor5,2755.93,Abbie,2022-09-26 12:11:26.903148,2022-09-26 16:22:43.374099,690,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor3,2322.01,Aiden,2022-09-19 14:57:48.981913,2022-09-19 16:56:42.843081,661,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor3,2169.89,Aiden,2022-09-23 13:48:52.626434,2022-09-23 16:05:08.555548,653,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor2,412.56,Aiden,2022-09-20 16:12:23.066640,2022-09-20 18:17:20.692496,637,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor2,1708.8,Adrian,2022-09-21 09:23:09.761886,2022-09-22 03:52:20.478280,693,Refund With Special Voucher
+"Seattle, USA",Invoice Processor,Vendor5,1370.91,Riley,2022-09-23 15:40:26.396042,2022-09-23 16:41:04.712264,717,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor1,955.79,Riley,2022-09-20 13:46:45.290715,2022-09-20 14:56:38.482732,633,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,1172.88,Abbie,2022-09-26 02:49:23.376781,2022-09-26 12:01:13.280538,707,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor4,2577.43,Riley,2022-09-23 16:14:47.497382,2022-09-23 17:54:05.049372,676,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor2,2160.85,Riley,2022-09-22 11:56:52.776001,2022-09-22 13:12:20.998895,705,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor4,928.73,Aiden,2022-09-22 14:45:39.183314,2022-09-22 15:56:02.626947,588,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor4,N/A,Riley,2022-09-23 14:34:30.001987,2022-09-23 15:58:30.012404,618,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,2503.98,Riley,2022-09-20 13:43:38.694000,2022-09-20 15:18:06.372916,663,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor1,600.09,Aiden,2022-09-19 13:31:43.275720,2022-09-19 14:43:37.647646,568,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor2,728.06,Adrian,2022-09-20 12:58:33.196279,2022-09-20 18:43:16.823755,560,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor5,948.89,Riley,2022-09-21 15:18:40.562122,2022-09-21 15:46:14.786887,688,Credit Memo Entry
+"San Diego, USA",Invoice Processor,Vendor5,443.1,Casey,2022-09-23 08:10:49.380937,2022-09-23 17:01:21.877526,623,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,537.9,Casey,2022-09-21 15:52:03.258945,2022-09-21 23:35:30.260350,694,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor1,1057.47,Aiden,2022-09-23 15:57:19.020979,2022-09-23 17:12:42.857169,719,Credit Memo Creation
+"San Diego, USA",Invoice Approver,Vendor2,862.99,Jessie,2022-09-27 11:43:47.624732,2022-09-27 19:28:36.554016,604,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor1,600.09,Aiden,2022-09-19 16:25:09.849271,2022-09-19 18:32:01.561029,568,Refund Customer
+"Seattle, USA",Invoice Approver,Vendor1,1074.48,Addison,2022-09-20 18:24:00.248412,2022-09-20 21:13:20.258469,605,Approve Invoice
+"San Francisco, USA",Invoice Approver,Vendor3,1437.06,Jackie,2022-09-23 04:19:06.031378,2022-09-23 08:27:40.025805,592,Reject Invoice
+"San Francisco, USA",Invoice Processor,Vendor4,578.67,Aiden,2022-09-19 12:49:36.704049,2022-09-19 14:57:26.233113,620,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor4,1475.79,Riley,2022-09-23 15:22:11.745121,2022-09-23 15:43:32.301874,622,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,885.7,Abbie,2022-09-29 02:36:04.019140,2022-09-29 11:39:23.903911,714,Fill Credit Memo
+"San Diego, USA",Invoice Approver,Vendor5,8993.46,Jessie,24.09.2022 00:14,2022-09-24 09:36:03.559671,611,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor3,1437.06,Aiden,2022-09-22 11:55:14.038373,2022-09-22 12:59:48.062413,592,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor4,4445.46,Riley,2022-09-22 14:27:55.739613,2022-09-22 15:16:08.040619,597,Refund With Standard Voucher
+"San Francisco, USA",Invoice Approver,Vendor2,638.48,Jackie,2022-09-23 22:17:56.589140,2022-09-24 02:52:36.603660,680,Complete the Customer Memo
+"San Francisco, USA",Invoice Approver,Vendor1,1377.12,Jackie,2022-09-19 17:50:03.149010,2022-09-19 20:24:53.177660,606,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1057.47,Aiden,2022-09-23 17:12:42.857169,2022-09-23 17:55:04.444781,719,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor2,3428.33,Aiden,2022-09-22 17:32:05.109912,2022-09-22 18:03:56.862060,564,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,862.99,Adrian,2022-09-27 19:28:36.554016,2022-09-28 00:03:44.834781,604,Credit Memo Creation
+"San Diego, USA",Invoice Approver,Vendor2,737.47,Jessie,2022-09-25 13:18:52.326444,2022-09-25 23:19:47.405329,629,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,3970.38,Aiden,2022-09-23 19:47:42.139016,2022-09-23 20:49:07.353102,599,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor3,747.4,Riley,2022-09-20 08:28:52.761000,2022-09-20 09:47:10.212371,598,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor3,1693.86,Jackie,2022-09-21 16:29:28.558201,2022-09-21 20:04:58.352632,684,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor2,919.33,Aiden,2022-09-23 11:52:04.154369,2022-09-23 14:01:30.715150,662,Credit Memo Entry
+"San Francisco, USA",Invoice Approver,Vendor3,2322.01,Jackie,2022-09-21 17:52:56.199552,2022-09-21 21:55:35.495913,661,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor3,410.47,Riley,2022-09-20 12:03:44.024108,2022-09-20 13:29:34.755280,562,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor4,817.7,Aiden,2022-09-22 16:25:35.251790,2022-09-22 17:59:32.532323,677,Credit Memo Entry
+"San Diego, USA",Invoice Processor,Vendor2,1067.03,Casey,2022-09-19 19:11:44.514543,2022-09-20 00:27:41.278076,619,Confirm Payment Received
+"San Diego, USA",Invoice Processor,Vendor2,509.0,Adrian,2022-09-24 12:51:56.617137,2022-09-24 18:18:50.248072,651,Check Customer Payment
+"San Diego, USA",Invoice Approver,Vendor2,935.28,Jessie,2022-09-30 02:15:48.018422,2022-09-30 11:19:37.598829,702,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor1,409.71,Aiden,2022-09-22 14:17:39.451465,2022-09-22 15:31:52.928311,595,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor3,1693.86,Aiden,2022-09-21 21:31:04.188794,2022-09-21 22:21:44.596610,684,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor1,369.08,Aiden,2022-09-19 16:00:53.282711,2022-09-19 17:38:19.623780,701,Confirm Payment Received
+"Seattle, USA",Invoice Approver,Vendor5,1370.91,Addison,2022-09-27 11:21:07.469763,2022-09-27 13:22:09.410577,717,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor2,562.35,Riley,2022-09-24 16:18:56.324462,2022-09-24 16:45:09.903514,624,Fill Credit Memo
+"San Francisco, USA",Invoice Approver,Vendor2,2042.0,Jackie,2022-09-22 16:41:32.621923,2022-09-22 20:05:46.783359,654,Reject Invoice
+"Seattle, USA",Invoice Processor,Vendor2,562.35,Riley,2022-09-23 12:30:06.096796,2022-09-23 13:32:51.045318,624,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor3,375.2,Aiden,2022-09-20 21:36:16.795602,2022-09-20 22:28:32.470208,600,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor5,1042.23,Abbie,2022-09-20 00:39:21.413382,2022-09-20 08:26:39.943024,602,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor3,1437.06,Aiden,2022-09-23 08:27:40.025805,2022-09-23 09:28:51.718970,592,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor5,1486.18,Casey,2022-10-02 03:51:37.680582,2022-10-02 11:07:01.952016,621,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor3,2503.98,Riley,2022-09-20 15:18:06.372916,2022-09-20 16:19:55.847818,663,Check Customer Payment
+"San Francisco, USA",Invoice Approver,Vendor1,1377.12,Jackie,2022-09-19 15:28:51.693863,2022-09-19 17:50:03.149010,606,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor5,1370.91,Riley,2022-09-27 10:39:20.841629,2022-09-27 11:21:07.469763,717,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor1,955.79,Riley,2022-09-20 14:56:38.482732,2022-09-20 16:37:50.096352,633,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor2,845.05,Riley,2022-09-23 17:41:43.836100,2022-09-23 18:32:25.977015,647,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor4,1100.54,Riley,2022-09-27 20:29:43.673140,2022-09-27 21:16:02.402793,710,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor2,638.48,Aiden,2022-09-23 21:22:56.846031,2022-09-23 22:17:56.589140,680,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor4,733.69,Riley,2022-09-25 21:04:45.253095,2022-09-25 21:27:55.322376,565,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1560.92,Aiden,2022-09-22 19:46:39.515243,2022-09-22 21:00:28.690539,594,Refund Customer
+"San Diego, USA",Invoice Approver,Vendor2,737.47,Jessie,2022-09-26 14:42:08.965140,2022-09-26 22:56:19.380713,629,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1205.05,Aiden,2022-09-23 12:10:32.462205,2022-09-23 13:17:06.863349,655,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor3,2379.22,Aiden,2022-09-21 14:18:19.093096,2022-09-21 16:01:16.820799,571,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,4988.27,Abbie,2022-09-21 12:09:55.258615,2022-09-21 19:25:29.291877,657,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor3,2169.89,Jackie,2022-09-24 08:09:47.779568,2022-09-24 11:12:48.296395,653,Reject Invoice
+"San Francisco, USA",Invoice Processor,Vendor3,2379.22,Aiden,2022-09-19 15:06:38.394024,2022-09-19 16:14:51.667673,571,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor2,509.0,Adrian,2022-09-25 06:17:56.933024,2022-09-25 14:34:56.418684,651,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor1,459.18,Aiden,2022-09-21 14:53:19.110514,2022-09-21 16:33:26.293488,713,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,5208.39,Aiden,2022-09-22 17:51:58.496224,2022-09-22 20:00:38.308048,718,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor5,980.08,Riley,2022-09-19 11:21:19.413444,2022-09-19 12:39:43.646755,603,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor4,2577.43,Riley,2022-09-23 15:01:55.696074,2022-09-23 16:14:47.497382,676,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,8993.46,Abbie,2022-09-24 19:02:01.811528,2022-09-25 00:07:18.898342,611,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor5,668.03,Riley,2022-09-22 19:11:54.207788,2022-09-22 20:07:41.575489,583,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor1,1074.48,Riley,2022-09-21 10:32:42.253025,2022-09-21 10:59:05.655504,605,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor3,1151.88,Jackie,2022-09-21 11:06:26.991023,2022-09-21 14:14:53.910240,614,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor2,562.35,Riley,2022-09-23 13:32:51.045318,2022-09-23 15:03:20.200219,624,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor3,2322.01,Aiden,2022-09-22 15:03:12.068363,2022-09-22 16:27:17.134350,661,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1057.47,Aiden,2022-09-22 16:19:26.353564,2022-09-22 17:44:00.008097,719,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor2,502.53,Riley,2022-09-22 21:34:05.727747,2022-09-22 22:05:24.374434,695,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor2,513.55,Aiden,2022-09-22 20:47:59.074025,2022-09-22 22:27:30.412486,681,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor1,955.79,Riley,2022-09-21 09:00:28.963992,2022-09-21 09:28:29.046934,633,Credit Memo Creation
+"San Francisco, USA",Invoice Approver,Vendor1,369.08,Jackie,2022-09-19 21:35:00.029414,2022-09-20 00:50:45.480393,701,Reject Invoice
+"San Diego, USA",Invoice Processor,Vendor2,522.2,Casey,2022-09-26 12:54:11.367864,2022-09-26 18:42:42.970389,699,Credit Memo Creation
+"San Francisco, USA",Invoice Approver,Vendor1,850.39,Jackie,2022-09-20 11:27:34.599574,2022-09-20 13:57:35.593304,563,Approve Invoice
+"San Francisco, USA",Invoice Approver,Vendor3,1037.58,Jackie,2022-09-23 10:00:02.323666,2022-09-23 14:31:30.223288,679,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor2,282.81,Adrian,2022-09-21 09:16:08.720128,2022-09-21 16:41:22.064068,658,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor3,2466.35,Riley,2022-09-19 15:09:24.198959,2022-09-19 16:18:22.930538,616,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor1,616.46, Riley  ,2022-09-20 11:24:29.172711,2022-09-20 12:19:28.426857,669,Confirm Payment Received
+"San Diego, USA",Invoice Approver,Vendor5,4731.83,Jessie,2022-09-25 12:28:37.920347,2022-09-25 20:09:40.210771,584,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor1,369.08,Aiden,2022-09-19 17:38:19.623780,2022-09-19 19:00:10.139138,,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor2,1652.63,Adrian,2022-09-24 23:20:22.372483,2022-09-25 09:02:25.605661,573,Fill Credit Memo
+"San Diego, USA",Invoice Processor,Vendor5,943.29,Adrian,2022-09-21 14:34:40.496915,2022-09-21 18:44:26.628432,570,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor2,728.06,Adrian,2022-09-29 07:26:41.291163,2022-09-29 13:01:45.596242,560,Fill Credit Memo
+"San Diego, USA",Invoice Processor,Vendor2,1652.63,Adrian,2022-09-21 18:20:41.745154,2022-09-22 00:23:16.766908,573,Confirm Payment Received
+"San Francisco, USA",Invoice Approver,Vendor2,2042.0,Jackie,2022-09-23 17:26:16.390518,2022-09-23 21:22:36.339504,654,Complete the Customer Memo
+"San Diego, USA",Invoice Approver,Vendor2,935.28,Jessie,2022-09-28 05:24:59.298780,2022-09-28 14:49:44.273261,702,Complete the Customer Memo
+"San Francisco, USA",Invoice Approver,Vendor3,2379.22,Jackie,2022-09-19 16:14:51.667673,2022-09-19 20:00:44.012542,571,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor4,1380.57,Aiden,2022-09-22 02:33:24.247133,2022-09-22 04:57:14.905765,656,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor5,1486.18,Casey,2022-09-28 11:32:18.660419,2022-09-29 01:56:30.270453,621,Refund With Special Voucher
+"San Diego, USA",Invoice Processor,Vendor5,2839.81,Casey,2022-09-23 09:54:25.555177,2022-09-23 16:56:53.803368,660,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,1235.6,Casey,2022-09-24 07:15:09.014216,2022-09-24 14:11:43.439953,607,Credit Memo Entry
+"San Diego, USA",Invoice Approver,Vendor2,619.29,Jessie,2022-09-28 15:07:08.851754,2022-09-29 01:12:18.633180,704,Reject Invoice
+"Seattle, USA",Invoice Processor,Vendor5,948.89,Riley,2022-09-21 12:30:03.349619,2022-09-21 13:37:19.344513,688,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,911.14,Casey,2022-09-22 09:55:01.913717,2022-09-22 16:46:04.126216,640,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor5,654.14,Abbie,2022-09-21 19:51:07.125480,2022-09-22 03:30:19.660497,649,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,4667.44,Casey,2022-09-21 21:25:52.269494,2022-09-22 02:01:50.316443,696,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor5,1800.96,Riley,2022-09-25 16:23:13.569674,2022-09-25 17:15:53.892335,575,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor4,1380.57,Aiden,2022-09-21 23:57:44.040640,2022-09-22 01:10:33.742100,656,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor2,737.47,Casey,2022-09-23 14:32:34.134905,2022-09-23 18:59:51.771184,629,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor4,709.79,Riley,2022-09-28 09:16:28.860113,2022-09-28 10:09:18.082631,618,Fill Credit Memo
+"San Diego, USA",Invoice Processor,Vendor2,1185.66,Casey,2022-09-23 13:29:41.095299,2022-09-23 23:18:43.182498,578,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,1919.38,Riley,2022-09-20 13:58:53.326054,2022-09-20 14:37:38.268161,697,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor3,375.2,Aiden,2022-09-20 22:28:32.470208,2022-09-20 23:29:57.677655,600,Fill Credit Memo
+"San Diego, USA",Invoice Approver,Vendor2,1133.67,Jessie,2022-09-23 15:18:21.893050,2022-09-24 01:02:02.420302,589,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor3,1105.72,Aiden,2022-09-23 20:18:57.126336,2022-09-23 21:22:03.172206,698,Fill Credit Memo
+"Seattle, USA",Invoice Processor,Vendor2,2160.85,Riley,2022-09-22 14:21:54.117359,2022-09-22 15:04:07.145518,705,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor4,784.16,Riley,2022-09-25 07:24:03.539706,2022-09-25 08:06:29.161241,630,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor1,371.64,Riley,2022-09-23 15:19:40.225203,2022-09-23 16:01:26.299422,632,Credit Memo Entry
+"San Diego, USA",Invoice Processor,Vendor2,522.2,Casey,2022-09-24 14:27:55.523416,2022-09-25 08:10:29.012890,699,Refund With Special Voucher
+"San Diego, USA",Invoice Processor,Vendor2,619.29,Abbie,2022-09-30 22:22:02.795920,2022-10-01 17:08:20.642258,704,Refund With Special Voucher
+"Seattle, USA",Invoice Processor,Vendor4,1908.76,Riley,2022-09-21 03:34:08.675706,2022-09-21 04:52:40.522001,628,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor1,1999.54,Aiden,2022-09-23 04:21:31.285314,2022-09-23 06:25:57.189569,572,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor2,522.2,Casey,2022-09-29 05:40:37.476767,2022-09-29 11:40:01.621218,699,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor2,562.35,Riley,2022-09-23 15:03:20.200219,2022-09-23 15:42:48.197730,624,Refund With Standard Voucher
+"San Diego, USA",Invoice Approver,Vendor2,1172.88,Jessie,2022-09-25 06:14:59.137368,2022-09-25 17:47:16.754861,707,Approve Invoice
+"Seattle, USA",Invoice Approver,Vendor5,668.03,Addison,2022-09-22 13:56:26.165886,2022-09-22 17:48:55.368097,583,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor3,410.47,Riley,2022-09-21 08:16:20.491433,2022-09-21 10:50:28.535207,562,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor1,1961.85,Riley,2022-09-20 00:26:33.228642,2022-09-20 01:35:27.166365,613,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor2,1370.38,Aiden,2022-09-20 09:04:41.256301,2022-09-20 10:44:56.333177,591,Credit Memo Creation
+"San Francisco, USA",Invoice Approver,Vendor3,2322.01,Jackie,2022-09-21 13:17:19.188866,2022-09-21 16:24:31.218102,661,Reject Invoice
+"San Diego, USA",Invoice Processor,Vendor5,654.14,Abbie,2022-09-19 20:54:30.193837,2022-09-20 04:11:07.308965,649,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor3,761.56,Riley,2022-09-23 11:10:14.092669,2022-09-23 12:09:46.693798,709,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor4,784.16,Riley,2022-09-25 06:11:20.155610,2022-09-25 07:01:03.227166,630,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor2,2634.24,Riley,2022-09-21 19:00:21.749586,2022-09-21 19:55:35.009703,666,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor2,1172.88,Abbie,2022-09-26 12:01:13.280538,2022-09-26 20:15:42.194034,707,Fill Credit Memo
+"San Diego, USA",Invoice Approver,Vendor2,619.29,Jessie,2022-09-27 16:26:08.113772,2022-09-28 01:47:49.191528,704,Complete the Customer Memo
+"San Francisco, USA",Invoice Approver,Vendor2,1370.38,Jackie,2022-09-19 15:51:14.538102,2022-09-19 18:47:29.948222,591,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor3,893.71,Riley,2022-09-22 12:54:25.157098,2022-09-22 14:22:29.792484,648,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor2,862.99,Adrian,2022-09-28 18:47:10.411467,2022-09-29 00:13:08.847623,604,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,2372.08,Adrian,2022-09-25 22:47:46.930221,2022-09-26 06:50:17.908696,642,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor5,1107.84,Riley,2022-09-22 16:10:34.928542,2022-09-22 16:58:00.971172,610,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor5,381.35,Riley,2022-09-24 07:45:05.182665,2022-09-24 08:29:00.705415,638,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor2,704.91,Riley,2022-09-23 15:23:53.378290,2022-09-23 16:05:54.710351,645,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor3,6846.42,Aiden,2022-09-23 13:26:37.589959,2022-09-23 15:31:07.001326,712,Check Customer Payment
+"Seattle, USA",Invoice Approver,Vendor3,761.56,Addison,2022-09-24 21:46:34.975668,2022-09-25 01:13:29.774774,709,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor4,1750.63,Riley,2022-09-23 16:44:11.564004,2022-09-23 17:42:51.472559,685,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor4,976.2,Aiden,2022-09-21 15:18:08.688381,2022-09-21 16:30:56.376004,691,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor5,264.85,Riley,2022-09-23 11:50:46.074519,2022-09-23 12:55:48.904228,601,Check Customer Payment
+"San Diego, USA",Invoice Approver,Vendor2,619.29,Jessie,2022-09-29 14:49:40.753840,2022-09-29 21:25:20.993044,704,Complete the Customer Memo
+"San Francisco, USA",Invoice Approver,Vendor1,369.08,Jackie,2022-09-23 04:35:18.136826,2022-09-23 07:39:47.613106,701,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor2,638.48,Aiden,2022-09-24 22:43:30.948535,2022-09-25 01:03:34.236097,680,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor3,2322.01,Aiden,2022-09-20 14:18:43.336025,2022-09-20 16:14:19.238128,661,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor2,728.06,Adrian,2022-09-21 14:48:10.449223,2022-09-22 09:12:12.888692,560,Refund With Special Voucher
+"San Francisco, USA",Invoice Approver,Vendor2,638.48,Jackie,2022-09-22 16:28:50.368183,2022-09-22 20:45:51.650475,680,Reject Invoice
+"Seattle, USA",Invoice Processor,Vendor1,1961.85,Riley,2022-09-20 07:34:51.511810,2022-09-20 08:18:55.067083,613,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor3,1151.88,Aiden,2022-09-19 09:26:16.501852,2022-09-19 11:05:27.705149,614,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,619.29,Abbie,2022-09-22 18:42:42.834191,2022-09-23 01:23:38.666982,704,Refund With Special Voucher
+"San Francisco, USA",Invoice Processor,Vendor1,409.71,Aiden,2022-09-22 08:18:36.528929,2022-09-22 09:41:22.761875,595,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,1632.91,Casey,2022-09-23 09:25:13.240161,2022-09-23 14:09:54.206049,617,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor1,459.18,Aiden,2022-09-21 16:33:26.293488,2022-09-21 17:58:42.769342,713,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor1,1961.85,Riley,2022-09-20 07:00:05.643942,2022-09-20 07:34:51.511810,613,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor5,1875.72,Adrian,2022-09-21 08:09:08.911132,2022-09-21 14:37:58.771591,689,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor5,1486.18,Casey,2022-09-20 02:25:50.624696,2022-09-20 10:08:45.555485,621,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor3,243.95,Riley,2022-09-20 12:35:05.783227,2022-09-20 13:14:37.126223,668,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor1,850.39,Aiden,2022-09-20 17:31:53.787771,2022-09-20 19:20:07.454929,563,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor4,1282.6,Riley,2022-09-24 10:28:41.572645,2022-09-24 12:00:44.982345,587,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor2,717.61,Aiden,2022-09-21 10:54:51.955481,2022-09-21 13:10:38.574038,703,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor2,2042.0,Jackie,2022-09-23 13:21:44.046551,2022-09-23 16:39:25.159163,654,Reject Invoice
+"Seattle, USA",Invoice Processor,Vendor4,282.21,Riley,2022-09-20 09:50:25.902534,2022-09-20 10:42:14.470908,577,Invoice Entry
+"San Diego, USA",Invoice Approver,Vendor2,1172.88,Jessie,2022-09-24 20:03:33.593919,2022-09-25 06:14:59.137368,707,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,638.48,Aiden,2022-09-21 13:31:05.495100,2022-09-21 15:34:15.508659,680,Confirm Payment Received
+"San Francisco, USA",Invoice Approver,Vendor3,1151.88,Jackie,2022-09-19 14:24:22.654956,2022-09-19 18:14:59.699152,614,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor2,862.99,Adrian,2022-09-28 08:56:06.367071,2022-09-28 18:47:10.411467,604,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor1,1560.92,Aiden,2022-09-22 14:39:44.351500,2022-09-22 16:58:16.931619,594,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor2,3428.33,Jackie,2022-09-21 18:57:14.964477,2022-09-21 22:32:08.428161,564,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor2,885.7,Abbie,2022-09-23 17:13:53.261546,2022-09-24 03:52:52.592477,714,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor2,5208.39,Aiden,2022-09-21 12:12:56.405644,2022-09-21 14:40:19.341933,718,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor1,369.08,Aiden,2022-09-22 04:47:26.646236,2022-09-22 05:21:05.992390,701,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor2,1133.67,Adrian,2022-09-22 12:34:54.149000,2022-09-22 21:16:44.440784,589,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor3,2169.89,Jackie,2022-09-25 04:21:07.631691,2022-09-25 06:23:58.881959,653,Reject Invoice
+"San Francisco, USA",Invoice Processor,Vendor2,2012.64,Aiden,2022-09-19 14:44:15.131548,2022-09-19 15:33:25.481194,590,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor4,1380.57,Aiden,2022-09-21 12:11:40.202013,2022-09-21 13:55:13.316019,656,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,8993.46,Abbie,2022-09-25 14:49:06.281042,2022-09-25 19:48:17.157576,611,Re-issuing the invoice
+"Seattle, USA",Invoice Approver,Vendor5,1370.91,Addison,2022-09-27 09:15:39.526740,2022-09-27 10:39:20.841629,717,Reject Invoice
+"Seattle, USA",Invoice Processor,Vendor2,2634.24,Riley,2022-09-24 08:29:14.408946,2022-09-24 09:10:59.117057,666,Re-issuing the invoice
+"Seattle, USA",Invoice Approver,Vendor4,1100.54,Addison,2022-09-27 14:39:30.694963,2022-09-27 17:24:56.685746,710,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor3,2322.01,Aiden,2022-09-21 16:24:31.218102,2022-09-21 17:52:56.199552,661,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor3,2169.89,Aiden,2022-09-23 16:05:08.555548,2022-09-23 17:19:22.573138,653,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor3,1693.86,Aiden,2022-09-20 17:41:29.723492,2022-09-20 19:57:42.830326,684,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor1,519.67,Aiden,2022-09-23 15:38:02.970793,2022-09-23 17:29:36.112027,567,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor2,1076.98,Aiden,2022-09-23 17:31:18.854480,2022-09-23 18:48:48.620760,615,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor5,8993.46,Abbie,2022-09-22 22:03:15.143433,2022-09-23 13:14:57.728617,611,Refund With Special Voucher
+"Seattle, USA",Invoice Processor,Vendor2,2634.24,Riley,2022-09-21 15:44:52.123965,2022-09-21 17:28:30.949252,666,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor2,918.79,Jackie,2022-09-22 16:15:08.744172,2022-09-22 20:53:41.531527,639,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor1,1999.54,Aiden,2022-09-25 11:42:26.716706,2022-09-25 13:27:21.069283,572,Fill Credit Memo
+"San Francisco, USA",Invoice Approver,Vendor1,1057.47,Jackie,2022-09-22 19:37:59.657311,2022-09-22 22:33:50.775585,719,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor4,709.79,Riley,2022-09-24 08:45:23.285885,2022-09-24 09:16:49.429479,618,Refund With Standard Voucher
+"Seattle, USA",Invoice Approver,Vendor4,1750.63,Addison,2022-09-23 17:42:51.472559,2022-09-23 21:19:05.541568,685,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,3428.33,Aiden,2022-09-21 14:08:18.477887,2022-09-21 15:36:57.755268,564,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,638.48,Aiden,2022-09-21 11:04:16.701326,2022-09-21 13:31:05.495100,680,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor4,1908.76,Riley,2022-09-21 04:52:40.522001,2022-09-21 05:16:17.179921,628,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor2,490.62,Jackie,2022-09-20 20:37:56.565119,2022-09-20 23:25:44.925840,579,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor4,1750.63,Riley,2022-09-22 12:52:49.353552,2022-09-22 13:36:49.340780,685,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor5,1507.99,Riley,2022-09-22 16:50:55.821155,2022-09-22 17:23:33.862534,635,Re-issuing the invoice
+"San Diego, USA",Invoice Approver,Vendor5,1486.18,Jessie,2022-09-21 06:57:00.966499,2022-09-21 15:28:43.033692,621,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,1123.28,Aiden,2022-09-24 10:14:06.121165,2022-09-24 11:34:01.970648,626,Fill Credit Memo
+"San Francisco, USA",Invoice Approver,Vendor3,2379.22,Jackie,2022-09-20 18:12:25.112376,2022-09-20 22:23:29.648098,571,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor2,498.69,Casey,2022-09-21 12:05:05.878412,2022-09-21 19:44:46.587431,559,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor1,369.08,Aiden,2022-09-23 00:10:36.311645,2022-09-23 00:52:33.767773,701,Refund With Standard Voucher
+"San Francisco, USA",Invoice Approver,Vendor3,2169.89,Jackie,2022-09-26 02:02:38.352277,2022-09-26 05:09:33.842936,653,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor3,1037.58,Aiden,2022-09-24 17:22:06.594956,2022-09-24 18:32:42.018063,679,Fill Credit Memo
+"San Diego, USA",Invoice Approver,Vendor2,728.06,Jessie,2022-09-27 18:17:30.064231,2022-09-28 03:22:43.521493,560,Approve Invoice
+"San Francisco, USA",Invoice Approver,Vendor1,660.77,Jackie,2022-09-22 17:52:46.571803,2022-09-22 20:24:34.379367,706,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor1,519.67,Aiden,2022-09-23 12:56:36.154871,2022-09-23 14:36:10.374348,567,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,4988.27,Abbie,2022-09-27 02:31:31.907143,2022-09-27 11:25:28.721170,657,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,4988.27,Abbie,2022-09-26 21:13:08.394606,2022-09-27 02:31:31.907143,657,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor5,1507.99,Riley,2022-09-22 13:36:03.111096,2022-09-22 14:54:40.964350,635,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor3,761.56,Riley,2022-09-23 13:18:16.938295,2022-09-23 13:59:08.524054,709,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor2,502.53,Riley,2022-09-21 14:41:26.283842,2022-09-21 15:31:15.428146,695,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor5,1042.23,Abbie,2022-09-24 00:31:33.524007,2022-09-24 04:36:44.495830,602,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor3,2169.89,Aiden,2022-09-23 12:02:48.710466,2022-09-23 13:48:52.626434,653,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor1,850.39,Jackie,2022-09-19 13:38:48.916444,2022-09-19 16:29:00.968858,563,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor2,4988.27,Abbie,2022-09-23 01:20:04.095646,2022-09-23 06:18:12.044239,657,Credit Memo Entry
+"San Diego, USA",Invoice Processor,Vendor2,1708.8,Adrian,2022-09-20 18:22:19.206613,2022-09-20 23:30:14.841369,693,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor2,1123.28,Aiden,2022-09-23 08:15:05.258714,2022-09-23 09:51:14.167998,626,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,762.27,Adrian,2022-09-25 18:35:16.283868,2022-09-26 00:12:04.965307,581,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor1,850.39,Aiden,2022-09-20 13:57:35.593304,2022-09-20 15:33:30.469814,563,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor4,1908.76,Riley,2022-09-21 01:57:06.986223,2022-09-21 03:34:08.675706,628,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor2,745.6,Aiden,2022-09-20 13:02:51.895010,2022-09-20 14:07:39.816929,716,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor1,1932.88,Aiden,2022-09-22 03:07:13.735823,2022-09-22 05:05:54.387021,561,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor1,1377.12,Aiden,2022-09-20 15:11:11.718623,2022-09-20 16:44:32.729867,606,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor3,747.4,Riley,2022-09-20 09:47:10.212371,2022-09-20 10:50:30.485907,598,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor2,490.62,Aiden,2022-09-21 21:16:41.479826,2022-09-21 23:29:50.674516,579,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor3,1151.88,Aiden,2022-09-20 09:01:12.584109,2022-09-20 10:24:51.414451,614,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor2,935.28,Abbie,2022-10-05 10:25:10.127737,2022-10-05 14:58:54.515517,702,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor1,2006.17,Aiden,2022-09-19 15:07:46.540922,2022-09-19 16:13:06.756050,593,Confirm Payment Received
+"San Diego, USA",Invoice Approver,Vendor2,885.7,Jessie,2022-09-27 21:55:51.646687,2022-09-28 04:12:46.757254,714,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor4,784.16,Riley,2022-09-21 09:13:57.189696,2022-09-21 10:21:07.786133,630,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor4,733.69,Riley,2022-09-23 14:18:43.987947,2022-09-23 16:27:41.269697,565,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor2,619.29,Abbie,2022-10-04 22:57:02.894203,2022-10-05 04:00:32.202202,704,Credit Memo Creation
+"Seattle, USA",Invoice Approver,Vendor4,1100.54,Addison,2022-09-27 17:24:56.685746,2022-09-27 20:29:43.673140,710,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1144.54,Aiden,2022-09-22 14:13:51.919041,2022-09-22 16:20:08.456636,687,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor4,1475.79,Riley,2022-09-21 09:29:09.292223,2022-09-21 10:30:54.143325,622,Invoice Entry
+"San Diego, USA",Invoice Approver,Vendor5,1632.91,Jessie,2022-09-22 09:04:11.822189,2022-09-22 16:50:17.156817,617,Approve Invoice
+"San Francisco, USA",Invoice Approver,Vendor2,2042.0,Jackie,2022-09-23 21:22:36.339504,2022-09-24 01:00:14.998942,654,Approve Invoice
+"San Francisco, USA",Invoice Approver,Vendor2,745.6,Jackie,2022-09-20 17:31:52.936786,2022-09-20 22:05:47.484291,716,Approve Invoice
+"Seattle, USA",Invoice Approver,Vendor4,1750.63,Addison,2022-09-23 13:49:14.988192,2022-09-23 16:44:11.564004,685,Reject Invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1377.12,Aiden,2022-09-19 10:31:26.971959,2022-09-19 12:32:37.206124,606,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,4667.44,Casey,2022-09-28 23:53:15.566304,2022-09-29 07:07:17.929476,696,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,737.47,Casey,2022-09-23 18:59:51.771184,2022-09-24 01:48:17.472639,629,Confirm Payment Received
+"San Diego, USA",Invoice Processor,Vendor2,1067.03,Casey,2022-09-20 12:11:38.283389,2022-09-20 22:33:58.629259,619,Refund With Special Voucher
+"Seattle, USA",Invoice Processor,Vendor1,1961.85,Riley,2022-09-20 08:18:55.067083,2022-09-20 09:06:08.759674,613,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,2006.17,Aiden,2022-09-19 16:13:06.756050,2022-09-19 17:42:04.663587,593,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor4,1571.36,Aiden,2022-09-20 09:39:44.233751,2022-09-20 11:25:14.530604,692,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor2,918.79,Aiden,2022-09-22 12:28:32.145723,2022-09-22 14:44:54.906494,639,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor5,2567.16,Riley,2022-09-19 16:29:17.301772,2022-09-19 17:04:50.835574,683,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor3,243.95,Riley,2022-09-20 11:16:48.202683,2022-09-20 12:35:05.783227,668,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor2,1708.8,Adrian,2022-09-25 19:51:33.492939,2022-09-26 02:56:53.289336,693,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor3,1151.88,Aiden,2022-09-19 11:05:27.705149,2022-09-19 12:40:26.480002,614,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor4,2577.43,Riley,2022-09-24 12:28:29.746001,2022-09-24 13:15:35.388381,676,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor3,1151.88,Jackie,2022-09-21 14:14:53.910240,2022-09-21 17:35:24.476872,614,Reject Invoice
+"Seattle, USA",Invoice Approver,Vendor4,4445.46,Addison,2022-09-22 18:08:52.689739,2022-09-22 20:28:47.082636,597,Approve Invoice
+"San Diego, USA",Invoice Approver,Vendor2,4667.44,Jessie,2022-09-24 11:09:16.852455,2022-09-24 19:06:48.231651,696,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor2,728.06,Adrian,2022-09-21 05:50:52.025384,2022-09-21 14:48:10.449223,560,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor2,530.63,Aiden,2022-09-22 16:22:38.340383,2022-09-22 17:32:11.539014,665,Check Customer Payment
+"San Diego, USA",Invoice Approver,Vendor5,1486.18,Jessie,2022-09-26 17:59:55.125321,2022-09-27 02:39:47.312424,621,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor3,1105.72,Aiden,2022-09-21 12:56:37.438728,2022-09-21 14:40:31.001420,698,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor3,1437.06,Aiden,2022-09-26 15:27:42.567596,2022-09-26 17:23:17.183440,592,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor1,1999.54,Aiden,2022-09-22 08:03:10.995488,2022-09-22 10:04:41.776635,572,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,1123.28,Aiden,2022-09-24 08:58:07.637956,2022-09-24 10:14:06.121165,626,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor3,628.04,Riley,2022-09-19 15:17:32.648197,2022-09-19 16:44:06.912870,673,Check Customer Payment
+"Seattle, USA",Invoice Approver,Vendor4,784.16,Addison,2022-09-24 13:33:27.174912,2022-09-24 18:09:37.618893,630,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor5,4731.83,Casey,2022-09-26 15:31:27.100492,2022-09-26 21:00:27.409641,584,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,369.08,Aiden,2022-09-23 23:40:44.943613,2022-09-24 01:00:55.838685,701,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor3,1481.82,Riley,2022-09-19 15:26:52.036822,2022-09-19 16:24:08.082897,711,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor4,1100.54,Riley,2022-09-23 15:51:40.039903,2022-09-23 17:05:34.234534,710,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor5,264.85,Riley,2022-09-23 13:29:09.329852,2022-09-23 14:09:04.160465,601,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor1,371.64,Riley,2022-09-23 16:01:26.299422,2022-09-23 17:00:04.211064,632,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor4,578.67,Aiden,2022-09-19 16:01:08.389087,2022-09-19 17:52:52.556921,620,Re-issuing the invoice
+"San Diego, USA",Invoice Approver,Vendor2,1708.8,Jessie,2022-09-22 11:38:04.913840,2022-09-23 00:13:24.506236,693,Complete the Customer Memo
+"San Francisco, USA",Invoice Approver,Vendor1,5716.42,Jackie,2022-09-20 12:18:38.351000,2022-09-20 15:09:21.816990,609,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor2,885.7,Abbie,2022-09-23 08:34:07.018470,2022-09-23 17:13:53.261546,714,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor1,660.77,Aiden,2022-09-22 14:03:16.345719,2022-09-22 15:24:07.831682,706,Confirm Payment Received
+"San Francisco, USA",Invoice Approver,Vendor1,369.08,Jackie,2022-09-19 19:00:10.139138,2022-09-19 21:35:00.029414,701,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor2,1133.67,Adrian,2022-09-26 15:02:51.296950,2022-09-26 22:45:04.631438,589,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,282.81,Adrian,2022-09-24 23:02:31.096675,2022-09-25 07:49:04.405237,658,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor2,1728.7,Riley,2022-09-23 12:59:49.552057,2022-09-23 14:15:41.416864,576,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor5,1507.99,Riley,2022-09-22 12:23:01.277523,2022-09-22 13:36:03.111096,635,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor2,972.32,Abbie,2022-09-24 22:54:18.221825,2022-09-25 04:33:20.626170,678,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor1,1264.16,Aiden,2022-09-23 13:05:45.656461,2022-09-23 14:21:26.571887,586,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor3,2379.22,Aiden,2022-09-21 10:56:41.058855,2022-09-21 12:12:00.352969,571,Credit Memo Creation
+"San Diego, USA",Invoice Approver,Vendor2,619.29,Jessie,2022-09-30 14:43:20.392681,2022-09-30 22:22:02.795920,704,Reject Invoice
+"Seattle, USA",Invoice Processor,Vendor3,2503.98,Riley,2022-09-20 17:44:05.305323,2022-09-20 18:36:14.043608,663,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor2,282.81,Adrian,2022-09-25 07:49:04.405237,2022-09-25 12:42:15.359566,658,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,282.81,Adrian,2022-09-21 16:41:22.064068,2022-09-21 23:17:00.247391,658,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor2,1922.69,Aiden,2022-09-21 16:51:00.734187,2022-09-21 19:01:09.679862,636,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor3,1037.58,Aiden,2022-09-23 08:45:57.760936,2022-09-23 10:00:02.323666,679,Refund With Standard Voucher
+"San Francisco, USA",Invoice Approver,Vendor3,1215.29,Jackie,2022-09-21 12:00:12.318580,2022-09-21 16:13:31.741473,667,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor4,709.79,Riley,2022-09-24 01:48:50.787290,2022-09-24 03:43:29.227671,618,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor1,1074.48,Riley,2022-09-20 14:00:37.343427,2022-09-20 14:43:44.660851,605,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor5,599.88,Casey,2022-09-23 15:18:53.001183,2022-09-23 22:16:04.287500,612,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor1,5716.42,Aiden,2022-09-23 21:11:59.272541,2022-09-23 22:33:37.860206,609,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor5,443.1,Casey,2022-09-28 09:02:25.096346,2022-09-28 14:18:45.401536,623,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,619.29,Abbie,2022-09-27 08:40:11.026373,2022-09-27 16:26:08.113772,704,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor2,745.6,Aiden,2022-09-19 14:47:52.939453,2022-09-19 16:14:58.791195,716,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor3,2379.22,Aiden,2022-09-19 11:26:27.694098,2022-09-19 12:54:50.450574,571,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,1919.38,Riley,2022-09-19 14:03:29.530628,2022-09-19 15:24:55.300051,697,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor1,2006.17,Aiden,2022-09-20 14:02:54.615478,2022-09-20 15:02:52.578411,593,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor2,716.55,Aiden,2022-09-22 16:59:51.081360,2022-09-22 18:47:41.933423,631,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor1,660.77,Aiden,2022-09-23 09:28:44.473264,2022-09-23 11:15:33.002235,706,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor4,1819.68,Riley,2022-09-23 12:46:17.306257,2022-09-23 14:04:55.135726,670,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor4,1908.76,Riley,2022-09-20 10:30:28.902315,2022-09-20 11:40:27.675546,628,Check Customer Payment
+"San Francisco, USA",Invoice Approver,Vendor2,2042.0,Jackie,2022-09-22 20:45:45.050118,2022-09-23 02:53:14.117209,654,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor5,344.79,Riley,2022-09-27 19:07:36.276133,2022-09-27 19:37:25.400479,596,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor3,1437.06,Jackie,2022-09-22 12:59:48.062413,2022-09-22 17:59:09.945289,592,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor5,599.88,Casey,2022-09-24 08:44:40.654642,2022-09-24 17:35:13.614354,612,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor5,1370.91,Riley,2022-09-28 09:07:09.386426,2022-09-28 09:38:10.707631,717,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor1,1429.51,Aiden,2022-09-21 13:05:02.227126,2022-09-21 14:59:09.891316,580,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor1,369.08,Aiden,2022-09-20 16:31:57.120317,2022-09-20 17:59:59.157585,701,Refund With Standard Voucher
+"San Francisco, USA",Invoice Approver,Vendor3,1437.06,Jackie,2022-09-24 09:25:16.083889,2022-09-24 13:53:13.089132,592,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor4,976.2,Aiden,2022-09-21 14:10:19.426114,2022-09-21 15:18:08.688381,691,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor2,716.55,Aiden,2022-09-22 18:47:41.933423,2022-09-22 19:40:38.354616,631,Credit Memo Entry
+"San Francisco, USA",Invoice Approver,Vendor3,1437.06,Jackie,2022-09-25 17:47:06.237692,2022-09-25 20:34:05.798168,592,Approve Invoice
+"San Francisco, USA",Invoice Approver,Vendor2,3428.33,Jackie,2022-09-22 11:25:05.001082,2022-09-22 15:13:33.490103,564,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor1,1735.26,Riley,2022-09-24 03:08:36.663789,2022-09-24 04:17:59.547356,608,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor4,784.16,Riley,2022-09-24 12:42:13.850964,2022-09-24 13:33:27.174912,630,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor1,5716.42,Aiden,2022-09-24 00:06:09.841855,2022-09-24 00:48:07.430895,609,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor3,510.85,Aiden,2022-09-23 14:47:05.309235,2022-09-23 16:41:47.750346,664,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor5,1507.99,Riley,2022-09-22 14:54:40.964350,2022-09-22 16:50:55.821155,635,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor4,928.73,Aiden,2022-09-22 11:13:43.829516,2022-09-22 13:05:39.150713,588,Invoice Entry
+"Seattle, USA",Invoice Approver,Vendor5,1800.96,Addison,2022-09-25 14:16:20.459417,2022-09-25 16:23:13.569674,575,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor3,761.56,Riley,2022-09-25 23:10:21.401927,2022-09-26 00:02:30.657687,709,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,509.0,Adrian,2022-09-20 14:57:09.157611,2022-09-20 22:14:56.576964,651,Invoice Entry
+"San Diego, USA",Invoice Approver,Vendor2,885.7,Jessie,2022-09-28 04:12:46.757254,2022-09-28 14:57:18.005220,714,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor2,437.13,Casey,2022-09-21 14:50:29.501627,2022-09-21 20:29:53.643622,625,Credit Memo Entry
+"San Diego, USA",Invoice Processor,Vendor2,737.47,Casey,2022-09-29 03:00:22.808559,2022-09-29 08:17:46.987182,629,Fill Credit Memo
+"Seattle, USA",Invoice Processor,Vendor2,1634.46,Riley,2022-09-19 15:57:29.080649,2022-09-19 16:30:21.763901,686,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor2,498.69,Casey,2022-09-23 13:20:21.987302,2022-09-23 20:14:49.467402,559,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,2372.08,Adrian,2022-09-21 15:59:25.606831,2022-09-21 20:42:02.861322,642,Invoice Entry
+"San Diego, USA",Invoice Processor,Vendor5,2839.81,Casey,2022-09-24 07:38:54.320851,2022-09-24 13:04:23.114814,660,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor5,1269.99,Casey,2022-09-24 21:33:33.184182,2022-09-25 06:40:28.046774,700,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,935.28,Abbie,2022-09-29 12:43:57.108969,2022-09-30 00:10:46.152228,702,Refund With Special Voucher
+"Seattle, USA",Invoice Processor,Vendor4,501.14,Riley,2022-09-20 17:24:43.833750,2022-09-20 18:15:26.313619,641,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor5,264.85,Riley,2022-09-23 14:09:04.160465,2022-09-23 14:48:19.717784,601,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor2,502.53,Riley,2022-09-22 20:54:37.265685,2022-09-22 21:34:05.727747,695,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor4,1380.57,Aiden,2022-09-22 01:10:33.742100,2022-09-22 02:33:24.247133,656,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor3,1105.72,Aiden,2022-09-23 21:22:03.172206,2022-09-23 22:32:25.879305,698,Re-issuing the invoice
+"San Diego, USA",Invoice Approver,Vendor5,1486.18,Jessie,2022-10-01 21:05:23.393267,2022-10-02 03:51:37.680582,621,Approve Invoice
+"Seattle, USA",Invoice Processor,Vendor1,1098.05,Riley,2022-09-24 03:11:02.658678,2022-09-24 03:57:54.499738,674,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor5,1800.96,Riley,2022-09-25 01:40:03.637102,2022-09-25 02:13:23.569973,575,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor2,918.79,Aiden,2022-09-23 19:18:53.339402,2022-09-23 20:12:00.347865,639,Fill Credit Memo
+"San Diego, USA",Invoice Approver,Vendor2,1133.67,Jessie,2022-09-24 11:01:22.969201,2022-09-24 20:13:35.370225,589,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor3,1151.88,Aiden,2022-09-21 09:40:36.657703,2022-09-21 11:06:26.991023,614,Refund With Standard Voucher
+"San Francisco, USA",Invoice Approver,Vendor2,490.62,Jackie,2022-09-20 17:10:20.704042,2022-09-20 19:34:05.376086,579,Reject Invoice
+"San Francisco, USA",Invoice Processor,Vendor1,5716.42,Aiden,2022-09-20 07:32:31.104087,2022-09-20 09:36:20.739871,609,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor2,745.6,Aiden,2022-09-21 13:30:45.560040,2022-09-21 14:17:50.519073,716,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor5,1370.91,Riley,2022-09-23 16:41:04.712264,2022-09-23 17:30:37.358684,717,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor5,1107.84,Riley,2022-09-22 12:15:35.087990,2022-09-22 13:31:04.096169,610,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor4,1188.32,Riley,2022-09-23 12:46:59.572681,2022-09-23 13:48:27.284706,708,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor5,1235.6,Casey,2022-09-22 08:14:01.042570,2022-09-22 15:50:35.574514,607,Invoice Entry
+"Seattle, USA",Invoice Approver,Vendor1,616.46,Addison,2022-09-20 12:56:44.957996,2022-09-20 16:13:38.243942,669,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,1076.98,Aiden,2022-09-23 21:10:43.465232,2022-09-23 22:56:33.898098,615,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor5,1370.91,Riley,2022-09-28 08:29:24.978783,2022-09-28 09:07:09.386426,717,Credit Memo Creation
+"San Diego, USA",Invoice Approver,Vendor5,2839.81,Jessie,2022-09-28 06:58:14.501676,2022-09-28 13:31:19.467575,660,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1932.88,Aiden,2022-09-21 09:09:00.299235,2022-09-21 11:17:01.086551,561,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor1,616.46,Riley,2022-09-21 05:22:11.450663,2022-09-21 06:17:36.648992,669,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor3,1151.88,Aiden,2022-09-19 12:40:26.480002,2022-09-19 14:24:22.654956,614,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor5,2567.16,Riley,2022-09-19 13:06:11.747742,2022-09-19 14:00:31.619839,683,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor3,747.4,Riley,2022-09-20 10:50:30.485907,2022-09-20 12:06:31.269223,598,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor3,375.2,Aiden,2022-09-20 23:29:57.677655,2022-09-21 00:39:15.432011,600,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor3,1437.06,Jackie,2022-09-23 09:28:51.718970,2022-09-23 12:39:26.147055,592,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor2,935.28,Abbie,2022-09-27 11:44:46.426845,2022-09-27 23:48:36.939136,702,Refund With Special Voucher
+"San Francisco, USA",Invoice Processor,Vendor2,278.18,Aiden,2022-09-20 08:28:06.772719,2022-09-20 10:30:44.327458,720,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor4,784.16,Riley,2022-09-21 10:21:07.786133,2022-09-21 10:57:33.718131,630,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor3,1286.58,Riley,2022-09-21 22:46:03.497376,2022-09-21 23:30:16.656404,582,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor4,817.7,Aiden,2022-09-22 17:59:32.532323,2022-09-22 20:04:27.993621,677,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor2,737.47,Casey,2022-09-29 21:45:17.181784,2022-09-30 02:24:36.295805,629,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,3516.46,Adrian,2022-09-25 16:17:21.100151,2022-09-25 23:43:39.844633,715,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor2,1408.27,Aiden,2022-09-23 17:40:15.545623,2022-09-23 18:56:22.019752,574,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor1,1377.12,Aiden,2022-09-19 14:18:51.176431,2022-09-19 15:28:51.693863,606,Refund With Standard Voucher
+"San Diego, USA",Invoice Processor,Vendor5,537.9,Casey,2022-09-24 00:19:40.973499,2022-09-24 06:48:18.587894,694,Credit Memo Creation
+"San Diego, USA",Invoice Processor,Vendor2,1185.66,Casey,2022-09-28 03:52:52.511890,2022-09-28 10:47:10.382136,578,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor3,1693.86,Aiden,2022-09-21 22:21:44.596610,2022-09-21 23:23:48.503327,684,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,935.28,Abbie,2022-09-21 11:08:32.522136,2022-09-21 22:29:17.863709,702,Refund With Special Voucher
+"San Francisco, USA",Invoice Approver,Vendor2,638.48,Jackie,2022-09-24 02:52:36.603660,2022-09-24 07:58:17.083329,680,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor2,2042.0,Aiden,2022-09-23 16:39:25.159163,2022-09-23 17:26:16.390518,654,Refund With Standard Voucher
+"Seattle, USA",Invoice Processor,Vendor5,344.79,Riley,2022-09-26 14:27:33.437662,2022-09-26 15:33:43.936033,596,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor2,3970.38,Aiden,2022-09-23 12:54:17.393700,2022-09-23 15:05:56.956524,599,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor1,2132.06,Aiden,2022-09-22 17:01:17.079840,2022-09-22 18:21:37.537467,566,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor1,1082.77,Riley,2022-09-23 10:36:50.227618,2022-09-23 11:19:28.686483,643,Credit Memo Entry
+"Seattle, USA",Invoice Approver,Vendor5,344.79,Addison,2022-09-23 16:29:39.792774,2022-09-23 18:29:25.118115,596,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor5,8993.46,Abbie,2022-09-25 00:07:18.898342,2022-09-25 05:39:43.705545,611,Fill Credit Memo
+"San Francisco, USA",Invoice Approver,Vendor1,660.77,Jackie,2022-09-22 16:18:27.203858,2022-09-22 17:52:46.571803,706,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor1,1074.48,Riley,2022-09-21 08:26:19.951401,2022-09-21 09:29:09.998896,605,Credit Memo Creation
+"San Francisco, USA",Invoice Approver,Vendor2,638.48,Jackie,2022-09-21 16:13:07.801842,2022-09-21 21:29:08.327345,680,Complete the Customer Memo
+"San Diego, USA",Invoice Approver,Vendor2,522.2,Jessie,2022-09-25 08:10:29.012890,2022-09-25 18:51:12.058148,699,Complete the Customer Memo
+"San Francisco, USA",Invoice Approver,Vendor2,638.48,Jackie,2022-09-23 02:09:30.295417,2022-09-22 21:41:37.698297,680,Complete the Customer Memo
+"Seattle, USA",Invoice Approver,Vendor2,502.53,Addison,2022-09-21 18:52:42.834813,2022-09-21 21:51:07.463411,695,Reject Invoice
+"San Francisco, USA",Invoice Processor,Vendor2,1370.38,Aiden,2022-09-19 10:59:17.218663,2022-09-19 12:23:41.925135,591,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor3,1215.29,Aiden,2022-09-22 01:56:12.441441,2022-09-22 03:05:18.604365,667,Fill Credit Memo
+"Seattle, USA",Invoice Processor,Vendor3,893.71,Riley,2022-09-22 14:22:29.792484,2022-09-22 16:40:32.298107,648,Credit Memo Entry
+"San Diego, USA",Invoice Processor,Vendor5,537.9,Casey,2022-09-24 17:38:57.545960,2022-09-25 02:59:09.919148,694,Fill Credit Memo
+"Seattle, USA",Invoice Processor,Vendor2,704.91,Riley,2022-09-23 16:36:59.316340,2022-09-23 18:03:36.677810,645,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor5,381.35,Riley,2022-09-23 15:56:55.440420,2022-09-23 16:48:18.694303,638,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor5,1486.18,Casey,2022-09-20 10:08:45.555485,2022-09-21 06:57:00.966499,621,Refund With Special Voucher
+"San Diego, USA",Invoice Processor,Vendor5,2839.81,Casey,2022-09-23 16:56:53.803368,2022-09-23 23:55:09.909169,660,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor3,1350.47,Riley,2022-09-20 05:57:32.693116,2022-09-20 06:48:10.363092,682,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor1,850.39,Aiden,2022-09-19 12:32:01.503417,2022-09-19 13:38:48.916444,563,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor4,1571.36,Aiden,2022-09-20 11:25:14.530604,2022-09-20 12:49:21.811855,692,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor4,1571.36,Aiden,2022-09-20 06:41:24.814739,2022-09-20 08:38:23.967778,692,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor5,3405.17,Adrian,2022-09-24 15:10:40.326665,2022-09-24 22:14:56.848003,627,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor3,676.24,Riley,2022-09-22 14:34:16.616062,2022-09-22 13:19:49.938535,585,Credit Memo Entry
+"San Diego, USA",Invoice Processor,Vendor2,935.28,Abbie,2022-09-20 11:28:13.114946,2022-09-20 18:14:25.721935,702,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor4,282.21,Riley,2022-09-21 14:13:58.357319,2022-09-21 15:11:21.753009,577,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor3,2169.89,Jackie,2022-09-24 02:53:38.647959,2022-09-24 08:09:47.779568,653,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor3,1437.06,Aiden,2022-09-24 08:10:33.325563,2022-09-24 09:25:16.083889,592,Refund With Standard Voucher
+"Seattle, USA",Invoice Approver,Vendor4,784.16,Addison,2022-09-24 05:23:49.400091,2022-09-24 09:45:19.878862,630,Complete the Customer Memo
+"San Diego, USA",Invoice Processor,Vendor5,599.88,Casey,2022-09-24 17:35:13.614354,2022-09-24 23:53:51.123453,612,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor3,556.35,Riley,2022-09-22 16:05:19.279714,2022-09-22 17:29:26.689911,634,Check Customer Payment
+"San Diego, USA",Invoice Approver,Vendor2,1067.03,Jessie,2022-09-21 14:57:27.180657,2022-09-21 22:50:35.300926,619,Complete the Customer Memo
+"Seattle, USA",Invoice Approver,Vendor5,1370.91,Addison,2022-09-27 04:06:39.359200,2022-09-27 09:15:39.526740,717,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor1,1735.26,Riley,2022-09-21 13:51:57.946055,2022-09-21 15:02:45.104617,608,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor3,1670.7,Aiden,2022-09-23 18:15:51.943915,2022-09-23 20:39:33.633520,652,Refund Customer
+"Seattle, USA",Invoice Approver,Vendor4,4445.46,Addison,2022-09-22 15:16:08.040619,2022-09-22 18:08:52.689739,597,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor5,2567.16,Riley,2022-09-19 14:00:31.619839,2022-09-19 15:00:05.703250,683,Credit Memo Entry
+"San Francisco, USA",Invoice Approver,Vendor3,2379.22,Jackie,2022-09-20 12:33:24.662515,2022-09-20 15:38:56.292968,571,Reject Invoice
+"Seattle, USA",Invoice Processor,Vendor4,2577.43,Riley,2022-09-24 11:11:52.153683,2022-09-24 11:55:10.926780,676,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor4,1012.15,Aiden,2022-09-21 12:43:01.379706,2022-09-21 15:28:18.976624,644,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor2,278.18,Aiden,2022-09-21 12:09:08.572028,2022-09-21 13:30:40.835551,720,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor3,375.2,Jackie,2022-09-19 21:42:08.382205,2022-09-20 02:42:52.020424,600,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor1,660.77,Aiden,2022-09-23 12:14:20.913711,2022-09-23 12:52:47.510520,706,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor2,490.62,Aiden,2022-09-19 15:41:03.620835,2022-09-19 17:45:07.731512,579,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor3,1151.88,Aiden,2022-09-23 08:59:57.266909,2022-09-23 10:18:54.468138,614,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor3,893.71,Riley,2022-09-22 17:43:58.367249,2022-09-22 18:12:00.467124,648,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor5,381.35,Riley,2022-09-23 15:00:21.017695,2022-09-23 15:56:55.440420,638,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor1,600.09,Aiden,2022-09-19 18:32:01.561029,2022-09-19 19:03:05.566885,568,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor3,2503.98,Riley,2022-09-20 16:19:55.847818,2022-09-20 17:44:05.305323,663,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor2,918.79,Aiden,2022-09-23 17:11:39.005294,2022-09-23 19:18:53.339402,639,Credit Memo Creation
+"San Francisco, USA",Invoice Approver,Vendor1,369.08,Jackie,2022-09-21 20:51:24.388504,2022-09-22 01:06:45.463592,701,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor3,510.85,Aiden,2022-09-23 19:03:43.138530,2022-09-23 20:31:00.588013,664,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor4,1100.54,Riley,2022-09-28 18:52:34.357898,2022-09-28 19:23:24.191924,710,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor5,1507.99,Riley,2022-09-22 11:08:02.187428,2022-09-22 12:23:01.277523,635,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor2,1634.46,Riley,2022-09-19 14:15:42.622457,2022-09-19 15:57:29.080649,686,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor2,2634.24,Riley,2022-09-24 06:46:55.475206,2022-09-24 07:44:01.015236,666,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor1,868.06,Aiden,2022-09-20 17:39:43.571084,2022-09-20 18:53:24.597679,646,Refund Customer
+"Seattle, USA",Invoice Processor,Vendor1,1082.77,Riley,2022-09-23 08:32:43.122242,2022-09-23 09:49:44.412938,643,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor3,761.56,Riley,2022-09-25 02:19:58.805182,2022-09-25 03:07:28.168077,709,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor3,1437.06,Aiden,2022-09-22 09:26:09.843004,2022-09-22 10:52:00.758919,592,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor1,600.09,Aiden,2022-09-19 11:46:29.295976,2022-09-19 13:31:43.275720,568,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,3970.38,Aiden,2022-09-23 15:05:56.956524,2022-09-23 16:56:00.044643,599,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor4,709.79,Riley,2022-09-28 10:09:18.082631,2022-09-28 10:29:54.655917,618,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor2,1408.27,Aiden,2022-09-23 11:32:25.040262,2022-09-23 14:01:15.557222,574,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor3,1215.29,Aiden,2022-09-20 14:53:36.933547,2022-09-20 18:08:29.273721,667,Confirm Payment Received
+"Seattle, USA",Invoice Approver,Vendor1,1961.85,Addison,2022-09-20 01:35:27.166365,2022-09-20 05:04:04.540897,613,Complete the Customer Memo
+"San Francisco, USA",Invoice Approver,Vendor1,1932.88,Jackie,2022-09-22 07:09:09.785383,2022-09-22 09:11:18.840699,561,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor1,1098.05,Riley,2022-09-24 03:57:54.499738,2022-09-24 05:44:11.238601,674,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor2,498.69,Casey,2022-09-20 10:28:42.179676,2022-09-20 17:29:03.596381,559,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor2,502.53,Riley,2022-09-21 21:51:07.463411,2022-09-21 22:39:08.296574,695,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor2,3428.33,Aiden,2022-09-22 16:16:07.947390,2022-09-22 17:32:05.109912,564,Fill Credit Memo
+"San Diego, USA",Invoice Processor,Vendor2,1652.63,Adrian,2022-09-22 16:22:53.404694,2022-09-22 21:51:50.262594,573,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor1,1144.54,Aiden,2022-09-22 17:32:44.879951,2022-09-22 19:20:30.458132,687,Credit Memo Entry
+"Seattle, USA",Invoice Processor,Vendor5,344.79,Riley,2022-09-27 17:48:31.582783,2022-09-27 18:35:58.079172,596,Credit Memo Creation
+"Seattle, USA",Invoice Processor,Vendor4,501.14,Riley,2022-09-20 16:36:57.198873,2022-09-20 17:24:43.833750,641,Check Customer Payment
+"San Diego, USA",Invoice Processor,Vendor5,1875.72,Adrian,2022-09-19 12:34:02.308202,2022-09-19 18:11:22.740982,689,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor2,502.53,Riley,2022-09-20 12:13:04.523464,2022-09-20 13:13:47.503412,695,Confirm Payment Received
+"San Diego, USA",Invoice Processor,Vendor2,437.13,Casey,2022-09-24 23:53:23.187666,2022-09-25 06:36:11.031836,625,Re-issuing the invoice
+"San Francisco, USA",Invoice Approver,Vendor3,1151.88,Jackie,2022-09-22 07:27:05.400365,2022-09-22 11:17:22.425940,614,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor4,4445.46,Riley,2022-09-23 10:27:47.513896,2022-09-23 11:30:49.729631,597,Fill Credit Memo
+"San Francisco, USA",Invoice Processor,Vendor3,1670.7,Aiden,2022-09-23 16:08:08.182217,2022-09-23 17:24:33.169514,652,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor5,344.79,Riley,2022-09-23 12:27:01.024753,2022-09-23 13:40:30.164173,596,Invoice Entry
+"San Francisco, USA",Invoice Approver,Vendor2,278.18,Jackie,2022-09-20 14:16:29.282075,2022-09-20 17:58:22.776709,720,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor4,282.21,Riley,2022-09-21 13:46:01.214164,2022-09-21 14:13:58.357319,577,Fill Credit Memo
+"Seattle, USA",Invoice Processor,Vendor1,1074.48,Riley,2022-09-20 13:11:23.954743,2022-09-20 14:00:37.343427,605,Confirm Payment Received
+"San Francisco, USA",Invoice Processor,Vendor3,1437.06,Aiden,2022-09-26 13:58:17.056945,2022-09-26 15:27:42.567596,592,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor2,1526.4,Aiden,2022-09-20 18:28:43.624935,2022-09-20 19:51:46.012844,569,Credit Memo Entry
+"San Francisco, USA",Invoice Processor,Vendor2,278.18,Aiden,2022-09-21 08:49:39.010772,2022-09-21 10:35:56.107787,720,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor2,530.63,Aiden,2022-09-22 14:29:56.807474,2022-09-22 16:22:38.340383,665,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor2,1370.38,Aiden,2022-09-20 10:44:56.333177,2022-09-20 12:14:57.368955,591,Fill Credit Memo
+"San Francisco, USA",Invoice Approver,Vendor3,1037.58,Jackie,2022-09-23 14:31:30.223288,2022-09-23 18:30:19.676573,679,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor2,911.14,Casey,2022-09-22 16:46:04.126216,2022-09-22 22:02:55.454740,640,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor4,976.2,Aiden,2022-09-20 14:58:54.420315,2022-09-20 16:00:22.553990,691,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor1,1429.51,Aiden,2022-09-25 12:30:07.911348,2022-09-25 14:31:34.961073,580,Refund Customer
+"San Francisco, USA",Invoice Processor,Vendor2,513.55,Aiden,2022-09-22 15:09:58.448845,2022-09-22 16:42:51.330493,681,Check Customer Payment
+"Seattle, USA",Invoice Processor,Vendor2,704.91,Riley,2022-09-23 18:03:36.677810,2022-09-23 18:54:35.538549,645,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor2,2372.08,Adrian,2022-09-26 06:50:17.908696,2022-09-26 14:42:14.371239,642,Re-issuing the invoice
+"San Francisco, USA",Invoice Processor,Vendor1,1205.05,Aiden,2022-09-23 11:14:57.948533,2022-09-23 12:10:32.462205,655,Check Customer Payment
+"San Francisco, USA",Invoice Processor,Vendor3,1037.58,Aiden,2022-09-22 11:48:27.903704,2022-09-22 14:28:42.514370,679,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor4,1819.68,Riley,2022-09-23 10:06:43.422453,2022-09-23 11:37:02.925188,670,Invoice Entry
+"Seattle, USA",Invoice Processor,Vendor4,4445.46,Riley,2022-09-23 09:33:48.360360,2022-09-23 10:27:47.513896,597,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor2,1922.69,Aiden,2022-09-21 14:16:34.311166,2022-09-21 15:22:54.235655,636,Credit Memo Entry
+"San Francisco, USA",Invoice Approver,Vendor1,2006.17,Jackie,2022-09-19 17:42:04.663587,2022-09-19 19:35:22.791797,593,Complete the Customer Memo
+"San Francisco, USA",Invoice Approver,Vendor2,2042.0,Jackie,2022-09-21 18:24:58.839447,2022-09-21 21:47:23.518460,654,Complete the Customer Memo
+"San Francisco, USA",Invoice Processor,Vendor2,1408.27,Aiden,2022-09-23 16:05:16.053027,2022-09-23 17:40:15.545623,574,Credit Memo Entry
+"San Diego, USA",Invoice Approver,Vendor2,1708.8,Jessie,2022-09-25 09:09:40.201816,2022-09-25 19:51:33.492939,693,Approve Invoice
+"San Francisco, USA",Invoice Processor,Vendor2,278.18,Aiden,2022-09-20 12:31:51.156098,2022-09-20 14:16:29.282075,720,Refund With Standard Voucher
+"San Francisco, USA",Invoice Processor,Vendor2,745.6,Aiden,2022-09-21 10:58:05.384776,2022-09-21 12:04:20.176336,716,Credit Memo Creation
+"Seattle, USA",Invoice Approver,Vendor3,1919.38,Addison,2022-09-19 18:59:13.907271,2022-09-19 23:10:30.268395,697,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor2,885.7,Abbie,2022-09-30 04:23:08.324237,2022-09-29 22:26:38.459558,714,Re-issuing the invoice
+"San Diego, USA",Invoice Processor,Vendor5,3405.17,Adrian,2022-09-25 14:42:52.505134,2022-09-25 19:11:17.016443,627,Re-issuing the invoice
+"Seattle, USA",Invoice Approver,Vendor2,1728.7,Addison,2022-09-22 17:49:37.878270,2022-09-22 22:37:44.167518,576,Approve Invoice
+"San Diego, USA",Invoice Processor,Vendor2,911.14,Casey,2022-09-21 14:37:47.171438,2022-09-21 19:19:14.127508,640,Check Customer Payment
+"San Francisco, USA",Invoice Approver,Vendor3,1693.86,Jackie,2022-09-20 21:49:45.275054,2022-09-21 02:42:09.626299,684,Complete the Customer Memo
+"Seattle, USA",Invoice Processor,Vendor2,704.91,Riley,2022-09-23 13:54:09.148371,2022-09-23 15:23:53.378290,645,Invoice Entry
+"San Francisco, USA",Invoice Processor,Vendor1,1932.88,Aiden,2022-09-25 22:43:49.274076,2022-09-25 23:25:59.752465,561,Re-issuing the invoice
+"Seattle, USA",Invoice Processor,Vendor2,2634.24,Riley,2022-09-21 17:28:30.949252,2022-09-21 19:00:21.749586,666,Confirm Payment Received
+"Seattle, USA",Invoice Processor,Vendor5,948.89,Riley,2022-09-21 15:46:14.786887,2022-09-21 16:32:08.626044,688,Refund Customer
+"San Diego, USA",Invoice Processor,Vendor5,1042.23,Abbie,2022-09-23 12:22:01.378643,2022-09-23 17:54:51.541240,602,Credit Memo Creation
+"San Francisco, USA",Invoice Processor,Vendor1,2132.06,Aiden,2022-09-26 11:39:48.875071,2022-09-26 14:08:36.598079,566,Refund Customer
