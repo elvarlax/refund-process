@@ -7,6 +7,9 @@ A portfolio project for learning Power Platform. It started from an idea, not a 
 week, catch the bad rows, and let a person decide what happens to them. The solution was designed for this project and built in a
 Power Platform Developer environment with Microsoft sample data.
 
+**Built with:** Dataverse · Power Query dataflows · Power Automate · Power Apps (model-driven) · Dataverse Web API (OData) ·
+SQL on the Dataverse SQL endpoint (SSMS) · Power Platform CLI
+
 ## Architecture
 
 ```mermaid
