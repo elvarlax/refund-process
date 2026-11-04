@@ -38,7 +38,7 @@ SELECT TOP 1 * FROM rp_step;
 | Source File Name | `rp_sourcefilename` | Confirmed |
 | Error Reason | `rp_errorreason` | Confirmed |
 | Raw Event Data | `rp_raweventdata` | Confirmed |
-| Primary key (GUID, written by the dataflow) | `rp_rejectedeventid` | Confirmed. The table has no `rp_name` column: *verify* which text column is the primary name column (needed for the lookup display and the grid) |
+| Primary key (GUID, written by the dataflow) | `rp_rejectedeventid` | Confirmed. The table has no `rp_name` column; the primary name column is `rp_errorreason` (seen in the export) |
 | Standard columns | `statecode`, `statuscode` (Active / Inactive), `ownerid`, `createdon`, `modifiedby` | Exist. `statuscode` is not used for review: it only knows Active and Inactive, so the review has its own column `rp_reviewstatus` |
 | Table Event | `rp_event`, key `rp_eventkey`, `rp_sourcefile` | Confirmed |
 | Table Step | `rp_step` | *Verify* |
@@ -136,8 +136,9 @@ Solution → New → App → Model-driven app, name `Refund Rejected Review`, un
 
 | Navigation | Page | Views shown |
 |---|---|---|
-| Review → **Rejected rows** | Table `Rejected Event` | Open rows, Resolved and ignored, All rejected rows |
-| Reference → **Events** | Table `Event` | One view of the columns used for context (Case Id, Activity Name, Start Timestamp, Source File), read-only through the role |
+| **Rejected Events** | Table `Rejected Event` | Open Rows, Resolved and ignored, All rejected rows |
+
+As built, the app has one page, **Rejected Events**. An `Events` page for context was part of the design and is not built.
 
 Save, **Publish**, **Play**. Add every component (app, table, columns, views, form, business rule, flow, roles) to the solution `Refund Process`.
 

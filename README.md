@@ -3,7 +3,9 @@
 A Power Platform solution that loads weekly refund event-log files into Dataverse, validates every row against data quality rules, and
 lets a reviewer handle the rejected rows in a model-driven app.
 
-Learning project, built in a Power Platform Developer environment with Microsoft sample data.
+A portfolio project for learning Power Platform. It started from an idea, not a tutorial: take a business process, load its data every
+week, catch the bad rows, and let a person decide what happens to them. The solution was designed for this project and built in a
+Power Platform Developer environment with Microsoft sample data.
 
 ## Architecture
 
@@ -64,6 +66,36 @@ Solution `RefundProcess`, publisher prefix `rp`.
 Outside the solution: a Copilot Studio agent on `Rejected Event` (in progress), read-only SQL for SSMS in `dataverse_sql/`, and DAX
 measures in `powerbi/` (written, not run).
 
+## Screenshots
+
+**Dataflow `LoadWeeklyFiles`:** raw files, quality rules, and the split into valid and rejected rows
+
+![Dataflow LoadWeeklyFiles in Power Query](docs/screenshots/01-dataflow-editor.png)
+
+**Cloud flow `StartWeeklyLoad`:** file name check, refresh, and error handling with *Configure run after*
+
+![StartWeeklyLoad in the flow designer](docs/screenshots/02-startweeklyload-designer.png)
+
+**Cloud flow `FinishWeeklyLoad`:** moves the files to `processed` or `failed` when the refresh completes
+
+![FinishWeeklyLoad in the flow designer](docs/screenshots/03-finishweeklyload-designer.png)
+
+**Run history of `StartWeeklyLoad`**
+
+![StartWeeklyLoad run history](docs/screenshots/04-startweeklyload-runs.png)
+
+**Model-driven app `Refund Rejected Review`:** the 125 rejected rows, view *Open Rows*
+
+![Refund Rejected Review, Open Rows](docs/screenshots/05-review-app-open-rows.png)
+
+**Business rule:** `Ignored` without a Review Note is blocked
+
+![Business rule blocking Ignored without a note](docs/screenshots/06-review-app-rule.png)
+
+**Cloud flow `SetReviewedOn`:** records who reviewed a row and when
+
+![SetReviewedOn in the flow designer](docs/screenshots/07-setreviewedon-designer.png)
+
 ## Prerequisites
 
 - A Power Platform environment with Dataverse (a Developer environment is enough)
@@ -87,7 +119,7 @@ other pipeline. Build steps for each part are in [docs/](docs/).
 ## Usage
 
 1. Upload a weekly file to `incoming`. `StartWeeklyLoad` refreshes the dataflow and `FinishWeeklyLoad` moves the file when the refresh completes.
-2. Open `Refund Rejected Review`, view *Open rows*, and set each row to `Resolved` or `Ignored` with a note.
+2. Open `Refund Rejected Review`, view *Open Rows*, and set each row to `Resolved` or `Ignored` with a note.
 3. Run [dataverse_sql/load_checks.sql](dataverse_sql/load_checks.sql) in SSMS against the Dataverse SQL endpoint and compare the counts
    with `data/expected_rejections.csv`.
 
@@ -95,16 +127,41 @@ To reload a file, delete its rows in `Rejected Event` first (Bulk deletion in th
 
 ## Testing
 
-Expected counts per file are computed outside the platform (`data/expected_rejections.csv`), so a load is correct only if it matches numbers
-the platform did not produce. All 18 weekly files are loaded and match:
+Expected counts per file are computed outside the platform (`data/expected_rejections.csv`), so a load is correct only
+if it matches numbers the platform did not produce. All 18 weekly files are loaded and match.
 
-| Rows in the files | Identical lines removed | Rejected with a reason | Loaded into Event |
-|---|---|---|---|
-| 19,337 | 36 | 125 | 19,176 |
+Row counts, checked with SQL in SSMS against the Dataverse SQL endpoint:
+
+```sql
+SELECT 'Event' AS TableName, COUNT(*) AS RowsLoaded FROM rp_event
+UNION ALL
+SELECT 'Rejected Event', COUNT(*) FROM rp_rejectedevent;
+```
+
+| TableName | RowsLoaded |
+|---|---|
+| Event | 19,176 |
+| Rejected Event | 125 |
+
+```sql
+SELECT rp_errorreason AS Reason, COUNT(*) AS RowsRejected
+FROM rp_rejectedevent
+GROUP BY rp_errorreason
+ORDER BY RowsRejected DESC;
+```
+
+| Reason | RowsRejected |
+|---|---|
+| End before start | 36 |
+| CaseId missing | 35 |
+| InvoiceValue not a number | 29 |
+| Unknown activity | 25 |
+
+The files also hold 36 identical lines. The load removes them before the rules run, so they are not stored in `Rejected Event`.
 
 Also verified: the flows end to end, the business rule on the form and in bulk edit, `SetReviewedOn`, four OData queries, and Flow checker
-and Solution checker with 0 issues. Not yet tested: the failure paths of the flows, the security roles with a second user, and the business
-rule in the editable grid and Excel import. Every test and its result is in [TESTS.md](TESTS.md).
+and Solution checker with 0 issues. Not yet tested: the failure paths of the flows, the run count of
+`SetReviewedOn` per change, the security roles with a second user, and the business rule in the editable grid and Excel import. Every test and its result is in [TESTS.md](TESTS.md).
 
 ## Data
 
@@ -116,7 +173,7 @@ Microsoft's sample event log for an accounts payable refund process (*AP Refunds
 
 ```
 solution/        unpacked unmanaged solution (RefundProcess)
-docs/            build notes for the load, flows, review app, agent and OData
+docs/            build notes for the load, flows, review app, agent and OData; screenshots/
 dataverse_sql/   read-only SQL for SSMS on the Dataverse SQL endpoint
 powerbi/         DAX measures
 data/            weekly files, expected rejections, table samples

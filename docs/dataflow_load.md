@@ -60,6 +60,8 @@ Settings that matter:
 - **The dataflow reads every file in `incoming`, not only the one that triggered the run.** `FinishWeeklyLoad` therefore moves all of them.
 - **A broken file fails the whole refresh** (missing column, empty or not a CSV), not just that file. The planned fix is a check in
   `StartWeeklyLoad` before the refresh (name, not empty, header line); not built.
+- **A refresh with no file in `incoming` fails** (`The column 'CaseId' of the table wasn't found`): with no files there are no columns.
+  It does not happen in normal runs, because `StartWeeklyLoad` only refreshes when a file arrives.
 - **Recovery after a failed refresh:** delete that file's rows in `Rejected Event` (Source File Name), then refresh again. Event needs no cleanup.
 - A file that arrives while a refresh is running may be moved by `FinishWeeklyLoad` before it was read. Not handled; load files one batch at a time.
 - Scale: this fits tens of thousands of rows. For millions of rows a dataflow is the wrong tool (Fabric, Azure Data Factory or SQL bulk load).
@@ -122,10 +124,11 @@ Goal: a failed load is visible and recoverable without opening the run history. 
 |---|---|
 | `Process files` (Scope) | Contains `List incoming files`, the condition `Dataflow refresh succeeded` and both loops (the structure was checked on a screenshot) |
 | `Handle failure` (Scope) | *Configure run after* on `Process files`: **has failed** and **has timed out** (not *is successful*). Contains the notification and `Fail the run` |
-| Notification | One message (Office 365 Outlook *Send an email (V2)* or a Teams message) with the dataflow name, the refresh status and the run link: `concat(workflow()['tags']['flowDisplayName'], ' failed: ', workflow()['run']['name'])` |
+| Notification | Office 365 Outlook *Send an email (V2)* with the dataflow name, the refresh status and the run link: `concat(workflow()['tags']['flowDisplayName'], ' failed: ', workflow()['run']['name'])` |
 | `Fail the run` (Terminate) | Status **Failed**, code `LoadFailed`, message = the notification text. Without it the run shows *Succeeded* after `Handle failure` has handled the error |
 
-Also send the notification in the branch where *Refresh Status* is not `Success` (files moved to `failed`): that is a failed load, not a failed flow.
+Not built yet: a notification in the branch where *Refresh Status* is not `Success`. That branch only moves the files to `failed`, so a failed
+refresh ends the run as *Succeeded*.
 
 ### `StartWeeklyLoad`
 
